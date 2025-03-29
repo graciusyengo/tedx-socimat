@@ -6,6 +6,9 @@ import Statistics from '../../components/Statistics/Statistics';
 import WhyAttend from '../../components/WhyAttend/WhyAttend';
 import Schedule from '../../components/Schedule/Schedule';
 import WhatsAppButton from '../../components/WhatsAppButton/WhatsAppButton';
+import Welcome from '../../components/Welcome/Welcome';
+import EventInfo from '../../components/EventInfo/EventInfo';
+import EventTheme from '../../components/EventTheme/EventTheme';
 
 const speakerss = [
   {
@@ -83,7 +86,7 @@ const Home = () => {
                     </a>
                   </div>
                   <div className="image-content">
-                    <img src="/images/tedx.jpg" alt="TEDx Event" className="tedx-logo" />
+                    <img src="/images/tedx-remove.png" alt="TEDx Event" className="tedx-logo" />
                   </div>
                 </div>
               </div>
@@ -98,9 +101,10 @@ const Home = () => {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-      </div>
-
-
+      </div> 
+      <Welcome />
+      <EventInfo />
+      <EventTheme />
       <section className="speakers-section">
         <div className="speakers-container">
           <h2 className="section-title">Nos Intervenants</h2>
@@ -120,6 +124,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+   
       <WhyAttend />
       <Schedule />
       <Statistics />

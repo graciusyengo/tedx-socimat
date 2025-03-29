@@ -58,7 +58,6 @@ const Header = () => {
       <header className="header">
       <div className="logo">
         <span className="ted">TED</span>
-      
         <span className="x">x</span>
         <span class="socimat">Socimat</span>
 
@@ -105,8 +104,6 @@ const Header = () => {
 
           
         </nav>
-
-
 
 
         <a href="#" className="ticket-btn">

@@ -1,0 +1,111 @@
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader-content {
+  text-align: center;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.tedx-text {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.ted {
+  color: #e62b1e;
+}
+
+.x {
+  color: #e62b1e;
+  font-style: italic;
+}
+
+.socimat-text {
+  font-size: 2rem;
+  color: #0B2154;
+  margin-bottom: 30px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #e62b1e;
+  border-radius: 50%;
+  animation: bounce 0.5s ease-in-out infinite;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .tedx-text {
+    font-size: 3rem;
+  }
+  
+  .socimat-text {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tedx-text {
+    font-size: 2.5rem;
+  }
+  
+  .socimat-text {
+    font-size: 1.5rem;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .spinner {
+    gap: 12px;
+  }
+}

@@ -250,8 +250,9 @@
       margin-left: 20px;
     }
     .x{
-      top: 14px;
-      left:80px;
+      font-size: 19px;
+      top: 10px;
+      left:83px;
     }
     .socimat{
       margin-left:10px ;
@@ -263,7 +264,7 @@
     }
   
     .button-dropdown{
-      margin-bottom:-10px;
+      margin-bottom:-5px;
    
     }
   
