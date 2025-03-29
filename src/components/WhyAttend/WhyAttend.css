@@ -1,0 +1,107 @@
+.why-attend {
+  padding: 100px 0;
+  background-color: #fff;
+}
+
+.why-attend-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  color: #1a1f71;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #e62b1e;
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.reason-card {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.reason-card:hover {
+  transform: translateY(-5px);
+}
+
+.reason-icon {
+  font-size: 2.5rem;
+  color: #e62b1e;
+  margin-bottom: 20px;
+}
+
+.reason-title {
+  color: #1a1f71;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.reason-description {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .reasons-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .why-attend {
+    padding: 60px 0;
+  }
+
+  .reasons-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .reason-card {
+    padding: 25px 15px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .reason-icon {
+    font-size: 2.2rem;
+  }
+
+  .reason-title {
+    font-size: 1.2rem;
+  }
+}
