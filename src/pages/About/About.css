@@ -1,0 +1,465 @@
+.about {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.hero-slide-about {
+
+  height: 60vh !important;
+
+}
+
+.hero-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(11, 33, 84, 0.4);
+}
+
+.carousel-content {
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+justify-content: center;
+
+
+  padding: 0 20px;
+  z-index: 2;
+}
+
+.text-content {
+  flex: 1;
+  padding-right: 50px;
+  margin: 0 auto !important;
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: white;
+  text-align: center;
+}
+
+.content-container {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 3.5rem;
+
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.talk-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.talk-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.stat-label {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.timeline-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+  padding-left: 30px;
+  border-left: 2px solid #0B2154;
+}
+
+.year {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0B2154;
+  margin-bottom: 10px;
+}
+
+.content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.content p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.tedx-container {
+  display: flex;
+  gap: 80px;
+  padding: 0;
+  background: #fff;
+  max-width: 1400px;
+  margin: 80px auto;
+}
+
+.image-container {
+  flex: 1;
+  position: relative;
+  max-width: 650px;
+  background: #000;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(100%) contrast(1.1);
+  opacity: 0.9;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 100px 40px 40px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 30%, transparent);
+  color: white;
+  text-align: left;
+}
+
+.overlay h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  color: #e62b1e;
+  margin: 0;
+  font-family: 'Arial Black', sans-serif;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+.overlay p {
+  font-size: 1.4rem;
+  margin: 10px 0 0;
+  letter-spacing: 3px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.content-container {
+  flex: 1;
+  padding: 40px 60px;
+  max-width: 650px;
+}
+
+.content-container h2 {
+  font-size: 2.8rem;
+  color: #0B2154;
+  margin-bottom: 40px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.content-container > p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 50px;
+}
+
+.objectives {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.objective {
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.objective span {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #e62b1e;
+  line-height: 1;
+  opacity: 0.9;
+}
+
+.objective h3 {
+  font-size: 1.4rem;
+  color: #0B2154;
+  margin: 0 0 12px;
+  font-weight: 700;
+}
+
+.objective p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.learn-more {
+  padding: 16px 35px;
+  background: #e62b1e;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.learn-more:hover {
+  background: #d41c1c;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1200px) {
+  .tedx-container {
+    margin: 40px auto;
+    gap: 40px;
+  }
+
+  .content-container {
+    padding: 20px 40px;
+  }
+
+  .content-container h2 {
+    font-size: 2.4rem;
+  }
+
+  .overlay h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tedx-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container {
+    width: 100%;
+    max-height: 600px;
+  }
+
+  .content-container {
+    max-width: 100%;
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-container h2 {
+    font-size: 2rem;
+  }
+
+  .objective span {
+    font-size: 2.4rem;
+  }
+
+  .overlay h1 {
+    font-size: 3.5rem;
+  }
+
+  .overlay p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tedx-container {
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 370px;
+  }
+
+  .overlay {
+    padding: 60px 20px 20px;
+  }
+
+  .overlay h1 {
+    font-size: 3rem;
+  }
+
+  .content-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .objective {
+    gap: 15px;
+  }
+
+  .objective span {
+    font-size: 2rem;
+  }
+
+  .objective h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .stats-grid {
+  grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    top: 45%;
+  }
+
+  .hero-slide {
+    height: 50vh !important;
+  }
+
+  .text-content {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .text-content h1 {
+    font-size: 2rem;
+  }
+
+  .text-content h6 {
+    font-size: 1rem;
+  }
+
+  .image-content {
+    display: none;
+    width: 100%;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .stat-card {
+    padding: 20px 15px;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-label {
+    font-size: 1rem;
+  }
+
+  .timeline-item {
+    padding-left: 20px;
+    margin-bottom: 30px;
+  }
+
+  .year {
+    font-size: 1.3rem;
+  }
+
+  .content h3 {
+    font-size: 1.1rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .intro-content h2 {
+    font-size: 2rem;
+  }
+
+  .intro-content p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .tedx-logo {
+    max-width: 200px;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+  }
+}

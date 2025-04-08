@@ -3,6 +3,7 @@
     width: 100%;
     background-color: #000;
     overflow: hidden;
+
 }
 
 .carousel {
@@ -19,25 +20,28 @@
 }
 
 .hero-slide {
-    height: 100vh;
-    width: 100%;
-    background-image: url('../../public/images/tedx.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
+  position: relative;
+  height: 100vh;
+ 
+  background-size: cover;
+  background-position: center;
+
 }
 
 .hero-slide::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(11, 33, 84, 0.4);
 }
 
 .carousel-content {
+
+  left: 40% !important;
+  top:60% !important;
     height: 100%;
     max-width: 1400px;
     margin: 0 auto;
@@ -53,6 +57,10 @@
     padding-right: 50px;
     text-align: left;
     width: 900px;
+}
+
+.text-content h1 {
+  width: 700px;
 }
 
 .text-content h6,
@@ -166,6 +174,8 @@ h1 {
         height: 60vh;
         display: flex;
         align-items: center;
+       
+
     }
 
     .carousel {
@@ -173,6 +183,10 @@ h1 {
     }
 
     .carousel-content {
+
+  left: 50% !important;
+  top: 80% !important;
+
         height: auto;
         flex-direction: column;
         justify-content: center;
@@ -196,6 +210,7 @@ h1 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
        
     }
 
@@ -240,6 +255,8 @@ h1 {
 
     .hero-slide {
         height: 50vh;
+     
+
     }
 
     h1 {
@@ -285,7 +302,6 @@ h1 {
   font-weight: bold;
   width: 100%;
   padding-top: 0;
-
   letter-spacing: 1px;
 }
 
@@ -428,6 +444,8 @@ h1 {
     height: 200px;
   }
 
+ 
+
   .speaker-info h3 {
     font-size: 1.2rem;
   }
@@ -460,8 +478,29 @@ h1 {
     max-width: 400px;
   }
 
+  .hero-slide {
+    background: 
+    /* Dégradé texte (haut) - très transparent */
+    linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, transparent 30%),
+    
+    /* Dégradé base (bas) - conservation de votre style */
+    linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0.1)),
+
+  }
+
+  .text-content{
+    margin-bottom: 180px !important;
+    
+  }
+
+  .text-content h1{
+    font-size: 1.3rem !important;
+  }
+
   .section-title {
-    font-size: 2rem;
+    font-size: 2rem !important;
     margin-bottom: 40px;
+    color: #0B2154!important;
+ 
   }
 }

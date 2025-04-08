@@ -1,47 +1,45 @@
 import React from 'react';
 import './Schedule.css';
+import { BiTime } from 'react-icons/bi';
+import { FaMicrophone, FaCoffee, FaUsers } from 'react-icons/fa';
 
 const Schedule = () => {
   const timelineEvents = [
     {
-      time: "08:30 - 09:30",
+      time: "08:00 - 09:00",
       title: "Accueil & Enregistrement",
-      description: "Accueil des participants et remise des badges"
+      description: "Accueil des participants et remise des badges",
+      icon: FaUsers
     },
     {
-      time: "09:30 - 10:00",
-      title: "Ouverture Officielle",
-      description: "Mot de bienvenue et présentation de la journée"
+      time: "09:00 - 10:30",
+      title: "Session du Matin",
+      description: "Présentations inspirantes sur l'innovation",
+      icon: FaMicrophone
     },
     {
-      time: "10:00 - 11:30",
-      title: "Session 1: Innovation",
-      description: "Première série de talks inspirants"
+      time: "10:30 - 11:00",
+      title: "Pause Café",
+      description: "Networking et rafraîchissements",
+      icon: FaCoffee
     },
     {
-      time: "11:30 - 12:00",
-      title: "Pause Networking",
-      description: "Échanges et discussions autour d'un café"
+      time: "11:00 - 12:30",
+      title: "Session Principale",
+      description: "Conférences des speakers vedettes",
+      icon: FaMicrophone
     },
     {
-      time: "12:00 - 13:30",
-      title: "Session 2: Impact Social",
-      description: "Deuxième série de talks transformateurs"
+      time: "12:30 - 14:00",
+      title: "Déjeuner & Networking",
+      description: "Repas et échanges entre participants",
+      icon: FaUsers
     },
     {
-      time: "13:30 - 14:30",
-      title: "Pause Déjeuner",
-      description: "Moment de partage et de networking"
-    },
-    {
-      time: "14:30 - 16:00",
-      title: "Session 3: Avenir",
-      description: "Dernière série de talks visionnaires"
-    },
-    {
-      time: "16:00 - 17:00",
-      title: "Table Ronde & Clôture",
-      description: "Discussion interactive et conclusion de l'événement"
+      time: "14:00 - 16:00",
+      title: "Sessions de l'Après-midi",
+      description: "Discussions et présentations innovantes",
+      icon: FaMicrophone
     }
   ];
 
@@ -52,10 +50,18 @@ const Schedule = () => {
         <div className="timeline">
           {timelineEvents.map((event, index) => (
             <div key={index} className="timeline-item">
+              <div className="time-block">
+                <BiTime className="clock-icon" />
+                <span>{event.time}</span>
+              </div>
               <div className="timeline-content">
-                <div className="time-block">{event.time}</div>
-                <h3 className="event-title">{event.title}</h3>
-                <p className="event-description">{event.description}</p>
+                <div className="event-icon">
+                  <event.icon />
+                </div>
+                <div className="event-details">
+                  <h3 className="event-title">{event.title}</h3>
+                  <p className="event-description">{event.description}</p>
+                </div>
               </div>
             </div>
           ))}

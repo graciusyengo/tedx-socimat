@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
 import { IoCartOutline } from "react-icons/io5";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -8,11 +8,14 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [submenuOpen, setSubmenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-
-  
   const toggleSubmenu = () => {
     setSubmenuOpen(prev => !prev); // Toggle pour ouvrir/fermer le sous-menu
+  };
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   };
 
   // Ferme le sous-menu lorsqu'on clique en dehors du menu
@@ -33,7 +36,6 @@ const Header = () => {
       document.removeEventListener('click', handleClickOutside);
     };
   }, []);
-
 
   return (
     <div className="header-container">
@@ -56,62 +58,47 @@ const Header = () => {
 
       {/* Barre de navigation */}
       <header className="header">
-      <div className="logo">
-        <span className="ted">TED</span>
-        <span className="x">x</span>
-        <span class="socimat">Socimat</span>
-
+        <div className="logo">
+          <span className="ted">TED</span>
+          <span className="x">x</span>
+          <span className="socimat">Socimat</span>
         </div>
 
-        {/* Menu de navigation
-        <nav className={`nav ${menuOpen ? "active" : ""}`}>
-          <a href="#" className="active">ACCUEIL</a>
-          <a href="#">À PROPOS</a>
-          <a href="#">SPONSORS</a>
-          <a href="#">NAVIGUEZ ▼</a>
-          <a href="#">CONTACTEZ-NOUS</a>
-        </nav> */}
+        <button className="button-dropdown" onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-{/* Menu déroulant NAVIGUEZ */}
-              {/* Menu de navigation */}
-              <nav className={`nav ${menuOpen ? "active" : ""}`}>
-          <a href="#" className="active">ACCUEIL</a>
-          <a href="#">À PROPOS</a>
-          <a href="#">SPONSORS</a>
-
-          {/* Menu déroulant NAVIGUEZ */}
-          <div
-            className="dropdown"
-            onMouseEnter={() => setSubmenuOpen(true)}
-            onMouseLeave={() => setSubmenuOpen(false)}
-          >
-
-            <div className="navigation"  onClick={toggleSubmenu}>
-            <a href="#">NAVIGUEZ  </a>  <RiArrowDropDownLine className="button-dropdown" size={30} />
-            </div>
-            
-            <div className={`submenu ${submenuOpen ? "show" : ""}`}>
-              <NavLink href="#">Prendre rendez-vous</NavLink>
-              <NavLink href="#">L'équipe TEDx Socimat</NavLink>
-              <NavLink href="#">Sponsoring</NavLink>
-              <NavLink href="#">Partenaires</NavLink>
-              <NavLink href="#">Devenir bénévole</NavLink>
-              <NavLink href="#">Offres et opportunités</NavLink>
-              <NavLink href="#">Devenir speaker</NavLink>
-          
-            </div>
-          </div>
-
-          
+        <nav className={`nav-menu ${isOpen ? 'active' : ''}`}>
+          <ul>
+            <li>
+              <NavLink to="/" end>Accueil</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about">À Propos</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact">Nous Contacter</NavLink>
+            </li>
+            <li>
+              <NavLink to="/sponsors">Sponsors</NavLink>
+            </li>
+            <li>
+              <NavLink to="/partners">Partenaires</NavLink>
+            </li>
+            <li>
+              <NavLink to="/become-speaker">Devenir Speaker</NavLink>
+            </li>
+          </ul>
         </nav>
 
-
         <a href="#" className="ticket-btn">
-           CONTACTEZ-NOUS
+          CONTACTEZ-NOUS
         </a>
 
-           {/* Menu burger pour mobile */}
-           <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+        {/* Menu burger pour mobile */}
+        <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <FaTimes /> : <FaBars />}
         </div>
       </header>

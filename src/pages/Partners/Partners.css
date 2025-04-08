@@ -1,0 +1,399 @@
+.partners {
+  min-height: 100vh;
+}
+
+.hero-slide {
+  position: relative;
+  height: 100vh;
+  background: url('/images/ted.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-slide-partners {
+ 
+  height: 60vh !important;
+
+}
+
+.hero-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(11, 33, 84, 0.4);
+}
+
+.carousel-content {
+  position: relative;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.text-content {
+  color: white;
+  max-width: 600px;
+}
+
+.text-content h6 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.text-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.image-content {
+  flex: 0 0 40%;
+  text-align: right;
+}
+
+.tedx-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container */
+.container-partner {
+  max-width: 1200px;
+  display:flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Benefits Section */
+.benefits-section {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.benefits-section h2,
+.partnership-levels h2,
+.current-partners h2 {
+  text-align: center;
+  color: #0B2154;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.benefits-section h2::after,
+.partnership-levels h2::after,
+.current-partners h2::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #e62b1e;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.benefit-card {
+  text-align: center;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  color: #e62b1e;
+  margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+  color: #0B2154;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.benefit-card p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Partnership Levels */
+.partnership-levels {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.levels-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.level-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.level-card:hover {
+  transform: translateY(-10px);
+}
+
+.level-icon {
+  font-size: 3rem;
+  color: #e62b1e;
+  margin-bottom: 20px;
+}
+
+.level-card h3 {
+  color: #0B2154;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.level-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+  text-align: left;
+}
+
+.level-card ul li {
+  color: #666;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.level-card ul li:last-child {
+  border-bottom: none;
+}
+
+.level-cta {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #e62b1e;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.level-cta:hover {
+  background: #d41c13;
+}
+
+/* Current Partners */
+.current-partners {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.partner-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-10px);
+}
+
+.partner-logo {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+  padding: 20px;
+}
+
+.partner-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.partner-info {
+  padding: 20px;
+}
+
+.partner-level {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #e62b1e;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.partner-info h3 {
+  color: #0B2154;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.partner-info p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Become Partner CTA */
+.become-partner {
+  padding: 100px 0;
+  background:linear-gradient(rgb(51 52 54 / 90%), rgb(1 11 33 / 90%)), url(/images/ted.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-button.primary {
+  background: #e62b1e;
+  color: white;
+}
+
+.cta-button.primary:hover {
+  background: #d41c13;
+}
+
+.cta-button.secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.cta-button.secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .benefits-grid,
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .levels-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content {
+    margin-bottom: 30px;
+  }
+
+  .text-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .image-content {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+
+  .tedx-logo {
+    max-width: 80%;
+  }
+
+  .benefits-grid,
+  .levels-grid,
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit-card,
+  .level-card,
+  .partner-card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cta-button {
+    width: 100%;
+    text-align: center;
+  }
+}

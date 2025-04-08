@@ -64,7 +64,7 @@ const Home = () => {
                 <div className="carousel-content">
                   <div className="text-content">
                     <h6 className="text-white text-uppercase mb-3 animated slideInDown">TEDXSOCIMAT</h6>
-                    <h1 className="text-white mb-4 animated slideInDown">Des idées prêtes à<br />révolutionner le monde.</h1>
+                    <h1 className="text-white mb-4 animated slideInDown fontSize">Des idées prêtes à<br />révolutionner le monde.</h1>
                     <a href="/" className="btn btn-primary animated slideInDown">
                       LIRE PLUS
                     </a>
@@ -77,7 +77,7 @@ const Home = () => {
             </div>
             <div className="carousel-item">
               <div className="hero-slide">
-                <div className="carousel-content">
+                <div className="carousel-content">+
                   <div className="text-content">
                     <h6 className="text-white text-uppercase mb-3 animated slideInDown">TEDXSOCIMAT</h6>
                     <h1 className="text-white mb-4 animated slideInDown">Dans un esprit d'idées<br />dignes d'être partagées.</h1>
@@ -86,7 +86,7 @@ const Home = () => {
                     </a>
                   </div>
                   <div className="image-content">
-                    <img src="/images/tedx-remove.png" alt="TEDx Event" className="tedx-logo" />
+                    <img src="/images/tedx-removebg.png" alt="TEDx Event" className="tedx-logo" />
                   </div>
                 </div>
               </div>
@@ -129,7 +129,7 @@ const Home = () => {
       <Schedule />
       <Statistics />
       <Team />
-      <WhatsAppButton />
+   
     </>
   );
 };

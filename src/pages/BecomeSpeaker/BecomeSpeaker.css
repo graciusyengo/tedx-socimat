@@ -1,0 +1,244 @@
+.become-speaker {
+  min-height: 100vh;
+}
+
+.container-speakers{
+  display: flex;
+justify-content: center;
+gap: 333px;
+}
+
+.hero-slide {
+  position: relative;
+  height: 100vh;
+  background: url('/images/ted.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-slide-become-speaker {
+  height: 60vh !important;
+
+}
+
+.hero-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(11, 33, 84, 0.4);
+}
+
+.carousel-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.text-content {
+  color: white;
+  max-width: 600px;
+}
+
+.text-content h6 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.text-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.image-content {
+  flex: 0 0 40%;
+  text-align: right;
+}
+
+.tedx-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Speaker Requirements Section */
+.speaker-requirements {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.speaker-requirements h2 {
+  color: #0B2154;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.speaker-requirements h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #e62b1e;
+}
+
+.requirements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.requirement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.requirement-item:hover {
+  transform: translateX(10px);
+}
+
+.requirement-item .icon {
+  font-size: 2rem;
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.requirement-item .text h3 {
+  color: #0B2154;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+/* Speaker Form */
+.speaker-form {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.speaker-form h2 {
+  color: #0B2154;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.speaker-form h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #e62b1e;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #e62b1e;
+}
+
+.submit-btn {
+  background-color: #e62b1e;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #d41c13;
+}
+
+@media (max-width: 768px) {
+  .carousel-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content {
+    margin-bottom: 30px;
+  }
+
+  .text-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .image-content {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+
+  .tedx-logo {
+    max-width: 80%;
+  }
+
+  .speaker-requirements {
+    padding: 60px 0;
+  }
+
+  .requirement-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .requirement-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .speaker-form {
+    padding: 20px;
+    margin-top: 40px;
+  }
+}
