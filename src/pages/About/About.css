@@ -346,6 +346,10 @@ justify-content: center;
     width: 300px !important;
   }
 
+
+  .swiper-pagination{
+    display: none !important;
+  }
   .video-thumbnail iframe {
     height: 200px;
   }
