@@ -343,7 +343,7 @@ justify-content: center;
   }
 
   .swiper-backface-hidden .swiper-slide{
-    width: 500px !important;
+    width: 300px !important;
   }
 
   .video-thumbnail iframe {
