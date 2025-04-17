@@ -1,9 +1,54 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import './About.css';
 import { HiGlobe, HiLightBulb, HiMicrophone, HiUsers } from 'react-icons/hi';
 import Funder from '../../components/Funder/Funder'
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+
+
+// import required modules
+import { FreeMode, Pagination, Autoplay } from 'swiper/modules';
 
 const About = () => {
+
+
+  const videos = [
+    {
+      title: "Comment le sport peut changer une vie",
+      videoId: "RVB3PBPxMWg",
+    },
+    {
+      title: "L'intelligence artificielle au service de l'humain",
+      videoId: "tXVe4qnhvxU",
+    },
+    {
+      title: "The power of vulnerability",
+      videoId: "iCvmsMzlF7o",
+    },
+    {
+      title: "How great leaders inspire action",
+      videoId: "qp0HIF3SfI4",
+    },
+    {
+      title: "Inside the mind of a master procrastinator",
+      videoId: "arj7oStGLkU",
+    },
+  ];
+
+
+  const [selectedVideo, setSelectedVideo] = useState(null);
+
+  const handleClosePopup = (e) => {
+    if (e.target.classList.contains("popup-overlay")) {
+      setSelectedVideo(null);
+    }
+  };
+
   return (
     <div className="about">
       <section className="hero-section">
@@ -19,60 +64,96 @@ const About = () => {
           </div>
         </div>
       </section>
-      <Funder/>
+      <Funder />
+
       <section className="ted-talks">
         <h2 className="section-title">TED Talks Inspirants</h2>
-        <div className="container">
-          <div className="talks-grid">
-            <div className="talk-card">
-              <div className="video-container">
+
+
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={30}
+          freeMode={true}
+          pagination={{
+            clickable: true,
+          }}
+
+
+
+
+          autoplay={{
+            delay: 3000, // 3 secondes entre chaque slide
+            disableOnInteraction: false, // continue même si on interagit avec le slide
+          }}
+          modules={[FreeMode, Pagination, Autoplay]}
+          className="mySwiper"
+
+
+          breakpoints={{
+            0:{
+              slidesPerView: 1, // Tablette et Desktop : 3 slides visibles
+
+            },
+
+            768: {
+              slidesPerView: 3, // Tablette et Desktop : 3 slides visibles
+            },
+          }}
+        >
+          {videos.map((video, index) => (
+            <SwiperSlide key={index}>
+              <div className="video-thumbnail">
+                <div
+                  className="clickable-overlay"
+                  onClick={() => setSelectedVideo(video.videoId)}
+                ></div>
                 <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/RVB3PBPxMWg"
-                  title="Comment le sport peut changer une vie | Yoan Stuck | TEDxClermont"
+                  src={`https://www.youtube.com/embed/${video.videoId}`}
+                  title={video.title}
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
+                <p>{video.title}</p>
               </div>
-              <h3>Comment le sport peut changer une vie</h3>
-              <p>Yoan Stuck - TEDxClermont</p>
+
+            </SwiperSlide>
+          ))}
+
+        </Swiper>
+
+        {selectedVideo && (
+          <div className="popup-overlay" onClick={handleClosePopup}>
+            <div className="popup-content">
+              <iframe
+                src={`https://www.youtube.com/embed/${selectedVideo}?autoplay=1`}
+                title="Selected Video"
+                frameBorder="0"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+              ></iframe>
             </div>
-            <div className="talk-card">
-              <div className="video-container">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/tXVe4qnhvxU"
-                  title="L'intelligence artificielle au service de l'humain | Laurence Devillers | TEDxClermont"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <h3>L'intelligence artificielle au service de l'humain</h3>
-              <p>Laurence Devillers - TEDxClermont</p>
+          </div>
+        )}
+
+      </section>
+
+      <section className="become-about">
+        <div className="container-become-about">
+          <div className="cta-content">
+            <h2>Devenez Sponsor</h2>
+            <p>
+              Rejoignez-nous dans cette aventure exceptionnelle et associez votre marque
+              à l'innovation et aux idées qui changent le monde.
+            </p>
+            <div className="cta-buttons">
+              <a href="/contact" className="cta-button primary">Contactez-nous</a>
+              <a href="#" className="cta-button secondary">Télécharger la Brochure</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="join-section">
-        <div className="container">
-          <div className="join-content">
-            <h2>Rejoignez l'Aventure</h2>
-            <p>
-              Participez à TEDx en tant que participant, bénévole ou speaker.
-              Ensemble, partageons des idées qui méritent d'être diffusées.
-            </p>
-            <div className="cta-buttons">
-              <a href="/contact" className="cta-button primary">Contactez-nous</a>
-              <a href="/become-speaker" className="cta-button secondary">Devenir Speaker</a>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

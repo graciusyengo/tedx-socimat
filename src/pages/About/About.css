@@ -86,26 +86,6 @@ justify-content: center;
   padding: 0 20px;
 }
 
-.talk-card {
-  background: #fff;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.talk-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
-}
-
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  background: #000;
-}
 
 .stat-number {
   font-size: 2.5rem;
@@ -283,24 +263,106 @@ justify-content: center;
   transform: translateY(-2px);
 }
 
-@media (max-width: 1200px) {
-  .tedx-container {
-    margin: 40px auto;
-    gap: 40px;
+
+
+.ted-talks {
+  padding: 2rem;
+}
+
+.video-thumbnail {
+  position: relative;
+  cursor: pointer;
+  background: #f1f1f1;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-thumbnail iframe {
+  width: 100%;
+  height: 180px;
+  display: block;
+  border: none;
+}
+
+.video-thumbnail p {
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Couche cliquable au-dessus de l'iframe */
+.clickable-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180px; /* doit correspondre à la hauteur de l'iframe */
+  z-index: 2;
+  cursor: pointer;
+  background: transparent;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  width: 80%;
+  max-width: 900px;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.popup-content iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+
+
+
+
+@media (max-width: 767px) {
+  .ted-talks {
+    padding: 1rem;
   }
 
-  .content-container {
-    padding: 20px 40px;
+  .swiper-backface-hidden .swiper-slide{
+    width: 500px !important;
   }
 
-  .content-container h2 {
-    font-size: 2.4rem;
+  .video-thumbnail iframe {
+    height: 200px;
   }
 
-  .overlay h1 {
-    font-size: 4rem;
+  .swiper-slide {
+    height: auto;
+  }
+
+  .popup-content {
+    width: 95%;
   }
 }
+
+
+
+
+
 
 @media (max-width: 1024px) {
   .tedx-container {
@@ -463,3 +525,133 @@ justify-content: center;
     font-size: 1.8rem;
   }
 }
+
+
+
+
+.become-about {
+  padding: 100px 0;
+  background:linear-gradient(rgb(51 52 54 / 90%), rgb(1 11 33 / 90%)), url(/images/ted.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-button.primary {
+  background: #e62b1e;
+  color: white;
+}
+
+.cta-button.secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+}
+
+.cta-button.primary:hover {
+  background: #d41c13;
+}
+
+.cta-button.secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .carousel-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content {
+    margin-bottom: 30px;
+  }
+
+  .text-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .image-content {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+
+  .tedx-logo {
+    max-width: 80%;
+  }
+
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .sponsors-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .sponsor-benefits h2,
+  .current-sponsors h2,
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .sponsor-category {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .text-content h1 {
+    font-size: 2rem;
+  }
+
+  .sponsor-benefits,
+  .become-about {
+    padding: 60px 0;
+  }
+}
+
