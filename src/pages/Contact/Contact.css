@@ -74,9 +74,9 @@
 }
 
 .contact-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .contact-info h2,
@@ -208,7 +208,7 @@ background-color: #f5f5f5;
 }
 .contact-info{
   max-width: 500px;
-  margin-left: 200px;
+
 
 }
 
@@ -291,6 +291,20 @@ background-color: #f5f5f5;
     font-size: 2.5rem;
   }
 
+  .contact-form h2::after {
+  
+    left: 150px;
+  
+  }
+
+  .contact-info h2::after{
+  
+    left: 150px;
+
+    background-color: #e62b1e;
+  
+  }
+
   .image-content {
     flex: 0 0 100%;
     text-align: center;
@@ -305,8 +319,7 @@ background-color: #f5f5f5;
   }
 
   .contact-wrapper {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    flex-direction: column;
   }
 
   .contact-info{

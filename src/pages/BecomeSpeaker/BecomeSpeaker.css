@@ -31,6 +31,9 @@ gap: 333px;
   background: rgba(11, 33, 84, 0.4);
 }
 
+
+
+
 .carousel-content {
   position: absolute;
   top: 50%;
@@ -83,13 +86,18 @@ gap: 333px;
   font-size: 2.5rem;
   margin-bottom: 50px;
   position: relative;
+
+}
+
+.why-title {
+  width: 330px ;
 }
 
 .speaker-requirements h2::after {
   content: '';
   position: absolute;
   bottom: -10px;
-  left: 0;
+  left: 0px;
   width: 60px;
   height: 3px;
   background-color: #e62b1e;
@@ -134,6 +142,11 @@ gap: 333px;
 }
 
 /* Speaker Form */
+
+.candidate-speaker{
+  margin-top: -34px;
+
+}
 .speaker-form {
   background: white;
   padding: 40px;
@@ -152,7 +165,7 @@ gap: 333px;
   content: '';
   position: absolute;
   bottom: -10px;
-  left: 0;
+  left: 0px;
   width: 60px;
   height: 3px;
   background-color: #e62b1e;
@@ -214,6 +227,16 @@ gap: 333px;
     font-size: 2.5rem;
   }
 
+  .speaker-requirements h2::after{
+    left: 130px;
+  }
+
+  .speaker-form h2::after {
+
+    left: 130px;
+
+  }
+
   .image-content {
     flex: 0 0 100%;
     text-align: center;
@@ -225,6 +248,12 @@ gap: 333px;
 
   .speaker-requirements {
     padding: 60px 0;
+  }
+
+  .why-title {
+    width: 330px ;
+    font-size: 2rem !important;
+    margin-left: 23px;
   }
 
   .requirement-item {

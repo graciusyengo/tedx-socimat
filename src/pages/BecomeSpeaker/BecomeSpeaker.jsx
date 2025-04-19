@@ -49,7 +49,7 @@ const BecomeSpeaker = () => {
           <div className="container-speakers">
             <div className="row">
               <div className="col-lg-6">
-                <h2>Pourquoi devenir speaker ?</h2>
+                <h2 className='why-title'>Pourquoi devenir speaker ?</h2>
                 <div className="requirements-list">
                   <div className="requirement-item">
                     <div className="icon">🌟</div>
@@ -74,9 +74,9 @@ const BecomeSpeaker = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-lg-6 candidate-speaker">
                 <div className="speaker-form">
-                  <h2>Candidature Speaker</h2>
+                  <h2 ti>Candidature Speaker</h2>
                   <form onSubmit={handleSubmit}>
                     <div className="form-group">
                       <input
