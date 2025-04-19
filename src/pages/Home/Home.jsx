@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Home.css';
 
 import Team from '../../components/Team/Team'
@@ -9,6 +9,7 @@ import WhatsAppButton from '../../components/WhatsAppButton/WhatsAppButton';
 import Welcome from '../../components/Welcome/Welcome';
 import EventInfo from '../../components/EventInfo/EventInfo';
 import EventTheme from '../../components/EventTheme/EventTheme';
+import SpeakerModal from '../../components/SpeakerModal/SpeakerModal';
 
 const speakerss = [
   {
@@ -16,34 +17,37 @@ const speakerss = [
     name: 'Marie Laurent',
     title: 'Design Thinking',
     image: '/images/speakers/Gisele.jpg',
-    description: 'Passionnée par l\'innovation et le design thinking.'
+    slogan: "Passionnée par l'innovation et le design thinking.",
+    bio: "Marie Laurent est une experte reconnue dans le domaine du design thinking. Elle accompagne depuis plus de 10 ans des entreprises et des startups dans la transformation de leurs processus créatifs et l'innovation centrée utilisateur. Elle est également conférencière TEDx, auteure et formatrice internationale. Marie Laurent est une experte reconnue dans le domaine du design thinking. Elle accompagne depuis plus de 10 ans des entreprises et des startups dans la transformation de leurs processus créatifs et l'innovation centrée utilisateur. Elle est également conférencière TEDx, auteure et formatrice internationale. Marie Laurent est une experte reconnue dans le domaine du design thinking. Elle accompagne depuis plus de 10 ans des entreprises et des startups dans la transformation de leurs processus créatifs et l'innovation centrée utilisateur. Elle est également conférencière TEDx, auteure et formatrice internationale.",
   },
   {
     id: 2,
     name: 'Thomas Dubois',
     title: 'Intelligence Artificielle',
     image: 'https://img.freepik.com/photos-gratuite/tour-taille-entrepreneur-masculin-joyeux-confiant-large-sourire_273609-18909.jpg?t=st=1743113967~exp=1743117567~hmac=d052ec0d57ca628bdf1bb2538897a62c376529be9aaec897b91ff509c741b3f5&w=1380',
-    description: 'Explorer les possibilités de l\'IA dans l\'éducation.'
+    slogan: "Explorer les possibilités de l'IA dans l'éducation.",
+    bio: "Thomas Dubois est chercheur en intelligence artificielle et pédagogue. Il travaille sur l'intégration de l'IA dans les systèmes éducatifs pour améliorer l'apprentissage personnalisé. Il a publié de nombreux articles et intervient régulièrement dans des conférences internationales.",
   },
   {
     id: 3,
     name: 'Sophie Martin',
     title: 'Développement Durable',
     image: 'https://img.freepik.com/photos-gratuite/tour-taille-entrepreneur-masculin-joyeux-confiant-large-sourire_273609-18909.jpg?t=st=1743113967~exp=1743117567~hmac=d052ec0d57ca628bdf1bb2538897a62c376529be9aaec897b91ff509c741b3f5&w=1380',
-    description: 'Engagée pour un avenir plus vert et durable.'
+    slogan: "Engagée pour un avenir plus vert et durable.",
+    bio: "Sophie Martin est consultante en développement durable et militante écologiste. Elle accompagne les entreprises et collectivités dans leur transition écologique et anime de nombreux ateliers de sensibilisation. Son engagement pour la planète et son expertise font d'elle une référence dans son domaine.",
   },
   {
     id: 4,
     name: 'Lucas Petit',
     title: 'Innovation Sociale',
     image: 'https://img.freepik.com/photos-gratuite/tour-taille-entrepreneur-masculin-joyeux-confiant-large-sourire_273609-18909.jpg?t=st=1743113967~exp=1743117567~hmac=d052ec0d57ca628bdf1bb2538897a62c376529be9aaec897b91ff509c741b3f5&w=1380',
-    description: 'Créer des solutions pour un impact social positif.'
+    slogan: "Créer des solutions pour un impact social positif.",
+    bio: "Lucas Petit est entrepreneur social et fondateur de l'association Impact+. Il développe des projets innovants pour lutter contre l'exclusion et favoriser l'inclusion sociale. Son parcours inspirant est salué par de nombreux prix internationaux.",
   },
-
-
 ];
 
 const Home = () => {
+  const [selectedSpeaker, setSelectedSpeaker] = useState(null);
   useEffect(() => {
     if (typeof window.bootstrap !== 'undefined') {
       const carousel = document.getElementById('header-carousel');
@@ -52,6 +56,13 @@ const Home = () => {
       });
     }
   }, []);
+
+  const handleSpeakerClick = (speaker) => {
+    setSelectedSpeaker(speaker);
+  };
+  const handleCloseModal = () => {
+    setSelectedSpeaker(null);
+  };
 
   return (
     <>
@@ -110,19 +121,20 @@ const Home = () => {
           <h2 className="section-title">Nos Intervenants</h2>
           <div className="speakers-grid">
             {speakerss.map(speakers => (
-              <div key={speakers.id} className="speaker-card">
+              <div key={speakers.id} className="speaker-card" onClick={() => handleSpeakerClick(speakers)} style={{ cursor: 'pointer' }}>
                 <div className="speaker-image">
                   <img src={speakers.image} alt={speakers.name} />
                 </div>
                 <div className="speaker-info">
                   <h3>{speakers.name}</h3>
                   <h4>{speakers.title}</h4>
-                  <p>{speakers.description}</p>
+                  <p>{speakers.slogan}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
+        <SpeakerModal speaker={selectedSpeaker} onClose={handleCloseModal} />
       </section>
    
       <WhyAttend />

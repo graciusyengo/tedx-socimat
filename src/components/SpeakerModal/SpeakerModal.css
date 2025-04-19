@@ -1,0 +1,212 @@
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  height: 100vh;
+  width: 100vw;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  max-width: 900px;
+  min-width: 550px;
+  width: 80vw;
+  min-height: 350px;
+  max-height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  font-family: 'Montserrat', Arial, sans-serif;
+  gap: 2.5rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.modal-image {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 0 0 240px;
+}
+.modal-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: none;
+  background: #f7f7f7;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.modal-info {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 1.5rem;
+}
+.modal-info h2 {
+  margin: 0 0 0.2rem 0;
+  color: #e62b1e;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: left;
+}
+.modal-info h4 {
+  margin: 0 0 1.2rem 0;
+  color: #222;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: left;
+}
+.modal-bio {
+  color: #444;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  text-align: left;
+  margin: 0;
+  max-width: 95%;
+  max-height: 28vh;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.modal-slogan {
+  font-weight: 700;
+  color: #e62b1e;
+  margin-bottom: 0.6rem;
+  margin-top: 0.1rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #e62b1e;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.close-btn:hover {
+  color: #222;
+}
+
+@media (max-width: 900px) {
+  .modal-content {
+    flex-direction: column;
+    min-width: unset;
+    max-width: 98vw;
+    width: 98vw;
+    gap: 1.3rem;
+    padding: 1.3rem 0.5rem 1.5rem 0.5rem;
+  }
+  .modal-image img {
+    width: 120px;
+    height: 120px;
+  }
+  .modal-info {
+    padding-top: 0.5rem;
+  }
+  .modal-bio {
+    max-height: 22vh;
+    font-size: 1rem;
+  }
+  .modal-slogan {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-content {
+    max-width: 98vw;
+    width: 98vw;
+    min-width: unset;
+    min-height: unset;
+    height: 80vh;
+    padding: 0.5rem 0.1rem 1rem 0.1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+  }
+  .modal-bio {
+    font-size: 0.92rem;
+    line-height: 1.5;
+    text-align: center;
+    max-height: 40vh;
+    min-height: 70px;
+    overflow-y: auto;
+    padding-right: 0.2rem;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+    scrollbar-width: thin;
+  }
+  .modal-image {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #fff;
+    padding-bottom: 0.5rem;
+  }
+  .modal-image img {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 0.7rem;
+    margin-top: 2.2rem;
+    border: none;
+  }
+  .modal-info {
+    padding-top: 0.3rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  .modal-info h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .modal-info h4 {
+    font-size: 0.95rem;
+    text-align: center;
+    font-weight: 700;
+  }
+  .modal-slogan {
+    font-size: 0.92rem;
+    margin-bottom: 0.3rem;
+    text-align: center;
+  }
+  .close-btn {
+    font-size: 1.4rem;
+    top: 10px;
+    right: 12px;
+  }
+}

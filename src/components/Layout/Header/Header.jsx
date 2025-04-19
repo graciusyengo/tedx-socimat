@@ -8,14 +8,9 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [submenuOpen, setSubmenuOpen] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
 
   const toggleSubmenu = () => {
     setSubmenuOpen(prev => !prev); // Toggle pour ouvrir/fermer le sous-menu
-  };
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
   };
 
   // Ferme le sous-menu lorsqu'on clique en dehors du menu
@@ -64,13 +59,11 @@ const Header = () => {
           <span className="socimat">Socimat</span>
         </div>
 
-        <button className="button-dropdown" onClick={toggleMenu}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <nav className={`nav-menu ${isOpen ? 'active' : ''}`}>
+        {/* Menu burger pour mobile */}
+        <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)} style={{display: 'block', zIndex: 2001, position: 'relative'}}>
+          {menuOpen ? <FaTimes size={28} color="#e62b1e" /> : <FaBars size={28} color="#e62b1e" />}
+        </div>
+        <nav className={`nav-menu ${menuOpen ? 'active' : ''}`}>
           <ul>
             <li>
               <NavLink to="/" end>Accueil</NavLink>
@@ -96,11 +89,6 @@ const Header = () => {
         <a href="#" className="ticket-btn">
           CONTACTEZ-NOUS
         </a>
-
-        {/* Menu burger pour mobile */}
-        <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? <FaTimes /> : <FaBars />}
-        </div>
       </header>
     </div>
   );
