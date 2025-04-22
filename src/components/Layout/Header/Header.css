@@ -209,7 +209,7 @@
   
   /* Icône du menu burger */
   .menu-icon {
-    display: none;
+    display: none!important;
     font-size: 24px;
     cursor: pointer;
     color: black;
@@ -224,7 +224,7 @@
       padding: 10px;
       display: none;
     }
-  
+   
     .top-left,
     .top-right {
       flex-direction: column;
@@ -234,7 +234,7 @@
   
     /* Affichage du menu burger */
     .menu-icon {
-      display: block;
+      display: block !important;
       font-size: 28px;
       cursor: pointer;
       color: #e62b1e;
