@@ -71,9 +71,7 @@ const Header = () => {
             <li>
               <NavLink to="/about">À Propos</NavLink>
             </li>
-            <li>
-              <NavLink to="/contact">Nous Contacter</NavLink>
-            </li>
+       
             <li>
               <NavLink to="/sponsors">Sponsors</NavLink>
             </li>
@@ -86,9 +84,9 @@ const Header = () => {
           </ul>
         </nav>
 
-        <a href="#" className="ticket-btn">
+        <NavLink to="/contact" className="ticket-btn">
           CONTACTEZ-NOUS
-        </a>
+        </NavLink>
       </header>
     </div>
   );
