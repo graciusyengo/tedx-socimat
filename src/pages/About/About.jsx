@@ -148,7 +148,9 @@ const About = () => {
             </p>
             <div className="cta-buttons">
               <a href="/contact" className="cta-button primary">Contactez-nous</a>
-              <a href="#" className="cta-button secondary">Télécharger la Brochure</a>
+              <a href="/document/TEDxSocimat%20.pdf.pdf" download="TEDxSocimat .pdf.pdf" rel="noopener noreferrer" className="cta-button secondary">
+                Télécharger la Brochure
+              </a>
             </div>
           </div>
         </div>
