@@ -190,7 +190,7 @@ const Partners = () => {
               <a href="/contact" className="cta-button primary">
                 Nous Contacter
               </a>
-              <a href="#" className="cta-button secondary">
+              <a href="/documentation/socimat-tedx.pdf"    download="socimat-tedx.pdf"  rel="noopener noreferrer" className="cta-button secondary">
                 Télécharger la Brochure
               </a>
             </div>
