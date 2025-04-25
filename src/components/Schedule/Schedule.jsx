@@ -14,7 +14,7 @@ const Schedule = () => {
     {
       time: "09:00 - 10:30",
       title: "Session du Matin",
-      description: "Présentations inspirantes sur l'innovation",
+      description: "Présentations inspirantes",
       icon: FaMicrophone
     },
     {
