@@ -31,7 +31,7 @@ const Schedule = () => {
     },
     {
       time: "12:30 - 14:00",
-      title: "Déjeuner & Networking",
+      title: "Pause & Networking",
       description: "Repas et échanges entre participants",
       icon: FaUsers
     },

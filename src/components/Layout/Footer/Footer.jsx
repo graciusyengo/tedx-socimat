@@ -25,7 +25,7 @@ function Footer() {
         <p className="legal-description">
           
           TEDxSocimat est un événement TEDx organisé de manière indépendante
-          sous licence TED.huhuhuh
+          sous licence TED.
         </p>
         <p className="legal-links">Informations Légales | Politique de cookies | Espace Presse</p>
       </div>
@@ -102,8 +102,8 @@ function Footer() {
         </div>
         <div className="footer-bottom">
           <p>
-            {" "}
-            Tedx Socimat, All Right Reserved. Created By <a href="#">JoeKim</a>
+            
+            Tedx Socimat, All Right Reserved.
           </p>
           <div className="footer-links">
             <Link to="/accueil">Accueil</Link>
