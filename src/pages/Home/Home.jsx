@@ -14,19 +14,19 @@ import SpeakerModal from '../../components/SpeakerModal/SpeakerModal';
 const speakerss = [
   {
     id: 1,
-    name: 'Gisele',
-    title: 'Design Thinking',
-    image: '/images/speakers/Gisele.jpg',
+    name: 'Alain Kahasha  NTUMWA  ',
+    title: 'Ingénieur Civil Electricien ',
+    image: '/images/speakers/Mr_AlainKahasha.jpg',
     slogan: "Passionnée par l'innovation et le design thinking.",
     bio: "Marie Laurent est une experte reconnue dans le domaine du design thinking. Elle accompagne depuis plus de 10 ans des entreprises et des startups dans la transformation de leurs processus créatifs et l'innovation centrée utilisateur. Elle est également conférencière TEDx, auteure et formatrice internationale. Marie Laurent est une experte reconnue dans le domaine du design thinking. Elle accompagne depuis plus de 10 ans des entreprises et des startups dans la transformation de leurs processus créatifs et l'innovation centrée utilisateur. Elle est également conférencière TEDx, auteure et formatrice internationale. Marie Laurent est une experte reconnue dans le domaine du design thinking. Elle accompagne depuis plus de 10 ans des entreprises et des startups dans la transformation de leurs processus créatifs et l'innovation centrée utilisateur. Elle est également conférencière TEDx, auteure et formatrice internationale.",
   },
   {
     id: 2,
-    name: 'Deborah Sabanga',
-    title: 'Intelligence Artificielle',
+    name: 'Déborah Tshidibi Sabanga ',
+    title: 'Juriste',
     image: '/images/speakers/Débora_Sabanga.jpeg',
     slogan: "Explorer les possibilités de l'IA dans l'éducation.",
-    bio: "Thomas Dubois est chercheur en intelligence artificielle et pédagogue. Il travaille sur l'intégration de l'IA dans les systèmes éducatifs pour améliorer l'apprentissage personnalisé. Il a publié de nombreux articles et intervient régulièrement dans des conférences internationales.",
+    bio: "Déborah Tshidibi SABANGA  est une jeune juriste congolaise originaire de Tshikapa. Diplômée en droit avec mention distinction de l’Université de Kinshasa (2024), elle se distingue par son excellence oratoire et ses performances en concours de plaidoirie. Finaliste du concours Tshibangu Kalala (2023), elle reçoit en 2024 le prix de la sixième meilleure plaidoirie au concours Charles Rousseau à Bruxelles, puis celui de meilleur orateur en finale du concours de procès simulé devant la CPI à La Haye. Ces distinctions lui valent une reconnaissance académique et institutionnelle notamment un satisfecit au département de droit international public et relations internationales ainsi qu’une médaille d’ambassadrice de la jeunesse estudiantine remise par le recteur de l’UNIKIN. "
   },
   {
     id: 3,
@@ -45,24 +45,26 @@ const speakerss = [
   },
   {
     id: 5,
-    name: 'Mme Yvonne CHIKA',
-    title: 'Innovation Sociale',
+    name: 'Mme Yvonne Chika NABINTU  ',
+    title: 'Avocate et cheffe d’entreprise et administratrice de société.  ',
     image: '/images/speakers/Mme Yvonne CHIKA.jpg',
-    bio: "Lucas Petit est entrepreneur social et fondateur de l'association Impact+. Il développe des projets innovants pour lutter contre l'exclusion et favoriser l'inclusion sociale. Son parcours inspirant est salué par de nombreux prix internationaux.",
+    bio: "Yvonne Chika NABINTU  est avocate inscrite au barreau de Matadi, cheffe d’entreprise et administratrice de société. Titulaire d’un MBA de la Frankfurt School of Finance and Management et d’une licence en droit public international de l’Université de Kinshasa, elle cumule une solide expertise en leadership, ressources humaines et gouvernance. Fondatrice et dirigeante de Hodari Manpower and Services depuis 2019, elle a acquis une solide expérience en tant que Directrice des Ressources Humaines et du Juridique, notamment chez Total RDC (où elle était également membre du comité de direction) et chez Orange.",
   },
-  {
-    id: 6,
-    name: 'Lucas Petit',
-    title: 'Innovation Sociale',
-    image: '/images/speakers/Mr_AlainKahasha.jpg',
-    bio: "Lucas Petit est entrepreneur social et fondateur de l'association Impact+. Il développe des projets innovants pour lutter contre l'exclusion et favoriser l'inclusion sociale. Son parcours inspirant est salué par de nombreux prix internationaux.",
-  },
+
   {
     id: 7,
     name: 'Lucas Petit',
     title: 'Innovation Sociale',
     image: '/images/speakers/powshilo04.JPG',
     bio: "Lucas Petit est entrepreneur social et fondateur de l'association Impact+. Il développe des projets innovants pour lutter contre l'exclusion et favoriser l'inclusion sociale. Son parcours inspirant est salué par de nombreux prix internationaux.",
+  },
+
+  {
+    id: 8,
+    name: 'Mr. Patrick Olondo wa SHILO',
+    title: 'réalisateur, auteur, directeur de la photographie et coloriste',
+    image: '',
+    bio: "Le parcours de Patrick Olondo wa SHILO, réalisateur, auteur, directeur de la photographie et coloriste, est marqué par une solide formation à l'Académie des Beaux-Arts de Kinshasa et à la SAE de Cape Town (animation 3D). Dès 2007, il s'illustre dans la réalisation de publicités, clips et courts-métrages. Son implication dans la seconde unité de la série Amazon Prime Video « The Widow » (en RDC, 2018) témoigne de son envergure. La reconnaissance internationale s'ensuit en 2020 et 2021 avec les multiples récompenses obtenues par « Lies of eyes », un court-métrage produit et réalisé par lui dans des festivals prestigieux (European Cinematography Awards, New York Cinematography Awards (NYCA), Asia Cinematography Awards, RapidLion, The South African Intenational Fim Festival, Ananse Cinema inetrnational Film Festival, Silicon Valley Africa (SVAFF), Festival International de Cinéma de Kinshasa (FICKIN 2021). Son expertise s'étend à divers genres et techniques audiovisuels. Coloriste utilisant Davinci Resolve, Patrick Olondo Wa SHILO étend son expériebce sur divers autres domaines, styles et techniques partant de la publicité, court-métrage, long-métrage, documentaire, clip musical, film d’entreprises et tant d’autres.",
   },
 ];
 
