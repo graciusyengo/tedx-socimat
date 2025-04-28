@@ -54,10 +54,15 @@ const Header = () => {
       {/* Barre de navigation */}
       <header className="header">
         <div className="logo">
+          <img src="/images/logo-tedx.png" alt="logo-tedx-socimat" className="logo-tedx"/>
+
+            {/*
           <span className="ted">TED</span>
           <span className="x">x</span>
           <span className="socimat">Socimat</span>
-        </div>
+      
+        */}
+          </div>
 
         {/* Menu burger pour mobile */}
         <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)} style={{display: 'block', zIndex: 2001, position: 'relative'}}>

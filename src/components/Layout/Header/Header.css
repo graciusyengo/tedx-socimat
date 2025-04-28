@@ -66,9 +66,13 @@
   }
   
   .logo {
-    font-size: 24px;
+   width: 45%;
     font-weight: bold;
     color: black;
+  }
+
+  .logo-tedx{
+    width: 35%;
   }
   .ted {
     color: #E62B1E;
