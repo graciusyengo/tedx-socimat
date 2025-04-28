@@ -228,6 +228,10 @@
       padding: 10px;
       display: none;
     }
+
+    .logo-tedx{
+      width: 55%!important;
+    }
    
     .top-left,
     .top-right {
