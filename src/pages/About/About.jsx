@@ -19,24 +19,24 @@ const About = () => {
 
   const videos = [
     {
-      title: "Comment le sport peut changer une vie",
-      videoId: "RVB3PBPxMWg",
+      title: "Comment passer de l’ordinaire à l’extraordinaire ? | Marion Chatel-Chaix | TEDxRennes",
+      videoId: "KOSMlgae0l4",
     },
     {
-      title: "L'intelligence artificielle au service de l'humain",
-      videoId: "tXVe4qnhvxU",
+      title: "Cybersécurité : Faites votre choix en conscience | Yann Allain | TEDxRennes",
+      videoId: "r5OEIY7oz6I",
     },
     {
-      title: "The power of vulnerability",
-      videoId: "iCvmsMzlF7o",
+      title: "Les 6 règles pour avoir confiance en soi | Sally | TEDxBrussels",
+      videoId: "2E_Kx-MBlEA",
     },
     {
-      title: "How great leaders inspire action",
-      videoId: "qp0HIF3SfI4",
+      title: "C'etait pas evident | Salif TRAORE | TEDxGrandBassam",
+      videoId: "V0mIPWviaak",
     },
     {
-      title: "Inside the mind of a master procrastinator",
-      videoId: "arj7oStGLkU",
+      title: "Rêvez grand, préparez-vous à le réaliser | Patricia ZOUNDI YAO | TEDxWassakara",
+      videoId: "cJOFj-jgIqQ",
     },
   ];
 
