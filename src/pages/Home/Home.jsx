@@ -33,7 +33,7 @@ const speakerss = [
 
   {
     id: 3,
-    name: 'Mme Yvonne Chika NABINTU  ',
+    name: ' Yvonne Chika NABINTU  ',
     title: 'Avocate et cheffe d’entreprise et administratrice de société.  ',
     image: '/images/speakers/yvonne-chika.jpeg',
     bio: "Yvonne Chika NABINTU  est avocate inscrite au barreau de Matadi, cheffe d’entreprise et administratrice de société. Titulaire d’un MBA de la Frankfurt School of Finance and Management et d’une licence en droit public international de l’Université de Kinshasa, elle cumule une solide expertise en leadership, ressources humaines et gouvernance. Fondatrice et dirigeante de Hodari Manpower and Services depuis 2019, elle a acquis une solide expérience en tant que Directrice des Ressources Humaines et du Juridique, notamment chez Total RDC (où elle était également membre du comité de direction) et chez Orange.",
@@ -57,7 +57,7 @@ const speakerss = [
   },
   {
     id: 6,
-    name: 'Mr. Patrick Olondo wa SHILO',
+    name: 'Patrick Olondo wa SHILO',
     title: 'réalisateur, auteur, directeur de la photographie et coloriste',
     image: '/images/speakers/powshilo.jpg',
     bio: "Le parcours de Patrick Olondo wa SHILO, réalisateur, auteur, directeur de la photographie et coloriste, est marqué par une solide formation à l'Académie des Beaux-Arts de Kinshasa et à la SAE de Cape Town (animation 3D). Dès 2007, il s'illustre dans la réalisation de publicités, clips et courts-métrages. Son implication dans la seconde unité de la série Amazon Prime Video « The Widow » (en RDC, 2018) témoigne de son envergure. La reconnaissance internationale s'ensuit en 2020 et 2021 avec les multiples récompenses obtenues par « Lies of eyes », un court-métrage produit et réalisé par lui dans des festivals prestigieux (European Cinematography Awards, New York Cinematography Awards (NYCA), Asia Cinematography Awards, RapidLion, The South African Intenational Fim Festival, Ananse Cinema inetrnational Film Festival, Silicon Valley Africa (SVAFF), Festival International de Cinéma de Kinshasa (FICKIN 2021). Son expertise s'étend à divers genres et techniques audiovisuels. Coloriste utilisant Davinci Resolve, Patrick Olondo Wa SHILO étend son expériebce sur divers autres domaines, styles et techniques partant de la publicité, court-métrage, long-métrage, documentaire, clip musical, film d’entreprises et tant d’autres.",

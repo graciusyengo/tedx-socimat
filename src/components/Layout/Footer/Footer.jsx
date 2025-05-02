@@ -26,8 +26,10 @@ function Footer() {
           
           TEDxSocimat est un événement TEDx organisé de manière indépendante
           sous licence TED.
+        
         </p>
-        <p className="legal-links">Informations Légales | Politique de cookies | Espace Presse</p>
+        <a href="https://www.ted.com/">Site Ted</a>
+        <p className="legal-links">Informations Légales | Politique de cookies | Espace Presse  | <a className="site-ted" href="https://www.ted.com/">Site-Officiel-Ted</a></p>
       </div>
 
       <footer className="footer">
