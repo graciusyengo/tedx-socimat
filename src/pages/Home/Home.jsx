@@ -103,7 +103,7 @@ const Home = () => {
               <div className="hero-slide">
                 <div className="carousel-content">
                   <div className="text-content">
-                    <div className="text-white text-uppercase mb-3 animated slideInDown">  <img src="/images/logo-tedx.png" alt="logo-tedx-socimat" className="logo-tedx"/></div>
+                    <div className="text-white text-uppercase mb-3 animated slideInDown">  <img src="/images/tedx2.png" alt="logo-tedx-socimat" className="logo-tedx"/></div>
                     <h1 className="text-white mb-4 animated slideInDown fontSize">Des idées prêtes à<br />révolutionner le monde.</h1>
                     <a href="/" className="btn btn-primary animated slideInDown">
                       LIRE PLUS
