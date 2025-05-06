@@ -8,7 +8,7 @@ const Team = () => {
   const teamMembers = [
 
     {
-      name: 'Joel ',
+      name: 'Joel Ngungu ',
       role: 'Organisateur TEDxSocimat',
       image: '/images/team/joel.jpg',
       description: 'TEDxSocimat est une plateforme unique où idées et innovation se rencontrent pour inspirer et rayonner l\'avenir. Je suis fier de contribuer à cet événement qui connecte et motive notre communauté.'
@@ -27,14 +27,14 @@ const Team = () => {
     },
     {
       name: 'Mariane ',
-      role: 'Chargé de communication',
+      role: 'Volontaire',
       image: '/images/team/mariane.jpg',
       description: 'En tant que chargé de communication, je suis ravi de diffuser les idées puissantes de TEDxSocimat. Cet événement est une plateforme où l\'innovation rencontre l\'inspiration, et je suis fier de faire rayonner ces messages au-delà de notre communauté.'
     },
     {
-      name: 'Carel ',
-      role: 'Chargé de communication',
-      image: '/images/team/team-Carel.jpg',
+      name: 'Hanaya',
+      role: 'Chargé de volontaires',
+      image: '/images/team/team-hanaya.jpg',
       description: 'En tant que chargé de communication, je suis ravi de diffuser les idées puissantes de TEDxSocimat. Cet événement est une plateforme où l\'innovation rencontre l\'inspiration, et je suis fier de faire rayonner ces messages au-delà de notre communauté.'
     },
     {
@@ -43,10 +43,35 @@ const Team = () => {
       image: '/images/team/team-Carel.jpg',
       description: 'En tant que chargé de communication, je suis ravi de diffuser les idées puissantes de TEDxSocimat. Cet événement est une plateforme où l\'innovation rencontre l\'inspiration, et je suis fier de faire rayonner ces messages au-delà de notre communauté.'
     },
+
     {
-      name: 'Merveille Cisca',
+      name: 'Josias',
+      role: "Membre de L'equipe de communication",
+      image: '',
+      description: 'En tant que chargé de communication, je suis ravi de diffuser les idées puissantes de TEDxSocimat. Cet événement est une plateforme où l\'innovation rencontre l\'inspiration, et je suis fier de faire rayonner ces messages au-delà de notre communauté.'
+    },
+    {
+      name: 'Merveille Kalumba',
       role: 'Chargé des intervenants',
       image: '/images/team/merveille.jpeg',
+      description: 'En tant que chargé de communication, je suis ravi de diffuser les idées puissantes de TEDxSocimat. Cet événement est une plateforme où l\'innovation rencontre l\'inspiration, et je suis fier de faire rayonner ces messages au-delà de notre communauté.'
+    },
+    {
+      name: 'Joe Kimbuya',
+      role: 'Developpeur et Chargé Marketing',
+      image: '',
+      description: 'En tant que chargé de communication, je suis ravi de diffuser les idées puissantes de TEDxSocimat. Cet événement est une plateforme où l\'innovation rencontre l\'inspiration, et je suis fier de faire rayonner ces messages au-delà de notre communauté.'
+    },
+    {
+      name: 'Eunice Kwambo',
+      role: 'Chargé des volontaires',
+      image: '/images/team/eunice.jpeg',
+      description: 'En tant que chargé de communication, je suis ravi de diffuser les idées puissantes de TEDxSocimat. Cet événement est une plateforme où l\'innovation rencontre l\'inspiration, et je suis fier de faire rayonner ces messages au-delà de notre communauté.'
+    },
+    {
+      name: 'Praise Munanga',
+      role: 'Chargé des volontaires',
+      image: '/images/team/team-praise.jpg',
       description: 'En tant que chargé de communication, je suis ravi de diffuser les idées puissantes de TEDxSocimat. Cet événement est une plateforme où l\'innovation rencontre l\'inspiration, et je suis fier de faire rayonner ces messages au-delà de notre communauté.'
     }
   ];
