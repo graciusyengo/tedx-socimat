@@ -13,6 +13,13 @@ const Team = () => {
       image: '/images/team/joel.jpg',
       description: 'TEDxSocimat est une plateforme unique où idées et innovation se rencontrent pour inspirer et rayonner l\'avenir. Je suis fier de contribuer à cet événement qui connecte et motive notre communauté.'
     },
+
+    {
+      name: 'Gisele ',
+      role: 'Coach Speaker',
+      image: '/images/team/gisele.jpg',
+      description: 'TEDxSocimat est une plateforme unique où idées et innovation se rencontrent pour inspirer et rayonner l\'avenir. Je suis fier de contribuer à cet événement qui connecte et motive notre communauté.'
+    },
     {
       name: 'Caleb Nday',
       role: 'CO-Organisateur TEDxSocimat',
