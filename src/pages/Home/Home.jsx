@@ -20,7 +20,7 @@ const speakerss = [
     slogan: "",
     bio: "Directrice Générale Adjointe du Fonds National de Réparation des Victimes des Violences Sexuelles liées aux Conflits et des Victimes des Crimes contre la paix et la sécurité de l'humanité (FONAREV)*  Emmanuella Zandi naît à Goma, dans le Nord-Kivu en République Démocratique du Congo, une région en proie aux conflits armés. À sept ans, elle subit des violences sexuelles extrêmes commises par des militaires, un traumatisme qui marque durablement son enfance.  Dès treize ans, elle s'engage dans les médias en animant une émission radio sur les droits des enfants. Cette expérience précoce forge sa détermination à dénoncer les violences faites aux jeunes filles.  Elle fonde l'ONG Ma Voisine, un mouvement d'émancipation féminine qui accompagne plus de 5 000 victimes de violences sexuelles à travers la RDC. Parallèlement, elle lance GenderRise with Zandi, un programme qui promeut l'épanouissement complet des jeunes filles.  Son engagement lui vaut plusieurs reconnaissances :  Elle est nommée Ambassadrice de la Paix par l'ONU en RDC ; Elle reçoit le titre d'Activiste Nationale de la Jeunesse pour l'Égalité des Genres ;  Elle est honorée du titre de Doctor Honoris Causa et par le CPVT (Tunisie) et l'IARPA (Septembre 2024).  En 2021, elle intègre une commission présidentielle pour la création du FONAREV. Deux ans plus tard, en 2023, elle en devient la Directrice Générale Adjointe, œuvrant quotidiennement pour la réparation des victimes.  Le parcours d'Emmanuella Zandi incarne la force de transformation personnelle. Victime devenue défenseure des droits humains, elle démontre qu'un destin brisé peut se muer en une puissante force de changement. Son histoire personnelle se confond désormais avec celle de milliers de femmes qu'elle aide à se reconstruire.  Aujourd'hui, à travers ses fonctions et ses engagements, elle continue d'écrire une page importante de l'histoire des droits des femmes en Afrique.",
   },
-
+ 
 
   {
     id: 2,
@@ -129,7 +129,7 @@ const Home = () => {
                     <img src="/images/tedx-removebg.png" alt="TEDx Event" className="tedx-logo" />
                   </div>
                 </div>
-              </div>
+              </div> 
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
