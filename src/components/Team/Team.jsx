@@ -19,6 +19,13 @@ const Team = () => {
       image: '/images/team/kaleb.jpg',
       description: 'TEDxSocimat est une plateforme unique où idées et innovation se rencontrent pour inspirer et rayonner l\'avenir. Je suis fier de contribuer à cet événement qui connecte et motive notre communauté.'
     },
+
+    {
+      name: 'Joe Kimbuya',
+      role: 'Chargé de marketing',
+      image: '/images/team/joe.jpg',
+      description: 'TEDxSocimat est une opportunité unique de connecter marques et idées inspirantes. En tant que chargé du marketing et du sponsoring, je suis fier de contribuer à cet événement qui favorise l\'innovation et le changement.'
+    },
     {
       name: 'Aphia Mbumu',
       role: 'Marketing et sponsoring',
@@ -47,7 +54,7 @@ const Team = () => {
     {
       name: 'Josias',
       role: "Membre de L'equipe de communication",
-      image: '',
+      image: '/images/team/josias.jpg',
       description: 'En tant que chargé de communication, je suis ravi de diffuser les idées puissantes de TEDxSocimat. Cet événement est une plateforme où l\'innovation rencontre l\'inspiration, et je suis fier de faire rayonner ces messages au-delà de notre communauté.'
     },
     {
