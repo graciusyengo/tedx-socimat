@@ -131,6 +131,9 @@
   .team-section {
     padding: 3rem 1rem;
   }
+  .team-section .slick-dots {
+    display: none !important;
+  }
   
   .team-section .slick-slider {
     margin: 0;

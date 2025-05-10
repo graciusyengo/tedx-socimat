@@ -11,39 +11,41 @@ const Team = () => {
       name: 'Joel Ngungu ',
       role: 'Organisateur TEDxSocimat',
       image: '/images/team/joel.jpg',
-      description: 'TEDxSocimat est une plateforme unique où idées et innovation se rencontrent pour inspirer et rayonner l\'avenir. Je suis fier de contribuer à cet événement qui connecte et motive notre communauté.'
+      description: "En tant qu’organisateur, Joël incarne la vision et la coordination globale de TEDxSocimat. Il veille à créer une plateforme fidèle à l’esprit TED, mettant en lumière idées novatrices et parcours inspirants. De la sélection des intervenants à la logistique, en passant par la direction artistique, il supervise chaque détail avec passion. Son leadership transforme chaque édition en un espace d’inspiration et de connexion pour la communauté."
     },
 
-    {
-      name: 'Gisele ',
-      role: 'Coach Speaker',
-      image: '/images/team/gisele.jpg',
-      description: 'TEDxSocimat est une plateforme unique où idées et innovation se rencontrent pour inspirer et rayonner l\'avenir. Je suis fier de contribuer à cet événement qui connecte et motive notre communauté.'
-    },
     {
       name: 'Caleb Nday',
       role: 'CO-Organisateur TEDxSocimat',
       image: '/images/team/kaleb.jpg',
-      description: 'TEDxSocimat est une plateforme unique où idées et innovation se rencontrent pour inspirer et rayonner l\'avenir. Je suis fier de contribuer à cet événement qui connecte et motive notre communauté.'
+      description: 'En tant que co-organisateur, Caleb joue un rôle clé dans la conception et la coordination de TEDxSocimat. Impliqué dans toutes les étapes — de la stratégie à la logistique en passant par la communication — il œuvre avec engagement et créativité pour offrir une expérience inspirante, fidèle à l’esprit TED et ancrée dans l’impact communautaire.'
     },
 
     {
+      name: 'Gisele Kabeya',
+      role: 'Coach Speaker',
+      image: '/images/team/gisele.jpg',
+      description: 'Gisele est une coach passionnée qui accompagne individus et organisations à libérer leur potentiel par la prise de parole et le développement personnel. Avec une approche authentique et inspirante, elle aide ses clients à clarifier leur message, affirmer leur présence et communiquer avec impact. Sa mission : révéler la voix unique de chacun et en faire un moteur de transformation.'
+    },
+
+
+    {
       name: 'Joe Kimbuya',
-      role: 'Chargé de marketing',
+      role: ' Developpeur et Chargé de marketing',
       image: '/images/team/joe.jpg',
-      description: 'TEDxSocimat est une opportunité unique de connecter marques et idées inspirantes. En tant que chargé du marketing et du sponsoring, je suis fier de contribuer à cet événement qui favorise l\'innovation et le changement.'
+      description: 'À la croisée de la technologie et du marketing, Joe conçoit des solutions web performantes tout en pilotant des stratégies de communication innovantes. Grâce à sa double compétence en développement et en marketing digital, il joue un rôle clé dans la création et le succès de produits digitaux à fort impact'
     },
     {
       name: 'Aphia Mbumu',
       role: 'Marketing et sponsoring',
       image: '/images/team/mbumu.jpg',
-      description: 'TEDxSocimat est une opportunité unique de connecter marques et idées inspirantes. En tant que chargé du marketing et du sponsoring, je suis fier de contribuer à cet événement qui favorise l\'innovation et le changement.'
+      description: "Le marketing et le sponsoring sont essentiels à la visibilité et au succès des projets. Tandis que le marketing cible, engage et fidélise les publics à travers des stratégies et contenus adaptés, le sponsoring crée des partenariats avec des marques qui soutiennent les événements en échange de visibilité. Ensemble, ils maximisent l’impact, renforcent l’image et assurent des collaborations durables."
     },
     {
       name: 'Mariane ',
       role: 'Volontaire',
       image: '/images/team/mariane.jpg',
-      description: 'En tant que chargé de communication, je suis ravi de diffuser les idées puissantes de TEDxSocimat. Cet événement est une plateforme où l\'innovation rencontre l\'inspiration, et je suis fier de faire rayonner ces messages au-delà de notre communauté.'
+      description: 'Mariane est une volontaire engagée, passionnée par le travail d’équipe et l’impact social. Présente sur le terrain, elle apporte un soutien précieux à l’organisation des événements, de l’accueil à la logistique. Son enthousiasme et son sens de la collaboration contribuent à offrir une expérience fluide et mémorable aux participants.'
     },
     {
       name: 'Hanaya',
@@ -55,27 +57,22 @@ const Team = () => {
       name: 'Cornella kudia ',
       role: 'Chargé de communication',
       image: '/images/team/team-Carel.jpg',
-      description: 'En tant que chargé de communication, je suis ravi de diffuser les idées puissantes de TEDxSocimat. Cet événement est une plateforme où l\'innovation rencontre l\'inspiration, et je suis fier de faire rayonner ces messages au-delà de notre communauté.'
+      description: "CCornella joue un rôle central dans la coordination des bénévoles, veillant à leur intégration, leur formation et leur bien-être tout au long de leur mission. Grâce à ses compétences organisationnelles et relationnelles, elle planifie les activités, encadre les équipes et crée un environnement collaboratif propice à l’engagement. Elle s’assure que chaque volontaire comprend l’impact de son action et contribue pleinement à la réussite des projets." 
     },
 
     {
       name: 'Josias',
       role: "Membre de L'equipe de communication",
       image: '/images/team/josias.jpg',
-      description: 'En tant que chargé de communication, je suis ravi de diffuser les idées puissantes de TEDxSocimat. Cet événement est une plateforme où l\'innovation rencontre l\'inspiration, et je suis fier de faire rayonner ces messages au-delà de notre communauté.'
+      description: 'Josias met sa passion des relations humaines et des mots au service de la communication stratégique. Il conçoit des messages percutants, gère les campagnes et anime les réseaux sociaux pour refléter nos valeurs et valoriser nos projets. Créatif et à l’écoute, il assure une présence cohérente en ligne et sur le terrain.'
     },
     {
       name: 'Merveille Kalumba',
       role: 'Chargé des intervenants',
       image: '/images/team/merveille.jpeg',
-      description: 'En tant que chargé de communication, je suis ravi de diffuser les idées puissantes de TEDxSocimat. Cet événement est une plateforme où l\'innovation rencontre l\'inspiration, et je suis fier de faire rayonner ces messages au-delà de notre communauté.'
+      description: 'Merveille assure la coordination avec les conférenciers et experts, de la prise de contact à la logistique de leur intervention. Grâce à son sens de l’organisation et son professionnalisme, elle garantit une expérience fluide et de qualité pour chaque intervenant.'
     },
-    {
-      name: 'Joe Kimbuya',
-      role: 'Developpeur et Chargé Marketing',
-      image: '',
-      description: 'En tant que chargé de communication, je suis ravi de diffuser les idées puissantes de TEDxSocimat. Cet événement est une plateforme où l\'innovation rencontre l\'inspiration, et je suis fier de faire rayonner ces messages au-delà de notre communauté.'
-    },
+
     {
       name: 'Eunice Kwambo',
       role: 'Chargé des volontaires',
