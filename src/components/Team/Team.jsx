@@ -39,14 +39,14 @@ const Team = () => {
       name: 'Aphia Mbumu',
       role: 'Chargé de finace et Sponring ',
       image: '/images/team/team-3.jpg',
-      description: "   "
+      description: "En tant que Chargée de Finance et Sponsoring, Aphia veille à la bonne gestion budgétaire des projets et au développement de partenariats financiers. elle élabore les prévisions financières, suit les dépenses, optimise les ressources et assure la transparence des opérations. Parallèlement, elle identifie, contacte et négocie avec des sponsors stratégiques."
     },
 
     {
-      name: 'Yasmine',
-      role: 'Chargé de finace ',
-      image: '/images/team/team-3.jpg',
-      description: "Le marketing et le sponsoring sont essentiels à la visibilité et au succès des projets. Tandis que le marketing cible, engage et fidélise les publics à travers des stratégies et contenus adaptés, le sponsoring crée des partenariats avec des marques qui soutiennent les événements en échange de visibilité. Ensemble, ils maximisent l’impact, renforcent l’image et assurent des collaborations durables."
+      name: 'Yasmine Mbumu',
+      role: 'Chargée de finance ',
+      image: '/images/team/mbumu.jpg',
+      description: "En tant que Chargée de Finance, Yasmine assure la gestion rigoureuse des ressources financières de l’organisation. elle élabore les budgets, suit les dépenses, prépare les rapports financiers et veille à la transparence comptable. Grâce à son sens de l’analyse et de l’organisation, elle contribue à la prise de décision stratégique et à la pérennité des projets."
     },
     {
       name: 'Mariane ',
@@ -56,15 +56,15 @@ const Team = () => {
     },
     {
       name: 'Hanaya',
-      role: 'Chargé de volontaires',
+      role: 'Chargée de volontaires',
       image: '/images/team/team-hanaya.jpg',
-      description: 'En tant que chargé de communication, je suis ravi de diffuser les idées puissantes de TEDxSocimat. Cet événement est une plateforme où l\'innovation rencontre l\'inspiration, et je suis fier de faire rayonner ces messages au-delà de notre communauté.'
+      description: 'En tant que Chargée de Volontaires, Hanaya coordonne et encadre l’équipe de bénévoles au sein de l’organisation. elle organise le recrutement, l’intégration, la formation et le suivi des volontaires, tout en veillant à leur bien-être et à leur motivation.'
     },
     {
       name: 'Cornella kudia ',
-      role: 'Chargé de communication',
+      role: 'Chargée de communication',
       image: '/images/team/team-Carel.jpg',
-      description: "CCornella joue un rôle central dans la coordination des bénévoles, veillant à leur intégration, leur formation et leur bien-être tout au long de leur mission. Grâce à ses compétences organisationnelles et relationnelles, elle planifie les activités, encadre les équipes et crée un environnement collaboratif propice à l’engagement. Elle s’assure que chaque volontaire comprend l’impact de son action et contribue pleinement à la réussite des projets." 
+      description: "Cornella joue un rôle central dans la coordination des bénévoles, veillant à leur intégration, leur formation et leur bien-être tout au long de leur mission. Grâce à ses compétences organisationnelles et relationnelles, elle planifie les activités, encadre les équipes et crée un environnement collaboratif propice à l’engagement. Elle s’assure que chaque volontaire comprend l’impact de son action et contribue pleinement à la réussite des projets." 
     },
 
     {
@@ -82,15 +82,15 @@ const Team = () => {
 
     {
       name: 'Eunice Kwambo',
-      role: 'Chargé des volontaires',
+      role: 'Chargé des Sponsoring',
       image: '/images/team/eunice.jpeg',
-      description: 'En tant que chargé de communication, je suis ravi de diffuser les idées puissantes de TEDxSocimat. Cet événement est une plateforme où l\'innovation rencontre l\'inspiration, et je suis fier de faire rayonner ces messages au-delà de notre communauté.'
+      description: "En tant que Chargée de Sponsoring, Eunice développe et gère les partenariats stratégiques avec des sponsors afin de soutenir les projets de l’organisation. Il/elle identifie les opportunités de collaboration, conçoit des propositions de valeur attractives et négocie les modalités de partenariat. Grâce à son sens du relationnel et à sa capacité de persuasion, il/elle assure une visibilité optimale pour les partenaires tout en garantissant des ressources nécessaires à la réussite des événements et initiatives."
     },
     {
       name: 'Praise Munanga',
       role: 'Chargé des volontaires',
       image: '/images/team/team-praise.jpg',
-      description: 'En tant que chargé de communication, je suis ravi de diffuser les idées puissantes de TEDxSocimat. Cet événement est une plateforme où l\'innovation rencontre l\'inspiration, et je suis fier de faire rayonner ces messages au-delà de notre communauté.'
+      description: 'En tant que chargé de communication, je suis ravie de diffuser les idées puissantes de TEDxSocimat. Cet événement est une plateforme où l\'innovation rencontre l\'inspiration, et je suis fier de faire rayonner ces messages au-delà de notre communauté.'
     }
   ];
 
