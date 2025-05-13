@@ -118,7 +118,8 @@ const Home = () => {
               <div className="hero-slide">
                 <div className="carousel-content">
                   <div className="text-content">
-                    <div className="text-white text-uppercase mb-3 animated slideInDown">  <img src="/images/tedx2.png" alt="logo-tedx-socimat" className="logo-tedx"/></div>
+                    <div className="text-white text-uppercase mb-3 animated slideInDown">  
+                    <img src="/images/tedx2.png" alt="logo-tedx-socimat" className="logo-tedx"/></div>
                     <h1 className="text-white mb-4 animated slideInDown fontSize">Des idées prêtes à<br />révolutionner le monde.</h1>
                     <a href="/" className="btn btn-primary animated slideInDown">
                       LIRE PLUS
@@ -132,9 +133,11 @@ const Home = () => {
             </div>
             <div className="carousel-item">
               <div className="hero-slide">
-                <div className="carousel-content">+
+                <div className="carousel-content">
                   <div className="text-content">
-                    <h6 className="text-white text-uppercase mb-3 animated slideInDown">TEDXSOCIMAT</h6>
+                  <div className="text-white text-uppercase mb-3 animated slideInDown">  
+                    <img src="/images/tedx2.png" alt="logo-tedx-socimat" className="logo-tedx"/></div>
+                    
                     <h1 className="text-white mb-4 animated slideInDown">Dans un esprit d'idées<br />dignes d'être partagées.</h1>
                     <a href="/" className="btn btn-primary animated slideInDown">
                       LIRE PLUS

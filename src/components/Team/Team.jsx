@@ -37,8 +37,15 @@ const Team = () => {
     },
     {
       name: 'Aphia Mbumu',
-      role: 'Marketing et sponsoring',
-      image: '/images/team/mbumu.jpg',
+      role: 'Chargé de finace et Sponring ',
+      image: '/images/team/team-3.jpg',
+      description: "   "
+    },
+
+    {
+      name: 'Yasmine',
+      role: 'Chargé de finace ',
+      image: '/images/team/team-3.jpg',
       description: "Le marketing et le sponsoring sont essentiels à la visibilité et au succès des projets. Tandis que le marketing cible, engage et fidélise les publics à travers des stratégies et contenus adaptés, le sponsoring crée des partenariats avec des marques qui soutiennent les événements en échange de visibilité. Ensemble, ils maximisent l’impact, renforcent l’image et assurent des collaborations durables."
     },
     {
