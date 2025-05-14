@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Contact.css';
-import { HiLocationMarker, HiPhone, HiMail } from 'react-icons/hi';
+import { HiLocationMarker, HiPhone, HiMail, HiCheckCircle } from 'react-icons/hi';
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 const Contact = () => {
@@ -18,10 +21,63 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+    const form = useRef();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Logique d'envoi du formulaire à implémenter
-    console.log('Form submitted:', formData);
+    setIsSubmitting(true);
+
+    try {
+      // Remplacez ces valeurs par vos propres identifiants EmailJS
+      const serviceId = 'service_plgawjv';
+      const templateId = 'template_t76k2rs'; // Remplacez par votre template ID
+      const publicKey = 'O_mGVzNR9LPqMfLeL'; // Remplacez par votre clé publique EmailJS
+
+      const currentTime = new Date().toLocaleString();
+      
+      const templateParams = {
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        time: currentTime
+      };
+
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      
+      // Réinitialiser le formulaire
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+      
+      // Afficher un message de succès
+      toast.success('Message envoyé avec succès !', {
+        icon: <HiCheckCircle className="text-green-500 text-2xl" />,
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    } catch (error) {
+      console.error('Erreur lors de l\'envoi du message:', error);
+      toast.error('Une erreur est survenue lors de l\'envoi du message.', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -50,6 +106,8 @@ const Contact = () => {
   ];
 
   return (
+    <>
+      <ToastContainer />
     <div className="contact">
       <div id="header-carousel" className="carousel slide">
         <div className="carousel-inner">
@@ -108,7 +166,7 @@ const Contact = () => {
 
             <div className="contact-form">
               <h2>Envoyez-nous un Message</h2>
-              <form onSubmit={handleSubmit}>
+              <form ref={form} onSubmit={handleSubmit} className="contact-form">
                 <div className="form-group">
                   <input
                     type="text"
@@ -148,8 +206,12 @@ const Contact = () => {
                     required
                   ></textarea>
                 </div>
-                <button type="submit" className="submit-btn">
-                  Envoyer le Message
+                <button 
+                  type="submit" 
+                  className={`submit-btn ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Envoi en cours...' : 'Envoyer le message'}
                 </button>
               </form>
             </div>
@@ -168,6 +230,7 @@ const Contact = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

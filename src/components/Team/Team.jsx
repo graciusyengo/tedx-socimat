@@ -37,7 +37,7 @@ const Team = () => {
     },
     {
       name: 'Aphia Mbumu',
-      role: 'Chargé de finace et Sponring ',
+      role: 'Chargé de finance et Sponring ',
       image: '/images/team/team-3.jpg',
       description: "En tant que Chargée de Finance et Sponsoring, Aphia veille à la bonne gestion budgétaire des projets et au développement de partenariats financiers. elle élabore les prévisions financières, suit les dépenses, optimise les ressources et assure la transparence des opérations. Parallèlement, elle identifie, contacte et négocie avec des sponsors stratégiques."
     },
