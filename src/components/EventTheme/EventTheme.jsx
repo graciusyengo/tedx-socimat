@@ -8,7 +8,7 @@ const EventTheme = () => {
         <h2>Thème 2025</h2>
         <div className="theme-content">
           <div className="theme-title">
-            "Le talent ne suffit pas : Aller au-delà de vos capacités"
+            "Le talent seul ne suffit pas : Allez au-delà de vos capacités"
           </div>
           <p className="theme-description">
             Découvrez comment la persévérance, l'effort et l'apprentissage continu 
