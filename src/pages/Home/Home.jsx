@@ -82,7 +82,7 @@ const speakerss = [
     name: 'Zoga Gomba Rigaud',
     title: 'Conférencier, motivateur et pasteur',
     image: '/images/speakers/rig.jpeg',
-    slogan: "“POSSIBLE 2 DEVENIR”,Et sa phrase légendaire résonne comme un appel à l’action :“MAKE YOUR STORY A LEGACY.”",
+    slogan: "",
     bio: "Zaga Gomba Rigaud est un leader accompli et une figure inspirante. Titulaire de deux licences, l’une en sciences de l’information et de la communication et l’autre en relations publiques internationales, il a également obtenu un master 1 en communication pour le développement et un master 2 en communication institutionnelle et politique. Fort de plus de vingt ans d’expérience, il s’est distingué dans les domaines de la communication, de la gestion des conflits régionaux et internationaux, et plus récemment : dans la lutte contre la criminalité transnationale organisée.Porté par une profonde conscience citoyenne et un amour indéfectible pour le Congo, Rigaud croit fermement en un avenir radieux pour son pays où la jeunesse jouera un rôle central. Il consacre sa vie à inspirer les autres, les encourager à croire en Dieu, en eux-mêmes et en leur capacité à transformer leur potentiel en leviers de développement personnel et collectif. Pour lui, le progrès passe par une prise de conscience, de soi et par l’exploitation maximale des talents de chacun au service de la nation. "
   },
   

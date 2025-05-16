@@ -84,7 +84,7 @@ const Team = () => {
       name: 'Eunice Kwambo',
       role: 'Chargé des Sponsoring',
       image: '/images/team/eunice.jpeg',
-      description: "En tant que Chargée de Sponsoring, Eunice développe et gère les partenariats stratégiques avec des sponsors afin de soutenir les projets de l’organisation. Il/elle identifie les opportunités de collaboration, conçoit des propositions de valeur attractives et négocie les modalités de partenariat. Grâce à son sens du relationnel et à sa capacité de persuasion, il/elle assure une visibilité optimale pour les partenaires tout en garantissant des ressources nécessaires à la réussite des événements et initiatives."
+      description: "En tant que Chargée de Sponsoring, Eunice développe et gère les partenariats stratégiques avec des sponsors afin de soutenir les projets de l’organisation. elle identifie les opportunités de collaboration, conçoit des propositions de valeur attractives et négocie les modalités de partenariat."
     },
     {
       name: 'Praise Munanga',

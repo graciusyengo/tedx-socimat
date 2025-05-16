@@ -1,15 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import { HiCheckCircle, HiXCircle } from 'react-icons/hi';
+import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
 import './BecomeSpeaker.css';
 
 const BecomeSpeaker = () => {
+  // EmailJS configuration
+  const SERVICE_ID = 'service_77gerzg';
+  const TEMPLATE_ID = 'template_31p61ce';
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    topic: '',
+    subject: '',
     experience: '',
-    message: ''
+    why: ''
   });
+
+  useEffect(() => {
+    // Initialize EmailJS
+    try {
+      emailjs.init("O_mGVzNR9LPqMfLeL");
+      console.log('EmailJS initialized successfully');
+    } catch (error) {
+      console.error('Error initializing EmailJS:', error);
+    }
+  }, []);
 
   const handleChange = (e) => {
     setFormData({
@@ -18,15 +37,82 @@ const BecomeSpeaker = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Traitement du formulaire
-    console.log(formData);
+    console.log('Form data submitted:', formData);
+
+    try {
+      const currentTime = new Date().toLocaleString();
+      const templateParams = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        subject: formData.subject,
+        experience: formData.experience,
+        why: formData.why,
+        time: currentTime
+      };
+
+      const result = await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, "O_mGVzNR9LPqMfLeL");
+
+       // Réinitialiser le formulaire
+       setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        experience: '',
+        why: '',
+        
+      });
+
+      console.log('Email sent successfully:', result);
+      toast.success('Merci pour votre demande ! Nous vous contacterons bientôt.', {
+        icon: <HiCheckCircle className="text-green-500 text-2xl" />,
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        
+      });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast.error("Une erreur est survenue lors de l'envoi du message. Veuillez réessayer.", {
+        icon: <HiXCircle className="text-red-500 text-2xl" />,
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+
+    }
   };
 
+  
+
+  
+
   return (
-    <>
-      <div className="become-speaker">
+    <div className="become-speaker">
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
+      <div className="become-speaker-container">
         <div id="header-carousel" className="carousel slide">
           <div className="carousel-inner">
             <div className="carousel-item active">
@@ -76,7 +162,7 @@ const BecomeSpeaker = () => {
               </div>
               <div className="col-lg-6 candidate-speaker">
                 <div className="speaker-form">
-                  <h2 ti>Candidature Speaker</h2>
+                  <h2>Candidature Speaker</h2>
                   <form onSubmit={handleSubmit}>
                     <div className="form-group">
                       <input
@@ -111,9 +197,9 @@ const BecomeSpeaker = () => {
                     <div className="form-group">
                       <input
                         type="text"
-                        name="topic"
+                        name="subject"
                         placeholder="Sujet proposé"
-                        value={formData.topic}
+                        value={formData.subject}
                         onChange={handleChange}
                         required
                       />
@@ -129,9 +215,9 @@ const BecomeSpeaker = () => {
                     </div>
                     <div className="form-group">
                       <textarea
-                        name="message"
+                        name="why"
                         placeholder="Pourquoi souhaitez-vous devenir speaker ?"
-                        value={formData.message}
+                        value={formData.why}
                         onChange={handleChange}
                         required
                       ></textarea>
@@ -146,7 +232,7 @@ const BecomeSpeaker = () => {
           </div>
         </section>
       </div>
-    </>
+    </div>
   );
 };
 

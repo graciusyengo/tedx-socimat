@@ -1,0 +1,31 @@
+.Toastify__toast-container {
+  position: fixed !important;
+  top: 20px !important;
+  right: 20px !important;
+  z-index: 999999 !important;
+}
+
+.Toastify__toast {
+  font-family: 'Arial', sans-serif !important;
+  font-size: 16px !important;
+  padding: 15px 25px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.Toastify__toast--success {
+  background-color: #28a745 !important;
+  color: white !important;
+}
+
+.Toastify__toast--error {
+  background-color: #dc3545 !important;
+  color: white !important;
+}
+
+.Toastify__toast--info {
+  background-color: #17a2b8 !important;
+  color: white !important;
+}
