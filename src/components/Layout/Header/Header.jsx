@@ -68,30 +68,34 @@ const Header = () => {
         <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)} style={{display: 'block', zIndex: 2001, position: 'relative'}}>
           {menuOpen ? <FaTimes size={28} color="#e62b1e" /> : <FaBars size={28} color="#e62b1e" />}
         </div>
-        <nav className={`nav-menu ${menuOpen ? 'active' : ''}`}>
-          <ul>
-            <li>
-              <NavLink to="/" end>Accueil</NavLink>
-            </li>
-            <li>
-              <NavLink to="/about">À Propos</NavLink>
-            </li>
-       
-            <li>
-              <NavLink to="/sponsors">Sponsors</NavLink>
-            </li>
-            <li>
-              <NavLink to="/partners">Partenaires</NavLink>
-            </li>
-            <li>
-              <NavLink to="/become-speaker">Devenir Speaker</NavLink>
-            </li>
-          </ul>
-        </nav>
+          <nav className={`nav-menu ${menuOpen ? 'active' : ''}`}>
+            <ul>
+              <li>
+                <NavLink to="/" end>Accueil</NavLink>
+              </li>
+              <li>
+                <NavLink to="/about">À Propos</NavLink>
+              </li>
+           
+              <li>
+                <NavLink to="/sponsors">Sponsors</NavLink>
+              </li>
+              <li>
+                <NavLink to="/partners">Partenaires</NavLink>
+              </li>
+              <li>
+                <NavLink to="/become-speaker">Devenir Speaker</NavLink>
+              </li>
+              <li className="mobile-only">
+                <NavLink to="/contact"> Contactez nous</NavLink>
+              </li>
+            </ul>
+          </nav>
 
-        <NavLink to="/contact" className="ticket-btn">
-          CONTACTEZ-NOUS
-        </NavLink>
+          <NavLink to="/contact" className="ticket-btn">
+            CONTACTEZ NOUS
+
+          </NavLink>
       </header>
     </div>
   );

@@ -211,6 +211,73 @@
     margin-right: 5px;
   }
   
+  /* Hide mobile-only menu item on desktop */
+  .mobile-only {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .mobile-only {
+      display: block;
+    }
+  }
+  
+  /* Bouton Contact */
+  .contact-btn {
+    background-color: #e62b1e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .contact-btn:hover {
+    background-color: #c4271b;
+  }
+
+  .contact-btn-mobile {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .ticket-btn {
+      display: none;
+    }
+    
+    .contact-btn-mobile {
+      display: block;
+      margin-top: 10px;
+    }
+    
+    .contact-btn-mobile a {
+      color: #333;
+      text-decoration: none;
+      padding: 15px 20px;
+      margin: 0;
+      border: none;
+      background: transparent;
+      transition: color 0.3s ease;
+      width: 100%;
+      text-align: center;
+      display: block;
+    }
+    
+    .contact-btn-mobile a:hover {
+      color: #e62b1e;
+    }
+    
+    .nav-menu.active .contact-btn-mobile a {
+      color: #fff;
+    }
+    
+    .nav-menu.active .contact-btn-mobile a:hover {
+      color: #e62b1e;
+    }
+  }
+  
   /* Icône du menu burger */
   .menu-icon {
     display: none!important;
