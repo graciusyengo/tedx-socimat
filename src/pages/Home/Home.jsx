@@ -115,7 +115,7 @@ const Home = () => {
         <div id="header-carousel" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <div className="hero-slide">
+              <div className="hero-slide hero-slide-home">
                 <div className="carousel-content">
                   <div className="text-content">
                     <div className="text-white text-uppercase mb-3 animated slideInDown">  
@@ -132,7 +132,7 @@ const Home = () => {
               </div>
             </div>
             <div className="carousel-item">
-              <div className="hero-slide">
+              <div className="hero-slide hero-slide-home">
                 <div className="carousel-content">
                   <div className="text-content">
                   <div className="text-white text-uppercase mb-3 animated slideInDown">  

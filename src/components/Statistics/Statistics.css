@@ -56,6 +56,30 @@
   margin-bottom: 10px;
   font-family: 'Arial', sans-serif;
   white-space: nowrap;
+  opacity: 1;
+  transform: none;
+}
+
+.number-animation {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white !important;
+  font-family: 'Arial', sans-serif;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: numberFadeIn 1s ease-out forwards;
+}
+
+@keyframes numberFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .stat-label {

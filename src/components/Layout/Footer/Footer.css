@@ -290,6 +290,15 @@
         padding: 1rem;
     }
 
+    .legale-info{
+        font-size: 12px;
+      margin-left: 35px;
+      margin-right: 35px;
+        text-align: center;
+    }
+
+   
+
     .footer-links {
         gap: 1rem;
     }

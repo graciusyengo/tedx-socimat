@@ -19,11 +19,10 @@
     height: 100%;
 }
 
-.hero-slide {
+.hero-slide-home {
   position: relative;
-  height: 100vh;
- 
-  background-size: cover;
+  height: 100vh !important;
+  background-size: cover; 
   background-position: center;
 
 }
@@ -51,6 +50,8 @@
     position: relative;
     z-index: 2;
 }
+
+
 
 .text-content {
     flex: 1;
