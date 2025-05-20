@@ -14,18 +14,18 @@
 .carousel-inner {
     height: 100%;
 }
-
+ 
 .carousel-item {
     height: 100%;
 }
 
-.hero-slide-home {
-  position: relative;
-  height: 100vh !important;
-  background-size: cover; 
-  background-position: center;
+
+.hero-slide{
+  height: 100vh !important ;
 
 }
+
+
 
 .hero-slide::before {
   content: '';

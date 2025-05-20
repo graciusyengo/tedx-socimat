@@ -11,6 +11,7 @@ const Welcome = () => {
           brillants pour partager des idées qui façonnent l'avenir. Inspiré par 
           le célèbre format TED, notre édition TEDx Socimat offre une plateforme 
           où innovation, savoir et inspiration se rencontrent.
+          <br/>
 
           <span className='mission'> Notre mission est d'encourager la créativité, le partage et l'exploration de nouvelles perspectives pour un monde meilleur.</span>
 

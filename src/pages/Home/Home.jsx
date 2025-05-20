@@ -50,7 +50,7 @@ const speakerss = [
   {
     id: 5,
     name: 'Blanchine Mazanga',
-    title: 'Specialiste en gestion RH',
+    title: 'Spécialiste en gestion RH',
     image: '/images/speakers/blanchine-mazanga.jpeg',
     bio: "Détentrice d'un MBA( Beulah Heights University, 2018), Femme multi casquettes avec plus de 23 ans d'expérience professionnelle dans le domaine de la gestion opérationnelle avec une spécialisation en gestion RH.14 ans d'expérience entrepreneuriale avec sa structure Source Creative Training ( Source creative en abrégé) au travers de laquelle elle offre des services de renforcement de capacités aux particuliers et aux organisations en tant que formatrice, coach, mentor, conférencière-motivatrice Bergère principale du ministère chrétien international Camp des précieuses (CDP) et Servante de Dieu au sein du corps de ChristLeader et activiste en société.",
   },
@@ -58,14 +58,14 @@ const speakerss = [
   {
     id: 6,
     name: 'Marc Tshibasu',
-    title: "Leader congolais reconnus dans L'innovation numerique et developpement des talents",
+    title: "Leader congolais reconnus dans l'innovation numérique et développement des talents.",
     image: '/images/speakers/IMG-20250218-WA0022.jpg',
     bio: "Marc TSHIBASU est un leader congolais reconnu dans l’innovation numérique et le développement des talents. Actuellement à la tête de l’Orange Digital Center en RDC, il pilote  un hub d’innovation qui offre gratuitement des formations et un accompagnement auxstart ups afin de stimuler l’entrepreneuriat technologique dans tout le pays.Fort d'une expérience de plus de 15 ans dans les secteurs des télécommunications et des biensde consommation, il a occupé des postes clés chez Nestlé, British American Tobacco etOrange RDC, où il a dirigé des initiatives majeures en matière de formation, de gestion destalents et de transformation digitale.Alumni du programme YALI (Young African Leaders Initiative) depuis 2010, Marc est unacteur engagé dans la structuration de l'écosystème tech congolais. Il œuvre pour l'émergencede startups locales dans des secteurs stratégiques tels que l'agritech, la santé, la fintech etl'environnement, en favorisant l'inclusion des femmes et des jeunes dans l'économienumériqueSes plus grands succès ont été le déploiement en 2018 en RDC en tant que premier paysafricain de la plate-forme d’apprentissage en ligne du groupe Orange Learning et de l’OrangeHR Global ERP MyJOB."
   },
   {
     id: 7,
     name: 'Patrick Olondo wa SHILO',
-    title: 'réalisateur, auteur, directeur de la photographie et coloriste',
+    title: 'Réalisateur, auteur, directeur de la photographie et coloriste',
     image: '/images/speakers/powshilo.jpg',
     bio: "Le parcours de Patrick Olondo wa SHILO, réalisateur, auteur, directeur de la photographie et coloriste, est marqué par une solide formation à l'Académie des Beaux-Arts de Kinshasa et à la SAE de Cape Town (animation 3D). Dès 2007, il s'illustre dans la réalisation de publicités, clips et courts-métrages. Son implication dans la seconde unité de la série Amazon Prime Video « The Widow » (en RDC, 2018) témoigne de son envergure. La reconnaissance internationale s'ensuit en 2020 et 2021 avec les multiples récompenses obtenues par « Lies of eyes », un court-métrage produit et réalisé par lui dans des festivals prestigieux (European Cinematography Awards, New York Cinematography Awards (NYCA), Asia Cinematography Awards, RapidLion, The South African Intenational Fim Festival, Ananse Cinema inetrnational Film Festival, Silicon Valley Africa (SVAFF), Festival International de Cinéma de Kinshasa (FICKIN 2021). Son expertise s'étend à divers genres et techniques audiovisuels. Coloriste utilisant Davinci Resolve, Patrick Olondo Wa SHILO étend son expériebce sur divers autres domaines, styles et techniques partant de la publicité, court-métrage, long-métrage, documentaire, clip musical, film d’entreprises et tant d’autres.",
   },
@@ -179,7 +179,7 @@ const Home = () => {
                           width: '100%',
                           objectFit: 'cover',
                           objectPosition: 'center center',
-                          transform: 'translateY(-20px)', // remonte visuellement la tête
+                          transform: 't ranslateY(-20px)', // remonte visuellement la tête
                     
                         }
                       : {
