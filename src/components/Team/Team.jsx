@@ -73,7 +73,7 @@ const Team = () => {
     {
 
       id: 8 ,
-      name: 'Hanaya',
+      name: 'Hanaya Makanzu',
       role: 'Chargée des volontaires',
       image: '/images/team/team-hanaya.jpg',
       description: 'En tant que Chargée de Volontaires, Hanaya coordonne et encadre l’équipe de bénévoles au sein de l’organisation. elle organise le recrutement, l’intégration, la formation et le suivi des volontaires, tout en veillant à leur bien-être et à leur motivation.'
