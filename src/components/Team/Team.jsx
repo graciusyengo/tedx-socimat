@@ -96,7 +96,7 @@ const Team = () => {
       description: 'Josias met sa passion des relations humaines et des mots au service de la communication stratégique. Il conçoit des messages percutants, gère les campagnes et anime les réseaux sociaux pour refléter nos valeurs et valoriser nos projets. Créatif et à l’écoute, il assure une présence cohérente en ligne et sur le terrain.'
     },
     {
-
+ 
       id: 11 ,
       name: 'Merveille Kalumba',
       role: 'Chargée des intervenants',

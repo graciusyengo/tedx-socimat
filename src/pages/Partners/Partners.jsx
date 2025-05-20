@@ -71,9 +71,9 @@ const Partners = () => {
 
   const currentPartners = [
     {
-      name: "TechCorp International",
-      logo: "/images/partner1.png",
-      description: "Leader mondial en innovation technologique",
+      name: "Hamac Communication",
+      logo: "/images/partener/h.jpeg",
+      description: "Une agence de communication globale, proposant des conseils tout en accompagnant ses clients sur chaque segment de communication.",
       level: "Platine"
     },
     {
