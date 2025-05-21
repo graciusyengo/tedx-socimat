@@ -64,13 +64,11 @@
 .eunice-fix img {
   margin-top: -14px; /* Ajuste selon besoin */
 }
+.gisele-fix img{
+  margin-top: 7px; /* Ajuste selon besoin */
 
-.zoomed img {
-
-  transform: scale(1.1);
-  transition: transform 0.3s ease-in-out;
-  object-fit: cover;
 }
+
 
 .member-name {
   color: #0B2154;
@@ -90,6 +88,41 @@
   color: #666;
   font-size: 0.95rem;
   line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.member-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.member-link {
+  color: #0B2154;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: color 0.3s ease;
+}
+
+.member-link:hover {
+  color: #e62b1e;
+}
+
+.linkedin {
+  color: #e62b1e;
+}
+
+.linkedin:hover {
+  color: #e62b1e;
+}
+
+.portfolio {
+  color: #e62b1e;
+}
+
+.portfolio:hover {
+  color: #e62b1e;
 }
 
 /* Styles pour le carrousel */

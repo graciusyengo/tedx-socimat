@@ -14,7 +14,9 @@ const Team = () => {
       name: 'Joel Ngungu ',
       role: 'Organisateur TEDxSocimat',
       image: '/images/team/joel.jpg',
-      description: "En tant qu’organisateur, Joël incarne la vision et la coordination globale de TEDxSocimat. Il veille à créer une plateforme fidèle à l’esprit TED, mettant en lumière idées novatrices et parcours inspirants. De la sélection des intervenants à la logistique, en passant par la direction artistique, il supervise chaque détail avec passion. Son leadership transforme chaque édition en un espace d’inspiration et de connexion pour la communauté."
+      description: "En tant qu’organisateur, Joël incarne la vision et la coordination globale de TEDxSocimat. Il veille à créer une plateforme fidèle à l’esprit TED, mettant en lumière idées novatrices et parcours inspirants. De la sélection des intervenants à la logistique, en passant par la direction artistique, il supervise chaque détail avec passion. Son leadership transforme chaque édition en un espace d’inspiration et de connexion pour la communauté.",
+      linkedin: 'https://www.linkedin.com/in/joel-ngungu/',
+      portfolio: 'https://joelngungu.com/'
     },
 
     {
@@ -23,17 +25,20 @@ const Team = () => {
       name: 'Caleb Nday',
       role: 'CO-Organisateur TEDxSocimat',
       image: '/images/team/kaleb.jpg',
-      description: 'En tant que co-organisateur, Caleb joue un rôle clé dans la conception et la coordination de TEDxSocimat. Impliqué dans toutes les étapes — de la stratégie à la logistique en passant par la communication — il œuvre avec engagement et créativité pour offrir une expérience inspirante, fidèle à l’esprit TED et ancrée dans l’impact communautaire.'
+      description: 'En tant que co-organisateur, Caleb joue un rôle clé dans la conception et la coordination de TEDxSocimat. Impliqué dans toutes les étapes — de la stratégie à la logistique en passant par la communication — il œuvre avec engagement et créativité pour offrir une expérience inspirante, fidèle à l’esprit TED et ancrée dans l’impact communautaire.',
+      linkedin: 'https://www.linkedin.com/in/caleb-nday/',
+      portfolio: 'https://calebnday.com/'
     },
 
     {
       id: 3,
       name: 'Gisele Kabeya',
       role: 'Coach Speaker',
-      image: '/images/team/gisele.jpg',
-      imageClass: 'zoomed',
-
-      description: 'Gisele est une coach passionnée qui accompagne individus et organisations à libérer leur potentiel par la prise de parole et le développement personnel. Avec une approche authentique et inspirante, elle aide ses clients à clarifier leur message, affirmer leur présence et communiquer avec impact. Sa mission : révéler la voix unique de chacun et en faire un moteur de transformation.'
+      image: '/images/team/gisele.jpeg',
+      imageClass: 'gisele-fix',
+      description: 'Gisele est une coach passionnée qui accompagne individus et organisations à libérer leur potentiel par la prise de parole et le développement personnel. Avec une approche authentique et inspirante, elle aide ses clients à clarifier leur message, affirmer leur présence et communiquer avec impact. Sa mission : révéler la voix unique de chacun et en faire un moteur de transformation.',
+      linkedin: 'https://www.linkedin.com/in/gisele-kabeya/',
+      portfolio: 'https://giselecoaching.com/'
     },
 
 
@@ -43,7 +48,9 @@ const Team = () => {
       name: 'Joe Kimbuya',
       role: 'Développeur et Chargé de marketing',
       image: '/images/team/joe.jpg',
-      description: 'À la croisée de la technologie et du marketing, Joe conçoit des solutions web performantes tout en pilotant des stratégies de communication innovantes. Grâce à sa double compétence en développement et en marketing digital, il joue un rôle clé dans la création et le succès de produits digitaux à fort impact'
+      description: 'À la croisée de la technologie et du marketing, Joe conçoit des solutions web performantes tout en pilotant des stratégies de communication innovantes. Grâce à sa double compétence en développement et en marketing digital, il joue un rôle clé dans la création et le succès de produits digitaux à fort impact',
+      linkedin: 'https://www.linkedin.com/in/joe-kimbuya/',
+      portfolio: 'https://joe.dev/'
     },
     {
 
@@ -51,7 +58,9 @@ const Team = () => {
       name: 'Aphia Mbumu',
       role: 'Chargée de finance et de Sponring',
       image: '/images/team/team-3.jpg',
-      description: "En tant que Chargée de Finance et Sponsoring, Aphia veille à la bonne gestion budgétaire des projets et au développement de partenariats financiers. elle élabore les prévisions financières, suit les dépenses, optimise les ressources et assure la transparence des opérations. Parallèlement, elle identifie, contacte et négocie avec des sponsors stratégiques."
+      description: "En tant que Chargée de Finance et Sponsoring, Aphia veille à la bonne gestion budgétaire des projets et au développement de partenariats financiers. elle élabore les prévisions financières, suit les dépenses, optimise les ressources et assure la transparence des opérations. Parallèlement, elle identifie, contacte et négocie avec des sponsors stratégiques.",
+      linkedin: 'https://www.linkedin.com/in/aphia-mbumu/',
+      portfolio: 'https://aphiafinance.com/'
     },
 
     {
@@ -60,7 +69,9 @@ const Team = () => {
       name: 'Yasmine Mbumu',
       role: 'Chargée des finances ',
       image: '/images/team/mbumu.jpg',
-      description: "En tant que Chargée de Finance, Yasmine assure la gestion rigoureuse des ressources financières de l’organisation. elle élabore les budgets, suit les dépenses, prépare les rapports financiers et veille à la transparence comptable. Grâce à son sens de l’analyse et de l’organisation, elle contribue à la prise de décision stratégique et à la pérennité des projets."
+      description: "En tant que Chargée de Finance, Yasmine assure la gestion rigoureuse des ressources financières de l’organisation. elle élabore les budgets, suit les dépenses, prépare les rapports financiers et veille à la transparence comptable. Grâce à son sens de l’analyse et de l’organisation, elle contribue à la prise de décision stratégique et à la pérennité des projets.",
+      linkedin: 'https://www.linkedin.com/in/yasmine-mbumu/',
+      portfolio: 'https://yasminefinance.com/'
     },
     {
 
@@ -68,7 +79,9 @@ const Team = () => {
       name: 'Mariane Kasongo',
       role: 'Volontaire',
       image: '/images/team/mariane.jpg',
-      description: 'Mariane est une volontaire engagée, passionnée par le travail d’équipe et l’impact social. Présente sur le terrain, elle apporte un soutien précieux à l’organisation des événements, de l’accueil à la logistique. Son enthousiasme et son sens de la collaboration contribuent à offrir une expérience fluide et mémorable aux participants.'
+      description: 'Mariane est une volontaire engagée, passionnée par le travail d’équipe et l’impact social. Présente sur le terrain, elle apporte un soutien précieux à l’organisation des événements, de l’accueil à la logistique. Son enthousiasme et son sens de la collaboration contribuent à offrir une expérience fluide et mémorable aux participants.',
+      linkedin: 'https://www.linkedin.com/in/mariane-kasongo/',
+      portfolio: 'https://marianevolunteer.com/'
     },
     {
 
@@ -76,7 +89,9 @@ const Team = () => {
       name: 'Hanaya Makanzu',
       role: 'Chargée des volontaires',
       image: '/images/team/team-hanaya.jpg',
-      description: 'En tant que Chargée de Volontaires, Hanaya coordonne et encadre l’équipe de bénévoles au sein de l’organisation. elle organise le recrutement, l’intégration, la formation et le suivi des volontaires, tout en veillant à leur bien-être et à leur motivation.'
+      description: 'En tant que Chargée de Volontaires, Hanaya coordonne et encadre l’équipe de bénévoles au sein de l’organisation. elle organise le recrutement, l’intégration, la formation et le suivi des volontaires, tout en veillant à leur bien-être et à leur motivation.',
+      linkedin: 'https://www.linkedin.com/in/hanaya-makanzu/',
+      portfolio: 'https://hanayavolunteer.com/'
     },
     {
 
@@ -84,7 +99,9 @@ const Team = () => {
       name: 'Cornella kudia ',
       role: 'Chargée de communication',
       image: '/images/team/team-Carel.jpg',
-      description: "Cornella joue un rôle central dans la coordination des bénévoles, veillant à leur intégration, leur formation et leur bien-être tout au long de leur mission. Grâce à ses compétences organisationnelles et relationnelles, elle planifie les activités, encadre les équipes et crée un environnement collaboratif propice à l’engagement. Elle s’assure que chaque volontaire comprend l’impact de son action et contribue pleinement à la réussite des projets." 
+      description: "Cornella joue un rôle central dans la coordination des bénévoles, veillant à leur intégration, leur formation et leur bien-être tout au long de leur mission. Grâce à ses compétences organisationnelles et relationnelles, elle planifie les activités, encadre les équipes et crée un environnement collaboratif propice à l’engagement. Elle s’assure que chaque volontaire comprend l’impact de son action et contribue pleinement à la réussite des projets.",
+      linkedin: 'https://www.linkedin.com/in/cornella-kudia/',
+      portfolio: 'https://cornellacommunication.com/' 
     },
 
     {
@@ -93,13 +110,16 @@ const Team = () => {
       name: 'Josias',
       role: "Membre de L'équipe de communication",
       image: '/images/team/josias.jpg',
-      description: 'Josias met sa passion des relations humaines et des mots au service de la communication stratégique. Il conçoit des messages percutants, gère les campagnes et anime les réseaux sociaux pour refléter nos valeurs et valoriser nos projets. Créatif et à l’écoute, il assure une présence cohérente en ligne et sur le terrain.'
+      description: 'Josias met sa passion des relations humaines et des mots au service de la communication stratégique. Il conçoit des messages percutants, gère les campagnes et anime les réseaux sociaux pour refléter nos valeurs et valoriser nos projets. Créatif et à l’écoute, il assure une présence cohérente en ligne et sur le terrain.',
+      linkedin: 'https://www.linkedin.com/in/josias-communication/',
+      portfolio: 'https://josiascommunication.com/'
     },
     {
- 
       id: 11 ,
       name: 'Merveille Kalumba',
       role: 'Chargée des intervenants',
+      linkedin: 'https://www.linkedin.com/in/merveille-kalumba/',
+      portfolio: 'https://merveilleintervenants.com/',
       image: '/images/team/merveille.jpeg',
       description: 'Merveille assure la coordination avec les conférenciers et experts, de la prise de contact à la logistique de leur intervention. Grâce à son sens de l’organisation et son professionnalisme, elle garantit une expérience fluide et de qualité pour chaque intervenant.'
     },
@@ -111,14 +131,18 @@ const Team = () => {
       role: 'Chargée des Sponsoring',
       image: '/images/team/eunice.jpeg',
       imageClass: 'eunice-fix',
-      description: "En tant que Chargée de Sponsoring, Eunice développe et gère les partenariats stratégiques avec des sponsors afin de soutenir les projets de l’organisation. elle identifie les opportunités de collaboration, conçoit des propositions de valeur attractives et négocie les modalités de partenariat."
+      description: "En tant que Chargée de Sponsoring, Eunice développe et gère les partenariats stratégiques avec des sponsors afin de soutenir les projets de l’organisation. elle identifie les opportunités de collaboration, conçoit des propositions de valeur attractives et négocie les modalités de partenariat.",
+      linkedin: 'https://www.linkedin.com/in/eunice-kwambo/',
+      portfolio: 'https://eunicesponsoring.com/'
     },
     {
       id: 13 ,
       name: 'Praise Munanga',
       role: 'Chargée des volontaires',
       image: '/images/team/team-praise.jpg',
-      description: 'En tant que chargé de communication, je suis ravie de diffuser les idées puissantes de TEDxSocimat. Cet événement est une plateforme où l\'innovation rencontre l\'inspiration, et je suis fier de faire rayonner ces messages au-delà de notre communauté.'
+      description: 'En tant que chargé de communication, je suis ravie de diffuser les idées puissantes de TEDxSocimat. Cet événement est une plateforme où l\'innovation rencontre l\'inspiration, et je suis fier de faire rayonner ces messages au-delà de notre communauté.',
+      linkedin: 'https://www.linkedin.com/in/praise-munanga/',
+      portfolio: 'https://praisevolunteer.com/'
     }
   ];
 
@@ -165,6 +189,18 @@ const Team = () => {
               <h3 className="member-name">{member.name}</h3>
               <p className="member-role">{member.role}</p>
               <p className="member-description">{member.description}</p>
+              <div className="member-links">
+                {member.linkedin && (
+                  <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="member-link linkedin">
+                    <i className="fab fa-linkedin"></i>
+                  </a>
+                )}
+                {member.portfolio && (
+                  <a href={member.portfolio} target="_blank" rel="noopener noreferrer" className="member-link portfolio">
+                    <i className="fas fa-external-link-alt"></i>
+                  </a>
+                )}
+              </div>
             </div>
           ))}
         </Slider>
