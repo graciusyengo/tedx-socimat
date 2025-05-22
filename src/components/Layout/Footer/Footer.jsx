@@ -70,30 +70,25 @@ function Footer() {
             <h3>Liens</h3>
 
             <li>
-              <Link to="/actualites">Actualités</Link>
+              <Link to="/actualites">A propos</Link>
             </li>
             <li>
-              <Link to="/sponsoring">Sponsoring</Link>
+              <Link to="/sponsoring">Sponsors</Link>
             </li>
             <li>
-              <Link to="/devenir-benevole">Devenir Bénévole</Link>
+              <Link to="/devenir-benevole">Partenaires</Link>
             </li>
             <li>
-              <Link to="/devenir-speaker">Devenir Speaker</Link>
+              <Link to="/devenir-speaker">Contactez nous</Link>
             </li>
-            <li>
-              <Link to="/galerie">Galerie</Link>
-            </li>
-            <li>
-              <Link to="/opportunites">Opportunités</Link>
-            </li>
+          
           </div>
           <div className="footer-section ">
             <h3 className="news-letter">Newsletter</h3>
             <p>
-              Découvrez nos actualités et inspirations de la semaine dans votre
-              newsletter !
+              Découvrez nos actualités et inspirations de la semaine dans 
             </p>
+            <p>  votre newsletter !</p>
             <div className="newsletter">
               <input type="email" placeholder="Votre mail" />
               <button>
