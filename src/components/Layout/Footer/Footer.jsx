@@ -86,9 +86,10 @@ function Footer() {
           <div className="footer-section ">
             <h3 className="news-letter">Newsletter</h3>
             <p>
-              Découvrez nos actualités et inspirations de la semaine dans 
+              Découvrez nos actualités et inspirations de la semaine
             </p>
-            <p>  votre newsletter !</p>
+            <span>dans votre newsletter !</span>
+          
             <div className="newsletter">
               <input type="email" placeholder="Votre mail" />
               <button>
