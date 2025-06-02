@@ -107,7 +107,7 @@ function Footer() {
             <Link to="/accueil">Accueil</Link>
             <Link to="/cookies">Cookies</Link>
             <Link to="/a-propos">À propos</Link>
-            <Link to="/faqs">FAQs</Link>
+            
           </div>
         </div>
         {showScrollTop && (
