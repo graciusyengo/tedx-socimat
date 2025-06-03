@@ -21,16 +21,6 @@ const speakerss = [
     bio: "Marie Laurent est une experte reconnue dans le domaine du design thinking. Elle accompagne depuis plus de 10 ans des entreprises et des startups dans la transformation de leurs processus créatifs et l'innovation centrée utilisateur. Elle est également conférencière TEDx, auteure et formatrice internationale. Marie Laurent est une experte reconnue dans le domaine du design thinking. Elle accompagne depuis plus de 10 ans des entreprises et des startups dans la transformation de leurs processus créatifs et l'innovation centrée utilisateur. Elle est également conférencière TEDx, auteure et formatrice internationale. Marie Laurent est une experte reconnue dans le domaine du design thinking. Elle accompagne depuis plus de 10 ans des entreprises et des startups dans la transformation de leurs processus créatifs et l'innovation centrée utilisateur. Elle est également conférencière TEDx, auteure et formatrice internationale.",
   },
 
-
-  {
-    id: 2,
-    name: 'Alain Kahasha Ntumwa',
-    title: 'ingénieur Civil Electricien ',
-    image: '/images/speakers/alain-kahasha.jpeg',
-    slogan: "Engagée pour un avenir plus vert et durable.",
-    bio: "Alain Kahasha  NTUMWA  est ingénieur Civil Electricien et détenteur d’une Maitrise en Télécommunications de la Faculté Polytechnique de Mons. À ce jour il cumule plus de 25 ans d’expériences professionnelles diverses et variées tant au niveau national qu’international notamment comme Administrateur Indépendant à la Banque Centrale du Congo depuis 2021.Directeur Général au Niger, en RDC, au Gabon et au Congo Brazzaville de 2010 à 2023 pour Airtel (Ex Celtel/Zain).Directeur de plusieurs régions et départements pour Vodacom en RDC où il lance le réseau dans plusieurs zones du pays en 2003.Responsable Commercial en RDC pour The Coca-Cola Company. Ingénieur de Production et Ingénieur Technicien pour British American Tobacco RDC (BAT) En 2023, Alain Kahasha  NTUMWA a participé à la création du Think Tank MANSSAH avec d’autres panafricains."
-  },
-
   {
     id: 3,
     name: ' Yvonne Chika NABINTU  ',
@@ -58,7 +48,7 @@ const speakerss = [
   {
     id: 6,
     name: 'Patrick Olondo wa SHILO',
-    title: 'réalisateur, auteur, directeur de la photographie et coloriste',
+    title: 'Réalisateur, Auteur, Directeur de la photographie et coloriste',
     image: '/images/speakers/powshilo.jpg',
     bio: "Le parcours de Patrick Olondo wa SHILO, réalisateur, auteur, directeur de la photographie et coloriste, est marqué par une solide formation à l'Académie des Beaux-Arts de Kinshasa et à la SAE de Cape Town (animation 3D). Dès 2007, il s'illustre dans la réalisation de publicités, clips et courts-métrages. Son implication dans la seconde unité de la série Amazon Prime Video « The Widow » (en RDC, 2018) témoigne de son envergure. La reconnaissance internationale s'ensuit en 2020 et 2021 avec les multiples récompenses obtenues par « Lies of eyes », un court-métrage produit et réalisé par lui dans des festivals prestigieux (European Cinematography Awards, New York Cinematography Awards (NYCA), Asia Cinematography Awards, RapidLion, The South African Intenational Fim Festival, Ananse Cinema inetrnational Film Festival, Silicon Valley Africa (SVAFF), Festival International de Cinéma de Kinshasa (FICKIN 2021). Son expertise s'étend à divers genres et techniques audiovisuels. Coloriste utilisant Davinci Resolve, Patrick Olondo Wa SHILO étend son expériebce sur divers autres domaines, styles et techniques partant de la publicité, court-métrage, long-métrage, documentaire, clip musical, film d’entreprises et tant d’autres.",
   },
