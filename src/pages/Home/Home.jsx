@@ -20,6 +20,14 @@ const speakerss = [
     slogan: "",
     bio: "Directrice Générale Adjointe du Fonds National de Réparation des Victimes des Violences Sexuelles liées aux Conflits et des Victimes des Crimes contre la paix et la sécurité de l'humanité (FONAREV)*  Emmanuella Zandi naît à Goma, dans le Nord-Kivu en République Démocratique du Congo, une région en proie aux conflits armés. À sept ans, elle subit des violences sexuelles extrêmes commises par des militaires, un traumatisme qui marque durablement son enfance.  Dès treize ans, elle s'engage dans les médias en animant une émission radio sur les droits des enfants. Cette expérience précoce forge sa détermination à dénoncer les violences faites aux jeunes filles.  Elle fonde l'ONG Ma Voisine, un mouvement d'émancipation féminine qui accompagne plus de 5 000 victimes de violences sexuelles à travers la RDC. Parallèlement, elle lance GenderRise with Zandi, un programme qui promeut l'épanouissement complet des jeunes filles.  Son engagement lui vaut plusieurs reconnaissances :  Elle est nommée Ambassadrice de la Paix par l'ONU en RDC ; Elle reçoit le titre d'Activiste Nationale de la Jeunesse pour l'Égalité des Genres ;  Elle est honorée du titre de Doctor Honoris Causa et par le CPVT (Tunisie) et l'IARPA (Septembre 2024).  En 2021, elle intègre une commission présidentielle pour la création du FONAREV. Deux ans plus tard, en 2023, elle en devient la Directrice Générale Adjointe, œuvrant quotidiennement pour la réparation des victimes.  Le parcours d'Emmanuella Zandi incarne la force de transformation personnelle. Victime devenue défenseure des droits humains, elle démontre qu'un destin brisé peut se muer en une puissante force de changement. Son histoire personnelle se confond désormais avec celle de milliers de femmes qu'elle aide à se reconstruire.  Aujourd'hui, à travers ses fonctions et ses engagements, elle continue d'écrire une page importante de l'histoire des droits des femmes en Afrique.",
   },
+  {
+  id: 2,
+  name: 'Gaetan Munkeni ',
+  title: "Directeur Général Adjoint d'Access Bank RDC",
+  image: '/images/speakers/gaetan.jpg',
+  slogan: "",
+  bio: "Gaëtan Munkeni est en charge du Pôle Grandes Entreprises et joue un rôle clé dans la structuration et l'exécution de la stratégie de la banque.Son parcours académique inclut un Master en finance de l'Université de Liverpool et une licence d'Economie de l'University of South Africa, complétés par des programmes de leadership dans des institutions de renom, dont la Harvard Business School.Après un parcours en tant que Corporate Banker chez Standard Bank et Citigroup, il a supervisé l'unité Grandes Entreprises pour la Région Sud chez Ecobank RDC avant de se voir confier la Direction de la Region pour le compte de la First Bank RDC. Il y a notamment initié et développé le programme de financement du secteur minier, entraînant une croissance conséquente du portefeuille d'actifs.olyvalent et rigoureux, Gaëtan parle couramment le français et l'anglais et  s'intéresse particulièrement aux médias financiers et à l'écriture. Avide Golfeur, il affectionne la lecture et les voyages comme mode de découverte de soi.",
+},
  
   {
     id: 3,
@@ -111,8 +119,8 @@ const Home = () => {
                     <div className="text-white text-uppercase mb-3 animated slideInDown">  
                     <img src="/images/tedx2.png" alt="logo-tedx-socimat" className="logo-tedx"/></div>
                     <h1 className="text-white mb-4 animated slideInDown fontSize">Des idées prêtes à<br />révolutionner le monde.</h1>
-                    <a href="/" className="btn btn-primary animated slideInDown">
-                      LIRE PLUS
+                    <a href="https://docs.google.com/forms/d/1Glkg-rgSHy3cZ16aLCB8RbqCPpggH-XW_Yg0SjFxlRA/edit?pli=1" target="_blank" rel="noopener noreferrer" className="btn btn-primary animated slideInDown">
+                    JE PARTICIPE
                     </a>
                   </div>
                   <div className="image-content">
@@ -129,8 +137,8 @@ const Home = () => {
                     <img src="/images/tedx2.png" alt="logo-tedx-socimat" className="logo-tedx"/></div>
                     
                     <h1 className="text-white mb-4 animated slideInDown">Dans un esprit d'idées<br />dignes d'être partagées.</h1>
-                    <a href="/" className="btn btn-primary animated slideInDown">
-                      LIRE PLUS
+                    <a href="https://docs.google.com/forms/d/1Glkg-rgSHy3cZ16aLCB8RbqCPpggH-XW_Yg0SjFxlRA/edit?pli=1" target="_blank" rel="noopener noreferrer" className="btn btn-primary animated slideInDown">
+                    JE PARTICIPE 
                     </a>
                   </div>
                   <div className="image-content">

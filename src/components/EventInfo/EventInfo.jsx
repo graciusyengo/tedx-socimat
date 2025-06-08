@@ -14,8 +14,7 @@ const EventInfo = () => {
             </div>
             <div className="info-content">
               <h3>Date de l'Événement</h3>
-              <p className="suspense-text">En cours de confirmation...</p>
-              <div className="suspense-overlay"></div>
+              <p>01 Novembre 2025</p>
             </div>
           </div>
           <div className="info-card">
