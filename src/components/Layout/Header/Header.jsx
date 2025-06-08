@@ -38,7 +38,7 @@ const Header = () => {
       <div className="top-bar">
         <div className="top-left">
           <span><i className="fas fa-map-marker-alt"></i> Socimat, Kinshasa-Gombe</span>
-          <span><i className="far fa-clock"></i> Lun - ven : 09h00 - 17h00</span>
+          <span><i className="far fa-clock"></i> Samedi 01 Novembre 2025 : 0_h00 - 1-h00</span>
         </div>
         <div className="top-right">
           <span><i className="fas fa-phone-alt"></i> +243 976 943 049</span>
