@@ -70,25 +70,26 @@ function Footer() {
             <h3>Liens</h3>
 
             <li>
-              <Link to="/actualites">A propos</Link>
+              <Link to="/about">A propos</Link>
             </li>
             <li>
-              <Link to="/sponsoring">Sponsors</Link>
+              <Link to="/sponsors">Sponsors</Link>
             </li>
             <li>
-              <Link to="/devenir-benevole">Partenaires</Link>
+              <Link to="/partners">Partenaires</Link>
             </li>
             <li>
-              <Link to="/devenir-speaker">Contactez nous</Link>
+              <Link to="/contact">Contactez nous</Link>
             </li>
           
           </div>
           <div className="footer-section ">
             <h3 className="news-letter">Newsletter</h3>
             <p>
-              Découvrez nos actualités et inspirations de la semaine dans 
+              Découvrez nos actualités et inspirations de la semaine
             </p>
-            <p>  votre newsletter !</p>
+            <span>dans votre newsletter !</span>
+          
             <div className="newsletter">
               <input type="email" placeholder="Votre mail" />
               <button>
@@ -103,10 +104,11 @@ function Footer() {
             Tedx Socimat, All Right Reserved.
           </p>
           <div className="footer-links">
-            <Link to="/accueil">Accueil</Link>
-            <Link to="/cookies">Cookies</Link>
-            <Link to="/a-propos">À propos</Link>
-            <Link to="/faqs">FAQs</Link>
+            <Link to="/">Accueil</Link>
+            <Link to="/sponsors">Sponsors</Link>
+            <Link to="/about">À propos</Link>
+            <Link to="/become-speaker">Devenir Speakers</Link>
+            
           </div>
         </div>
         {showScrollTop && (

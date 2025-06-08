@@ -31,13 +31,6 @@ const speakerss = [
  
   {
     id: 3,
-    name: 'Mme  Gisele Lutundula ',
-    title: 'Directrice Générale Adjointe Chez First Bank SA',
-    image: '/images/speakers/lutundula.jpg',
-    bio: "Avec plus de 16 ans d’expérience dans le secteur bancaire en République Démocratique du Congo dans la gestion de la trésorerie, le commercial, l’analyse économique des marchés (devises, obligations et monnaie), la gestion du segment banque grande entreprise, les opérations bancaires internationales (financement du commerce) et nationales, le service à la clientèle, Mme Gisèle Lutundula Putshu a une expérience variée dans le secteur bancaire.Mme Lutundula est titulaire d’une licence en économie de l’Université Catholique du Congo et d’un Master of Business Administration (MBA) de la Frankfurt School of Finance and Management. Elle a également suivi des programmes spécialisés tels qu’ International cash & Treasury management à EuroFinance Londres, Market risk Management Program de FDLH, Trade Finances, Treasury ALM & FX risk Management pour n’en citer que quelques-uns. Mme Lutundula Putshu Gisèle est heureuse en ménage et mère de 4 beaux enfants..",
-  },
-  {
-    id: 4,
     name: ' Yvonne Chika NABINTU  ',
     title: 'Avocate et cheffe d’entreprise et administratrice de société.  ',
     image: '/images/speakers/yvonne-chika.jpeg',
@@ -46,29 +39,29 @@ const speakerss = [
 
 
   {
-    id: 5,
+    id: 4,
     name: 'Blanchine Mazanga',
-    title: 'Spécialiste en gestion RH',
+    title: 'Coach Professionnelle, Formatrice et expert en GRH ',
     image: '/images/speakers/blanchine-mazanga.jpeg',
     bio: "Détentrice d'un MBA( Beulah Heights University, 2018), Femme multi casquettes avec plus de 23 ans d'expérience professionnelle dans le domaine de la gestion opérationnelle avec une spécialisation en gestion RH.14 ans d'expérience entrepreneuriale avec sa structure Source Creative Training ( Source creative en abrégé) au travers de laquelle elle offre des services de renforcement de capacités aux particuliers et aux organisations en tant que formatrice, coach, mentor, conférencière-motivatrice Bergère principale du ministère chrétien international Camp des précieuses (CDP) et Servante de Dieu au sein du corps de ChristLeader et activiste en société.",
   },
 
   {
-    id: 6,
+    id: 5,
     name: 'Marc Tshibasu',
-    title: "Leader congolais reconnus dans l'innovation numérique et développement des talents.",
+    title: "Leader congolais reconnus dans L'innovation numerique et developpement des talents",
     image: '/images/speakers/IMG-20250218-WA0022.jpg',
-    bio: "Marc TSHIBASU est un leader congolais reconnu dans l’innovation numérique et le développement des talents. Actuellement à la tête de l’Orange Digital Center en RDC, il pilote  un hub d’innovation qui offre gratuitement des formations et un accompagnement auxstart ups afin de stimuler l’entrepreneuriat technologique dans tout le pays.Fort d'une expérience de plus de 15 ans dans les secteurs des télécommunications et des biensde consommation, il a occupé des postes clés chez Nestlé, British American Tobacco etOrange RDC, où il a dirigé des initiatives majeures en matière de formation, de gestion destalents et de transformation digitale.Alumni du programme YALI (Young African Leaders Initiative) depuis 2010, Marc est unacteur engagé dans la structuration de l'écosystème tech congolais. Il œuvre pour l'émergencede startups locales dans des secteurs stratégiques tels que l'agritech, la santé, la fintech etl'environnement, en favorisant l'inclusion des femmes et des jeunes dans l'économienumériqueSes plus grands succès ont été le déploiement en 2018 en RDC en tant que premier paysafricain de la plate-forme d’apprentissage en ligne du groupe Orange Learning et de l’OrangeHR Global ERP MyJOB."
+    bio: "Marc TSHIBASU est un leader congolais reconnu dans l'innovation numérique et le développement des talents. Actuellement à la tête de l'Orange Digital Center en RDC, il pilote un hub d’innovation qui offre gratuitement des formations et un accompagnement auxstart ups afin de stimuler l’entrepreneuriat technologique dans tout le pays.Fort d'une expérience de plus de 15 ans dans les secteurs des télécommunications et des biensde consommation, il a occupé des postes clés chez Nestlé, British American Tobacco etOrange RDC, où il a dirigé des initiatives majeures en matière de formation, de gestion destalents et de transformation digitale.Alumni du programme YALI (Young African Leaders Initiative) depuis 2010, Marc est unacteur engagé dans la structuration de l'écosystème tech congolais. Il œuvre pour l'émergencede startups locales dans des secteurs stratégiques tels que l'agritech, la santé, la fintech etl'environnement, en favorisant l'inclusion des femmes et des jeunes dans l'économienumériqueSes plus grands succès ont été le déploiement en 2018 en RDC en tant que premier paysafricain de la plate-forme d’apprentissage en ligne du groupe Orange Learning et de l’OrangeHR Global ERP MyJOB."
   },
   {
-    id: 7,
+    id: 6,
     name: 'Patrick Olondo wa SHILO',
-    title: 'Réalisateur, auteur, directeur de la photographie et coloriste',
+    title: 'Réalisateur, Auteur, Directeur de la photographie et coloriste',
     image: '/images/speakers/powshilo.jpg',
     bio: "Le parcours de Patrick Olondo wa SHILO, réalisateur, auteur, directeur de la photographie et coloriste, est marqué par une solide formation à l'Académie des Beaux-Arts de Kinshasa et à la SAE de Cape Town (animation 3D). Dès 2007, il s'illustre dans la réalisation de publicités, clips et courts-métrages. Son implication dans la seconde unité de la série Amazon Prime Video « The Widow » (en RDC, 2018) témoigne de son envergure. La reconnaissance internationale s'ensuit en 2020 et 2021 avec les multiples récompenses obtenues par « Lies of eyes », un court-métrage produit et réalisé par lui dans des festivals prestigieux (European Cinematography Awards, New York Cinematography Awards (NYCA), Asia Cinematography Awards, RapidLion, The South African Intenational Fim Festival, Ananse Cinema inetrnational Film Festival, Silicon Valley Africa (SVAFF), Festival International de Cinéma de Kinshasa (FICKIN 2021). Son expertise s'étend à divers genres et techniques audiovisuels. Coloriste utilisant Davinci Resolve, Patrick Olondo Wa SHILO étend son expériebce sur divers autres domaines, styles et techniques partant de la publicité, court-métrage, long-métrage, documentaire, clip musical, film d’entreprises et tant d’autres.",
   },
   {
-    id: 8,
+    id: 7,
     name: 'Déborah Tshidibi Sabanga ',
     title: 'Juriste',
     image: '/images/speakers/deborah-sabanga.jpeg',
@@ -113,11 +106,10 @@ const Home = () => {
         <div id="header-carousel" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <div className="hero-slide hero-slide-home">
+              <div className="hero-slide">
                 <div className="carousel-content">
                   <div className="text-content">
-                    <div className="text-white text-uppercase mb-3 animated slideInDown">  
-                    <img src="/images/tedx2.png" alt="logo-tedx-socimat" className="logo-tedx"/></div>
+                    <div className="text-white text-uppercase mb-3 animated slideInDown">  <img src="/images/tedx2.png" alt="logo-tedx-socimat" className="logo-tedx"/></div>
                     <h1 className="text-white mb-4 animated slideInDown fontSize">Des idées prêtes à<br />révolutionner le monde.</h1>
                     <a href="https://docs.google.com/forms/d/1Glkg-rgSHy3cZ16aLCB8RbqCPpggH-XW_Yg0SjFxlRA/edit?pli=1" target="_blank" rel="noopener noreferrer" className="btn btn-primary animated slideInDown">
                     JE PARTICIPE
@@ -130,12 +122,10 @@ const Home = () => {
               </div>
             </div>
             <div className="carousel-item">
-              <div className="hero-slide hero-slide-home">
-                <div className="carousel-content">
+              <div className="hero-slide">
+                <div className="carousel-content">+
                   <div className="text-content">
-                  <div className="text-white text-uppercase mb-3 animated slideInDown">  
-                    <img src="/images/tedx2.png" alt="logo-tedx-socimat" className="logo-tedx"/></div>
-                    
+                    <h6 className="text-white text-uppercase mb-3 animated slideInDown">TEDXSOCIMAT</h6>
                     <h1 className="text-white mb-4 animated slideInDown">Dans un esprit d'idées<br />dignes d'être partagées.</h1>
                     <a href="https://docs.google.com/forms/d/1Glkg-rgSHy3cZ16aLCB8RbqCPpggH-XW_Yg0SjFxlRA/edit?pli=1" target="_blank" rel="noopener noreferrer" className="btn btn-primary animated slideInDown">
                     JE PARTICIPE 
@@ -145,7 +135,7 @@ const Home = () => {
                     <img src="/images/tedx-removebg.png" alt="TEDx Event" className="tedx-logo" />
                   </div>
                 </div>
-              </div> 
+              </div>
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
@@ -171,13 +161,13 @@ const Home = () => {
                 >
                   <img src={speakers.image} alt={speakers.name}    
                   style={
-                    ( speakers.id === 4 ||  speakers.id === 8)
+                    (speakers.id === 3|| speakers.id === 7)
                       ? {
               
                           width: '100%',
                           objectFit: 'cover',
                           objectPosition: 'center center',
-                          transform: 't ranslateY(-20px)', // remonte visuellement la tête
+                          transform: 'translateY(-20px)', // remonte visuellement la tête
                     
                         }
                       : {

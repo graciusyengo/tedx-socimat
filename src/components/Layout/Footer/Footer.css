@@ -53,7 +53,8 @@
     font-size: 0.9rem;
 
     display: flex;
-    align-items: center;
+    justify-content: flex-start;
+    ;
     gap: 0.5rem;
 }
 .time{
@@ -86,7 +87,6 @@
 }
 
 .social-icons a:hover {
- 
     transform: translateY(-3px);
 }
 .footer-section li {
@@ -94,7 +94,6 @@
     list-style: none;
     padding: 0;
     margin: 0;
-  
 }
 
 .footer-section  li a {
@@ -262,7 +261,6 @@
     }
     .liens {
         margin-left: 0px;
-       
      }
 
     .footer-section p {
@@ -289,15 +287,6 @@
     .footer-bottom {
         padding: 1rem;
     }
-
-    .legale-info{
-        font-size: 12px;
-      margin-left: 35px;
-      margin-right: 35px;
-        text-align: center;
-    }
-
-   
 
     .footer-links {
         gap: 1rem;
