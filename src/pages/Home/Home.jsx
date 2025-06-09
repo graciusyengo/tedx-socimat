@@ -76,6 +76,18 @@ const speakerss = [
     slogan: "",
     bio: "Zaga Gomba Rigaud est un leader accompli et une figure inspirante. Titulaire de deux licences, l’une en sciences de l’information et de la communication et l’autre en relations publiques internationales, il a également obtenu un master 1 en communication pour le développement et un master 2 en communication institutionnelle et politique. Fort de plus de vingt ans d’expérience, il s’est distingué dans les domaines de la communication, de la gestion des conflits régionaux et internationaux, et plus récemment : dans la lutte contre la criminalité transnationale organisée.Porté par une profonde conscience citoyenne et un amour indéfectible pour le Congo, Rigaud croit fermement en un avenir radieux pour son pays où la jeunesse jouera un rôle central. Il consacre sa vie à inspirer les autres, les encourager à croire en Dieu, en eux-mêmes et en leur capacité à transformer leur potentiel en leviers de développement personnel et collectif. Pour lui, le progrès passe par une prise de conscience, de soi et par l’exploitation maximale des talents de chacun au service de la nation. "
   },
+
+
+
+  {
+    id: 10,
+    name: 'Gisele Lutundula',
+    title: 'Directeur Générale Adjointe First Bank RDC',
+    image: '/images/speakers/lutundula.jpg',
+    slogan: "",
+    bio: "Avec plus de 16 ans d’expérience dans le secteur bancaire en République Démocratique du Congo dans la gestion de la trésorerie, le commercial, l’analyse économique des marchés (devises, obligations et monnaie), la gestion du segment banque grande entreprise, les opérations bancaires internationales (financement du commerce) et nationales, le service à la clientèle, Mme Gisèle Lutundula Putshu a une expérience variée dans le secteur bancaire.Mme Lutundula est titulaire d’une licence en économie de l’Université Catholique du Congo et d’un Master of Business Administration (MBA) de la Frankfurt School of Finance and Management. Elle a également suivi des programmes spécialisés tels qu’ International cash & Treasury management à EuroFinance Londres, Market risk Management Program de FDLH, Trade Finances, Treasury ALM & FX risk Management pour n’en citer que quelques-uns. Mme Lutundula Putshu Gisèle est heureuse en ménage et mère de 4 beaux enfants."
+  }
+  
   
 
 
@@ -161,13 +173,13 @@ const Home = () => {
                 >
                   <img src={speakers.image} alt={speakers.name}    
                   style={
-                    (speakers.id === 3|| speakers.id === 7)
+                    (speakers.id === 3|| speakers.id === 7  )
                       ? {
               
                           width: '100%',
                           objectFit: 'cover',
                           objectPosition: 'center center',
-                          transform: 'translateY(-20px)', // remonte visuellement la tête
+                          transform: 'translateY(-8px)', // remonte visuellement la tête
                     
                         }
                       : {
