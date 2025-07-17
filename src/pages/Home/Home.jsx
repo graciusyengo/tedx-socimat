@@ -89,7 +89,7 @@ const speakerss = [
   },
 
   {
-    id: 10,
+    id: 11,
     name: 'Pasteur Ghislain BIABATANTOU',
     title: 'Prédicateur, Auteur, Formateur, Coach et Entrepreneur',
     image: '/images/speakers/pasteur.JPG',
