@@ -9,7 +9,7 @@ import './BecomeSpeaker.css';
 const BecomeSpeaker = () => {
   // EmailJS configuration
   const SERVICE_ID = 'service_77gerzg';
-  const TEMPLATE_ID = 'service_gis4vea';
+  const TEMPLATE_ID = 'template_31p61ce';
 
   const [formData, setFormData] = useState({
     name: '',

@@ -86,10 +86,17 @@ const speakerss = [
     image: '/images/speakers/lutundula.jpg',
     slogan: "",
     bio: "Avec plus de 16 ans d’expérience dans le secteur bancaire en République Démocratique du Congo dans la gestion de la trésorerie, le commercial, l’analyse économique des marchés (devises, obligations et monnaie), la gestion du segment banque grande entreprise, les opérations bancaires internationales (financement du commerce) et nationales, le service à la clientèle, Mme Gisèle Lutundula Putshu a une expérience variée dans le secteur bancaire.Mme Lutundula est titulaire d’une licence en économie de l’Université Catholique du Congo et d’un Master of Business Administration (MBA) de la Frankfurt School of Finance and Management. Elle a également suivi des programmes spécialisés tels qu’ International cash & Treasury management à EuroFinance Londres, Market risk Management Program de FDLH, Trade Finances, Treasury ALM & FX risk Management pour n’en citer que quelques-uns. Mme Lutundula Putshu Gisèle est heureuse en ménage et mère de 4 beaux enfants."
+  },
+
+  {
+    id: 10,
+    name: 'Pasteur Ghislain BIABATANTOU',
+    title: 'Prédicateur, Auteur, Formateur, Coach et Entrepreneur',
+    image: '/images/speakers/pasteur.JPG',
+    slogan: "",
+    bio: "Le Pasteur Ghislain, formé depuis plus de 20 ans auprès de l’apôtre Yvan Castanou à Impact Centre Chrétien, est un adorateur passionné de Dieu, prédicateur, auteur, formateur, coach et entrepreneur. Il a fondé BRG Consulting et la plateforme de formation « NOUVEAU NIVEAU », et intervient à l’IEBI. Il est l’auteur de plusieurs ouvrages et confessions de foi disponibles en livre et sur YouTube. Pasteur depuis 2010, il a dirigé ICC Pointe-Noire pendant près de 10 ans et est aujourd’hui responsable des églises ICC en RDC. Il mène des campagnes d’évangélisation comme le MBONGWANA TOUR et s’investit fortement auprès de la jeunesse kinoise, notamment les jeunes artistes. Avec son épouse, le Pasteur Rosy, ils œuvrent pour l’épanouissement des jeunes, des femmes et des hommes en Christ. Ils ont trois enfants et de nombreux fils et filles spirituels à travers le monde."
   }
   
-  
-
 
 ];
 
