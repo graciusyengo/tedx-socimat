@@ -38,33 +38,24 @@ const Partners = () => {
       level: "Platine",
       icon: FaRocket,
       benefits: [
-        "Logo en position premium sur tous les supports",
-        "10 invitations VIP à l'événement",
-        "Stand dédié lors de l'événement",
-        "Mention dans tous les communiqués de presse",
-        "Accès exclusif aux speakers"
+     
+      
       ]
     },
     {
       level: "Or",
       icon: FaBullseye,
       benefits: [
-        "Logo sur les supports principaux",
-        "5 invitations VIP à l'événement",
-        "Espace d'exposition",
-        "Visibilité sur les réseaux sociaux",
-        "Networking privilégié"
+       
+      
       ]
     },
     {
       level: "Argent",
       icon: FaUsers,
       benefits: [
-        "Logo sur le site web",
-        "2 invitations à l'événement",
-        "Mention sur les réseaux sociaux",
-        "Accès au networking",
-        "Kit partenaire digital"
+     
+       
       ]
     }
   ];
@@ -74,26 +65,15 @@ const Partners = () => {
       name: "Hamac Communication",
       logo: "/images/partener/h.jpeg",
       description: "Une agence de communication globale, proposant des conseils tout en accompagnant ses clients sur chaque segment de communication.",
-      level: "Platine"
-    },
-    {
-      name: "Global Solutions",
-      logo: "/images/partner2.png",
-      description: "Expert en solutions durables",
       level: "Or"
     },
     {
-      name: "Digital Futures",
-      logo: "/images/partner3.png",
-      description: "Pionnier en transformation numérique",
+      name: "Silikin Village",
+      logo: "/images/partener/silikin3.png",
+      description: "Silikin Village, lancé par TEXAF DIGITAL (filiale du Groupe TEXAF), vise à développer un écosystème d’entrepreneuriat numérique en offrant un accompagnement aux entrepreneurs, en partenariat avec des acteurs locaux et internationaux.",
       level: "Or"
     },
-    {
-      name: "EcoTech Systems",
-      logo: "/images/partner4.png",
-      description: "Solutions écologiques innovantes",
-      level: "Argent"
-    }
+
   ];
 
   return (

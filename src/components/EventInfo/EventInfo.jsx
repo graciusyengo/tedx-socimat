@@ -23,7 +23,7 @@ const EventInfo = () => {
             </div>
             <div className="info-content">
               <h3>Lieu</h3>
-              <p className="suspense-text">Lieu à dévoiler bientôt...</p>
+              <p className="suspense-text">Silikin Village(Socimat)</p>
               <div className="suspense-overlay"></div>
             </div>
           </div>

@@ -104,16 +104,7 @@ const Team = () => {
       portfolio: 'https://cornellacommunication.com/' 
     },
 
-    {
 
-      id: 10 ,
-      name: 'Josias',
-      role: "Membre de L'équipe de communication",
-      image: '/images/team/josias.jpg',
-      description: 'Josias met sa passion des relations humaines et des mots au service de la communication stratégique. Il conçoit des messages percutants, gère les campagnes et anime les réseaux sociaux pour refléter nos valeurs et valoriser nos projets. Créatif et à l’écoute, il assure une présence cohérente en ligne et sur le terrain.',
-      linkedin: 'https://www.linkedin.com/in/josias-communication/',
-      portfolio: 'https://josiascommunication.com/'
-    },
     {
       id: 11 ,
       name: 'Merveille Kalumba',
@@ -143,6 +134,15 @@ const Team = () => {
       description: 'En tant que chargé de communication, je suis ravie de diffuser les idées puissantes de TEDxSocimat. Cet événement est une plateforme où l\'innovation rencontre l\'inspiration, et je suis fier de faire rayonner ces messages au-delà de notre communauté.',
       linkedin: 'https://www.linkedin.com/in/praise-munanga/',
       portfolio: 'https://praisevolunteer.com/'
+    },
+      {
+      id: 13 ,
+      name: 'Grace Yengo',
+      role: 'Ingénieur logiciel et Devops',
+      image: '/images/team/Gracius.jpeg',
+      description: 'Grace Yengo, ingénieure en développement logiciel et DevOps, passionnée par la conception de solutions performantes, sécurisées et évolutives. Mon expertise couvre à la fois le développement d’applications web et API, ainsi que l’automatisation du déploiement et de l’infrastructure grâce aux outils DevOps modernes.',
+      linkedin: 'https://www.linkedin.com/in/grace-yengo-1430bb271/',
+      portfolio: 'https://my-portfolios-five.vercel.app/'
     }
   ];
 
