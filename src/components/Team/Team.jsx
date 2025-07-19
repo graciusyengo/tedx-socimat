@@ -145,7 +145,7 @@ const Team = () => {
       portfolio: 'https://my-portfolios-five.vercel.app/'
     }
   ];
-
+  
   const settings = {
     dots: true,
     infinite: true,
