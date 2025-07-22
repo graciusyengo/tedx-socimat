@@ -91,7 +91,7 @@ const speakerss = [
   {
     id: 11,
     name: 'Pasteur Ghislain BIABATANTOU',
-    title: 'Prédicateur, Auteur, Formateur, Coach et Entrepreneur',
+    title: 'Auto-entreneur, Formateur, Auteur, Conferencier, Coach, Styliste',
     image: '/images/speakers/pasteur.JPG',
     slogan: "",
     bio: "Le Pasteur Ghislain, formé depuis plus de 20 ans auprès de l’apôtre Yvan Castanou à Impact Centre Chrétien, est un adorateur passionné de Dieu, prédicateur, auteur, formateur, coach et entrepreneur. Il a fondé BRG Consulting et la plateforme de formation « NOUVEAU NIVEAU », et intervient à l’IEBI. Il est l’auteur de plusieurs ouvrages et confessions de foi disponibles en livre et sur YouTube. Pasteur depuis 2010, il a dirigé ICC Pointe-Noire pendant près de 10 ans et est aujourd’hui responsable des églises ICC en RDC. Il mène des campagnes d’évangélisation comme le MBONGWANA TOUR et s’investit fortement auprès de la jeunesse kinoise, notamment les jeunes artistes. Avec son épouse, le Pasteur Rosy, ils œuvrent pour l’épanouissement des jeunes, des femmes et des hommes en Christ. Ils ont trois enfants et de nombreux fils et filles spirituels à travers le monde."
