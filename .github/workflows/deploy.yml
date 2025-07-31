@@ -21,7 +21,7 @@ jobs:
         run: npm run build
 
       - name: 📤 Déployer le dossier build via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v3
+        uses: SamKirkland/FTP-Deploy-Action@v3.1.1
         with:
           server: ftp.tedxsocimat.com
           username: u660992835gracius
