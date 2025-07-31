@@ -23,7 +23,7 @@ jobs:
       - name: 📤 Déployer le dossier build via FTP
         uses: SamKirkland/FTP-Deploy-Action@v3.1.1
         with:
-          ftp-server: ftp.tedxsocimat.com
+          ftp-host: ftp.tedxsocimat.com
           ftp-username: u660992835gracius
           ftp-password: yengo03@M  # ← mot de passe gardé sécurisé
           server-dir: /public_html/
