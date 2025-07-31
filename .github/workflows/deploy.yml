@@ -1,4 +1,4 @@
-name: 🚀 Deploy React App to Hostinger via FTP
+name: Deploy React App to Hostinger via FTP
 
 on:
   push:
@@ -23,7 +23,6 @@ jobs:
       - name: 📤 Déployer le dossier build via FTP
           uses: SamKirkland/ftp-deploy-action@v4.3.5
         with:
-        
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
