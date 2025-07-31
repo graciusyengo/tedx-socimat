@@ -1,0 +1,31 @@
+name: 🚀 Deploy React App to Hostinger via FTP
+
+on:
+  push:
+    branches:
+      - master  # Change si ta branche principale s'appelle autrement
+
+jobs:
+  deploy:
+    name: 📦 Build & Upload via FTP
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🔄 Checkout du code source
+        uses: actions/checkout@v3
+
+      - name: 📥 Installer les dépendances
+        run: npm install
+
+      - name: 🏗️ Compiler le projet React
+        run: npm run build
+
+      - name: 📤 Déployer le dossier build via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4
+        with:
+          server: ftp.tedxsocimat.com
+          username: u660992835gracius
+          password: yengo03@M  # ← mot de passe gardé sécurisé
+          server-dir: /public_html/
+          local-dir: build/
+
