@@ -95,6 +95,14 @@ const speakerss = [
     image: '/images/speakers/pasteur.JPG',
     slogan: "",
     bio: "Le Pasteur Ghislain, formé depuis plus de 20 ans auprès de l’apôtre Yvan Castanou à Impact Centre Chrétien, est un adorateur passionné de Dieu, prédicateur, auteur, formateur, coach et entrepreneur. Il a fondé BRG Consulting et la plateforme de formation « NOUVEAU NIVEAU », et intervient à l’IEBI. Il est l’auteur de plusieurs ouvrages et confessions de foi disponibles en livre et sur YouTube. Pasteur depuis 2010, il a dirigé ICC Pointe-Noire pendant près de 10 ans et est aujourd’hui responsable des églises ICC en RDC. Il mène des campagnes d’évangélisation comme le MBONGWANA TOUR et s’investit fortement auprès de la jeunesse kinoise, notamment les jeunes artistes. Avec son épouse, le Pasteur Rosy, ils œuvrent pour l’épanouissement des jeunes, des femmes et des hommes en Christ. Ils ont trois enfants et de nombreux fils et filles spirituels à travers le monde."
+  },
+  {
+    id: 12,
+    name: 'Sara Twana',
+    title: 'Expert en gestion de projet et Communication',
+    image: '/images/speakers/Sarah_Twana.jpg',
+    slogan: "",
+    bio: "Professionnelle en gestion de projet et en communication, j'ai contribué à plusieurs initiatives liées à l’inclusion financière et à la transformation digitale. J'ai participé au lancement de Flexpay, aux projets de transformation digitale des institutions de microfinance, ainsi qu’au développement de systèmes de marché pour lescommunautés minières dans le cadre du projet Zahabu Safi d'USAID. J'ai également prispart au projet d'identification d'un soutien à la mise en oeuvre du plan d’actionnumérique de Kinshasa. A présent j'accompagne, au sein de Silikin Village ASBL, les entrepreneurs à la structuration et au développement de leurs projets.Animée par la bienveillance, l’intégrité, le respect et la résilience, je m’engage à faire en sorte que chaque projet contribue à un changement tangible et à un impact durable."
   }
   
 
