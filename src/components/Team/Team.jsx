@@ -148,8 +148,8 @@ const Team = () => {
       id: 14 ,
       name: 'Elie Izungu',
       role: '',
-      image: '/images/team/elie.jpeg',
-      description: 'Grace Yengo, ingénieure en développement logiciel et DevOps, passionnée par la conception de solutions performantes, sécurisées et évolutives. Mon expertise couvre à la fois le développement d’applications web et API, ainsi que l’automatisation du déploiement et de l’infrastructure grâce aux outils DevOps modernes.',
+      image: '/images/team/eli.jpeg',
+      description: '',
       linkedin: 'https://www.linkedin.com/in/elie-izungu-191a3a2b8',
       portfolio: ''
     },
