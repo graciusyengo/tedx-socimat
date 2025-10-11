@@ -73,6 +73,18 @@ const Partners = () => {
       description: "Silikin Village, lancé par TEXAF DIGITAL (filiale du Groupe TEXAF), vise à développer un écosystème d’entrepreneuriat numérique en offrant un accompagnement aux entrepreneurs, en partenariat avec des acteurs locaux et internationaux.",
       level: "Or"
     },
+    {
+      name: "Wallonie-Bruxelle",
+      logo: "/images/partener/wallonie.jpeg",
+      description: "Wallonie-Bruxelles désigne l’ensemble des institutions représentant les francophones de Belgique, principalement issus de la Wallonie et de Bruxelles-Capitale. Regroupés au sein de la Fédération Wallonie-Bruxelles, ils partagent une même langue, une culture commune et des politiques en matière d’éducation, de culture, de jeunesse, de recherche et de communication.",
+      level: "Or"
+    },
+    {
+      name: "LeaderShip",
+      logo: "/images/partener/Leader.jpg",
+      description: "Leadership Magazine Afrique est un média bilingue (français/anglais) dédié à la promotion du leadership, de l’entrepreneuriat, de la gouvernance et de l’innovation à travers le continent africain.Il se positionne comme le premier magazine bilingue du leader africain, avec pour mission de valoriser les parcours inspirants, de diffuser les bonnes pratiques en matière de management et de stimuler la pensée stratégique des décideurs africains..",
+      level: "Or"
+    },
 
   ];
 

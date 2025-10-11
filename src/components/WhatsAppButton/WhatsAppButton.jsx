@@ -3,7 +3,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 import './WhatsAppButton.css';
 
 const WhatsAppButton = () => {
-  const phoneNumber = "+243818866316"; // Remplacez par votre numéro WhatsApp
+  const phoneNumber = "+243851773575"; // Remplacez par votre numéro WhatsApp
   const message = "Bonjour et bienvenue ! Envie de faire partie de l’aventure TEDx Socimat ? Écrivez-nous, nous serons ravis d’échanger avec vous!";
   
   const handleClick = () => {

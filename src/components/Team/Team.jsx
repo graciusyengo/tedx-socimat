@@ -143,6 +143,35 @@ const Team = () => {
       description: 'Grace Yengo, ingénieure en développement logiciel et DevOps, passionnée par la conception de solutions performantes, sécurisées et évolutives. Mon expertise couvre à la fois le développement d’applications web et API, ainsi que l’automatisation du déploiement et de l’infrastructure grâce aux outils DevOps modernes.',
       linkedin: 'https://www.linkedin.com/in/grace-yengo-1430bb271/',
       portfolio: 'https://my-portfolios-five.vercel.app/'
+    },
+    {
+      id: 14 ,
+      name: 'Elie Izungu',
+      role: '',
+      image: '/images/team/elie.jpeg',
+      description: 'Grace Yengo, ingénieure en développement logiciel et DevOps, passionnée par la conception de solutions performantes, sécurisées et évolutives. Mon expertise couvre à la fois le développement d’applications web et API, ainsi que l’automatisation du déploiement et de l’infrastructure grâce aux outils DevOps modernes.',
+      linkedin: 'https://www.linkedin.com/in/elie-izungu-191a3a2b8',
+      portfolio: ''
+    },
+
+    {
+      id: 14 ,
+      name: 'Blessing Mbaku',
+      role: '',
+      image: '/images/team/blessing.jpeg',
+      description: '.',
+      linkedin: 'https://www.linkedin.com/in/b%C3%A9n%C3%A9dicte-mbuku-528200378',
+      portfolio: ''
+    },
+
+    {
+      id: 14 ,
+      name: 'Uriel Mbemba Lomame ',
+      role: '',
+      image: '/images/team/uriel.jpeg',
+      description: '.',
+      linkedin: 'https://www.linkedin.com/in/uriel-mbemba-b32745298/',
+      portfolio: ''
     }
   ];
   
