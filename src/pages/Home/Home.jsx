@@ -63,10 +63,10 @@ const speakerss = [
   {
     id: 7,
     name: 'Déborah Tshidibi Sabanga ',
-    title: 'Juriste',
+    title: 'Assistante juridique',
     image: '/images/speakers/deborah-sabanga.jpeg',
     slogan: "",
-    bio: "Déborah Tshidibi SABANGA  est une jeune juriste congolaise originaire de Tshikapa. Diplômée en droit avec mention distinction de l’Université de Kinshasa (2024), elle se distingue par son excellence oratoire et ses performances en concours de plaidoirie. Finaliste du concours Tshibangu Kalala (2023), elle reçoit en 2024 le prix de la sixième meilleure plaidoirie au concours Charles Rousseau à Bruxelles, puis celui de meilleur orateur en finale du concours de procès simulé devant la CPI à La Haye. Ces distinctions lui valent une reconnaissance académique et institutionnelle notamment un satisfecit au département de droit international public et relations internationales ainsi qu’une médaille d’ambassadrice de la jeunesse estudiantine remise par le recteur de l’UNIKIN. "
+    bio: "Assistante juridique au Cabinet Shematsi & Associates Law Firm et Chercheuse Fellow à l'institut congolais de recherche sur la politique, la gouvernance et la violence 'Ebuteli' "
   },
   {
     id: 9,
@@ -76,8 +76,6 @@ const speakerss = [
     slogan: "",
     bio: "Zaga Gomba Rigaud est un leader accompli et une figure inspirante. Titulaire de deux licences, l’une en sciences de l’information et de la communication et l’autre en relations publiques internationales, il a également obtenu un master 1 en communication pour le développement et un master 2 en communication institutionnelle et politique. Fort de plus de vingt ans d’expérience, il s’est distingué dans les domaines de la communication, de la gestion des conflits régionaux et internationaux, et plus récemment : dans la lutte contre la criminalité transnationale organisée.Porté par une profonde conscience citoyenne et un amour indéfectible pour le Congo, Rigaud croit fermement en un avenir radieux pour son pays où la jeunesse jouera un rôle central. Il consacre sa vie à inspirer les autres, les encourager à croire en Dieu, en eux-mêmes et en leur capacité à transformer leur potentiel en leviers de développement personnel et collectif. Pour lui, le progrès passe par une prise de conscience, de soi et par l’exploitation maximale des talents de chacun au service de la nation. "
   },
-
-
 
   {
     id: 10,

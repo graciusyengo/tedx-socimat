@@ -46,7 +46,7 @@ const Team = () => {
 
       id: 4 ,
       name: 'Joe Kimbuya',
-      role: 'Développeur et Chargé de marketing',
+      role: 'Expert en commuication et Chargé de marketing',
       image: '/images/team/joe.jpg',
       description: 'À la croisée de la technologie et du marketing, Joe conçoit des solutions web performantes tout en pilotant des stratégies de communication innovantes. Grâce à sa double compétence en développement et en marketing digital, il joue un rôle clé dans la création et le succès de produits digitaux à fort impact',
       linkedin: ' https://www.linkedin.com/in/joe-kimbuya-zola-80a779181?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
@@ -136,7 +136,7 @@ const Team = () => {
       portfolio: 'https://praisevolunteer.com/'
     },
       {
-      id: 13 ,
+      id: 14 ,
       name: 'Grace Yengo',
       role: 'Ingénieur logiciel et Devops',
       image: '/images/team/Gracius.jpeg',
@@ -145,34 +145,34 @@ const Team = () => {
       portfolio: 'https://my-portfolios-five.vercel.app/'
     },
     {
-      id: 14 ,
+      id: 15 ,
       name: 'Elie Izungu',
-      role: '',
+      role: 'Chargée de communication',
       image: '/images/team/eli.jpeg',
-      description: '',
+      description: 'Ingénieur informaticien diplômé de l’Université de Kinshasa, avec une expérience de stage à la Banque Centrale du Congo, axée sur l’administration des serveurs, la virtualisation et la gestion de bases de données. En charge du design graphique au sein du chapitre PMI RDC.',
       linkedin: 'https://www.linkedin.com/in/elie-izungu-191a3a2b8',
       portfolio: ''
     },
 
     {
-      id: 14 ,
+      id: 16 ,
       name: 'Blessing Mbaku',
-      role: '',
+      role: 'Chargée de communication',
       image: '/images/team/blessing.jpeg',
-      description: '.',
+      description: "Blessing Mbuku est une communicante créative et stratège, passionnée par la psychologie humaine, le développement personnel et l'impact social Curieuse déterminéeetdotéed’une forte capacité d’analyse, elle sait transmettre des idées de manière claire et inspirante, tout en utilisant le storytelling et le contenu visuel pour toucher et éveiller les consciences. Au sein de l’équipe TEDx Socimat, elle contribue à la création de contenu, à la communication et à la valorisation des intervenants, en veillant à ce que chaque message résonne auprès du public.",
       linkedin: 'https://www.linkedin.com/in/b%C3%A9n%C3%A9dicte-mbuku-528200378',
       portfolio: ''
     },
 
-    {
-      id: 14 ,
-      name: 'Uriel Mbemba Lomame ',
-      role: '',
-      image: '/images/team/uriel.jpeg',
-      description: '.',
-      linkedin: 'https://www.linkedin.com/in/uriel-mbemba-b32745298/',
-      portfolio: ''
-    }
+   // {
+    //  id: 17 ,
+    //  name: 'Uriel Mbemba Lomame ',
+    //  role: 'Chargée de communication',
+    //  image: '/images/team/uriel.jpeg',
+     // description: '.',
+     // linkedin: 'https://www.linkedin.com/in/uriel-mbemba-b32745298/',
+     // portfolio: ''
+   // }
   ];
   
   const settings = {
