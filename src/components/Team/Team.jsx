@@ -46,7 +46,7 @@ const Team = () => {
 
       id: 4 ,
       name: 'Joe Kimbuya',
-      role: 'Expert en commuication et Chargé de marketing',
+      role: 'Expert en communication et Chargé de marketing',
       image: '/images/team/joe.jpg',
       description: 'À la croisée de la technologie et du marketing, Joe conçoit des solutions web performantes tout en pilotant des stratégies de communication innovantes. Grâce à sa double compétence en développement et en marketing digital, il joue un rôle clé dans la création et le succès de produits digitaux à fort impact',
       linkedin: ' https://www.linkedin.com/in/joe-kimbuya-zola-80a779181?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
