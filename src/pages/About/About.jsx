@@ -4,6 +4,8 @@ import './About.css';
 import { HiGlobe, HiLightBulb, HiMicrophone, HiUsers } from 'react-icons/hi';
 import Funder from '../../components/Funder/Funder'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Link } from "react-router-dom";
+
 
 // Import Swiper styles
 import 'swiper/css';
@@ -147,7 +149,9 @@ const About = () => {
               à l'innovation et aux idées qui changent le monde.
             </p>
             <div className="cta-buttons">
-              <a href="/contact" className="cta-button primary">Contactez-nous</a>
+            <Link to="/contact" className="cta-button primary">
+    Contactez-nous
+  </Link>
               <a href="/document/TEDxSocimat%20.pdf.pdf" download="TEDxSocimat .pdf.pdf" rel="noopener noreferrer" className="cta-button secondary">
                 Télécharger la Brochure
               </a>
