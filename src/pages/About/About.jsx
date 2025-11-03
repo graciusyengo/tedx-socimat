@@ -1,17 +1,25 @@
 import React, { useState } from 'react';
+
 import './About.css';
 import { HiGlobe, HiLightBulb, HiMicrophone, HiUsers } from 'react-icons/hi';
 import Funder from '../../components/Funder/Funder'
 import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
+
+
+// import required modules
 import { FreeMode, Pagination, Autoplay } from 'swiper/modules';
 
 const About = () => {
+
+
   const videos = [
     {
-      title: "Comment passer de l'ordinaire à l'extraordinaire ? | Marion Chatel-Chaix | TEDxRennes",
+      title: "Comment passer de l’ordinaire à l’extraordinaire ? | Marion Chatel-Chaix | TEDxRennes",
       videoId: "KOSMlgae0l4",
     },
     {
@@ -32,6 +40,7 @@ const About = () => {
     },
   ];
 
+
   const [selectedVideo, setSelectedVideo] = useState(null);
 
   const handleClosePopup = (e) => {
@@ -49,6 +58,9 @@ const About = () => {
               <h6 className="text-white text-uppercase mb-3 animated slideInDown">À PROPOS</h6>
               <h1 className="text-white mb-4 animated slideInDown">Découvrez TEDx<br />Socimat</h1>
             </div>
+            {/* <div className="image-content">
+              <img src="/images/tedx1.png" alt="TEDx Logo" className="tedx-logo" />
+            </div> */}
           </div>
         </div>
       </section>
@@ -56,6 +68,8 @@ const About = () => {
 
       <section className="ted-talks">
         <h2 className="section-title">TED Talks Inspirants</h2>
+
+
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
@@ -63,18 +77,26 @@ const About = () => {
           pagination={{
             clickable: true,
           }}
+
+
+
+
           autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
+            delay: 3000, // 3 secondes entre chaque slide
+            disableOnInteraction: false, // continue même si on interagit avec le slide
           }}
           modules={[FreeMode, Pagination, Autoplay]}
           className="mySwiper"
+
+
           breakpoints={{
-            0: {
-              slidesPerView: 1,
+            0:{
+              slidesPerView: 1, // Tablette et Desktop : 3 slides visibles
+
             },
+
             768: {
-              slidesPerView: 3,
+              slidesPerView: 3, // Tablette et Desktop : 3 slides visibles
             },
           }}
         >
@@ -94,8 +116,10 @@ const About = () => {
                 ></iframe>
                 <p>{video.title}</p>
               </div>
+
             </SwiperSlide>
           ))}
+
         </Swiper>
 
         {selectedVideo && (
@@ -111,6 +135,7 @@ const About = () => {
             </div>
           </div>
         )}
+
       </section>
 
       <section className="become-about">
@@ -123,16 +148,14 @@ const About = () => {
             </p>
             <div className="cta-buttons">
               <a href="/contact" className="cta-button primary">Contactez-nous</a>
-              <a href="/contact" className="cta-button secondary">
-                Demander la Brochure
+              <a href="/document/TEDxSocimat%20.pdf.pdf" download="TEDxSocimat .pdf.pdf" rel="noopener noreferrer" className="cta-button secondary">
+                Télécharger la Brochure
               </a>
             </div>
-            <p className="brochure-note" style={{fontSize: '0.9em', marginTop: '10px', color: '#666'}}>
-              La brochure est disponible sur demande auprès de notre équipe
-            </p>
           </div>
         </div>
       </section>
+
     </div>
   );
 };
