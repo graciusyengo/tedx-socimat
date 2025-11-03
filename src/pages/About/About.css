@@ -660,8 +660,6 @@ justify-content: center;
 }
 
 
-
-
 .brochure-modal {
   background: white;
   padding: 30px;
@@ -669,34 +667,66 @@ justify-content: center;
   max-width: 500px;
   width: 90%;
   text-align: center;
-  position: relative;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  margin: 20px auto;
 }
 
-/* Titre */
 .brochure-modal h3 {
   color: #e62b1e; /* Couleur TEDx */
   margin-bottom: 15px;
-  font-size: 1.6rem;
 }
 
-/* Paragraphe */
 .brochure-modal p {
   margin-bottom: 25px;
   line-height: 1.6;
-  font-size: 1rem;
 }
 
-/* Boutons */
 .modal-buttons {
   display: flex;
   gap: 15px;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
 }
 
-/* Bouton de fermeture */
+/* Styles pour rendre le bouton secondaire visible */
+.modal-buttons .cta-button.secondary {
+  background: transparent;
+  color: #e62b1e; /* Couleur TEDx pour le texte */
+  border: 2px solid #e62b1e; /* Bordure rouge TEDx */
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.modal-buttons .cta-button.secondary:hover {
+  background: #e62b1e;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.modal-buttons .cta-button.primary {
+  background: #e62b1e;
+  color: white;
+  border: 2px solid #e62b1e;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.modal-buttons .cta-button.primary:hover {
+  background: #c8231a;
+  border-color: #c8231a;
+  transform: translateY(-2px);
+}
+
 .close-button {
   position: absolute;
   top: 15px;
@@ -711,49 +741,3 @@ justify-content: center;
 .close-button:hover {
   color: #000;
 }
-
-/* === Responsive === */
-
-/* Petits écrans (tablettes et mobiles) */
-@media (max-width: 600px) {
-  .brochure-modal {
-    padding: 20px;
-    width: 95%;
-  }
-
-  .brochure-modal h3 {
-    font-size: 1.4rem;
-  }
-
-  .brochure-modal p {
-    font-size: 0.95rem;
-  }
-
-  .modal-buttons {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .close-button {
-    font-size: 22px;
-    top: 10px;
-    right: 10px;
-  }
-}
-
-/* Très petits écrans (ex : iPhone SE) */
-@media (max-width: 400px) {
-  .brochure-modal {
-    padding: 15px;
-  }
-
-  .brochure-modal h3 {
-    font-size: 1.2rem;
-  }
-
-  .brochure-modal p {
-    font-size: 0.9rem;
-  }
-}
-
-
