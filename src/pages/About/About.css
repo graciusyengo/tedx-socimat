@@ -664,19 +664,21 @@ justify-content: center;
   background: white;
   padding: 30px;
   border-radius: 10px;
-  max-width: 500px;
+  max-width: 600px; /* Longueur augmentée */
   width: 90%;
   text-align: center;
 }
 
 .brochure-modal h3 {
-  color: #e62b1e; /* Couleur TEDx */
+  color: #e62b1e;
   margin-bottom: 15px;
+  font-size: 1.5rem; /* Taille par défaut */
 }
 
 .brochure-modal p {
   margin-bottom: 25px;
   line-height: 1.6;
+  font-size: 1rem; /* Taille par défaut */
 }
 
 .modal-buttons {
@@ -688,11 +690,11 @@ justify-content: center;
   text-align: center;
 }
 
-/* Styles pour rendre le bouton secondaire visible */
+/* Styles pour les boutons */
 .modal-buttons .cta-button.secondary {
   background: transparent;
-  color: #e62b1e; /* Couleur TEDx pour le texte */
-  border: 2px solid #e62b1e; /* Bordure rouge TEDx */
+  color: #e62b1e;
+  border: 2px solid #e62b1e;
   padding: 12px 25px;
   border-radius: 50px;
   font-weight: 600;
@@ -700,6 +702,7 @@ justify-content: center;
   transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
+  min-width: 160px; /* Largeur réduite */
 }
 
 .modal-buttons .cta-button.secondary:hover {
@@ -719,6 +722,7 @@ justify-content: center;
   transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
+  min-width: 160px; /* Largeur réduite */
 }
 
 .modal-buttons .cta-button.primary:hover {
@@ -740,4 +744,58 @@ justify-content: center;
 
 .close-button:hover {
   color: #000;
+}
+
+/* Responsive Mobile */
+@media (max-width: 768px) {
+  .brochure-modal {
+    max-width: 500px; /* Longueur adaptée pour mobile */
+    padding: 25px 20px; /* Padding réduit */
+    width: 95%;
+  }
+  
+  .brochure-modal h3 {
+    font-size: 1.2rem; /* Taille police réduite */
+    margin-bottom: 12px;
+  }
+  
+  .brochure-modal p {
+    font-size: 0.85rem; /* Taille police réduite */
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .modal-buttons {
+    gap: 12px;
+  }
+  
+  .modal-buttons .cta-button.primary,
+  .modal-buttons .cta-button.secondary {
+    padding: 10px 20px; /* Taille bouton réduite */
+    min-width: 140px; /* Largeur réduite */
+    font-size: 0.85rem; /* Taille texte réduite */
+  }
+}
+
+/* Petits mobiles */
+@media (max-width: 480px) {
+  .brochure-modal {
+    max-width: 400px; /* Encore plus adapté petits écrans */
+    padding: 20px 15px;
+  }
+  
+  .brochure-modal h3 {
+    font-size: 1.1rem;
+  }
+  
+  .brochure-modal p {
+    font-size: 0.8rem;
+  }
+  
+  .modal-buttons .cta-button.primary,
+  .modal-buttons .cta-button.seconsdary {
+    padding: 8px 16px;
+    min-width: 120px; /* Largeur encore réduite */
+    font-size: 0.8rem;
+  }
 }
