@@ -51,7 +51,7 @@ const speakerss = [
     name: 'Marc Tshibasu',
     title: "Leader congolais reconnus dans L'innovation numerique et developpement des talents",
     image: '/images/speakers/IMG-20250218-WA0022.jpg',
-    bio: "Marc TSHIBASU est un leader congolais reconnu dans l'innovation numérique et le développement des talents. Actuellement à la tête de l'Orange Digital Center en RDC, il pilote un hub d’innovation qui offre gratuitement des formations et un accompagnement auxstart ups afin de stimuler l’entrepreneuriat technologique dans tout le pays.Fort d'une expérience de plus de 15 ans dans les secteurs des télécommunications et des biensde consommation, il a occupé des postes clés chez Nestlé, British American Tobacco etOrange RDC, où il a dirigé des initiatives majeures en matière de formation, de gestion destalents et de transformation digitale.Alumni du programme YALI (Young African Leaders Initiative) depuis 2010, Marc est unacteur engagé dans la structuration de l'écosystème tech congolais. Il œuvre pour l'émergencede startups locales dans des secteurs stratégiques tels que l'agritech, la santé, la fintech etl'environnement, en favorisant l'inclusion des femmes et des jeunes dans l'économienumériqueSes plus grands succès ont été le déploiement en 2018 en RDC en tant que premier paysafricain de la plate-forme d’apprentissage en ligne du groupe Orange Learning et de l’OrangeHR Global ERP MyJOB."
+    bio: "Marc TSHIBASU est un leader congolais reconnu dans l'innovation numérique et le développement des talents. Actuellement à la tête de l'Orange Digital Center en RDC, il pilote un hub d’innovation qui offre gratuitement des formations et un accompagnement auxstart ups afin de stimuler l’entrepreneuriat technologique dans tout le pays.Fort d'une expérience de plus de 15 ans dans les secteurs des télécommunications et des biens deconsommation, il a occupé des postes clés chez Nestlé, British American Tobacco etOrange RDC, où il a dirigé des initiatives majeures en matière de formation, de gestion destalents et de transformation digitale.Alumni du programme YALI (Young African Leaders Initiative) depuis 2010, Marc est unacteur engagé dans la structuration de l'écosystème tech congolais. Il œuvre pour l'émergencede startups locales dans des secteurs stratégiques tels que l'agritech, la santé, la fintech etl'environnement, en favorisant l'inclusion des femmes et des jeunes dans l'économienumériqueSes plus grands succès ont été le déploiement en 2018 en RDC en tant que premier paysafricain de la plate-forme d’apprentissage en ligne du groupe Orange Learning et de l’OrangeHR Global ERP MyJOB."
   },
   {
     id: 6,
@@ -134,10 +134,24 @@ const Home = () => {
               <div className="hero-slide">
                 <div className="carousel-content">
                   <div className="text-content">
-                    <div className="text-white text-uppercase mb-3 animated slideInDown">  <img src="/images/tedx2.png" alt="logo-tedx-socimat" className="logo-tedx"/></div>
-                    <h1 className="text-white mb-4 animated slideInDown fontSize">Des idées prêtes à<br />révolutionner le monde.</h1>
-                    <a href="https://docs.google.com/forms/d/1Glkg-rgSHy3cZ16aLCB8RbqCPpggH-XW_Yg0SjFxlRA/edit?pli=1" target="_blank" rel="noopener noreferrer" className="btn btn-primary animated slideInDown">
-                    JE PARTICIPE
+                    <div className="text-white text-uppercase mb-3 animated slideInDown">
+                      <img 
+                        src="/images/tedx2.png" 
+                        alt="logo-tedx-socimat" 
+                        className="logo-tedx"
+                        style={{ width: '120px', height: 'auto' }}
+                      />
+                    </div>
+                    <h1 className="text-white mb-4 animated slideInDown fontSize">
+                      Des idées prêtes à<br />révolutionner le monde.
+                    </h1>
+                    <a 
+                      href="https://docs.google.com/forms/d/1Glkg-rgSHy3cZ16aLCB8RbqCPpggH-XW_Yg0SjFxlRA/edit?pli=1" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="btn btn-primary animated slideInDown"
+                    >
+                      JE PARTICIPE
                     </a>
                   </div>
                   <div className="image-content">
@@ -148,12 +162,26 @@ const Home = () => {
             </div>
             <div className="carousel-item">
               <div className="hero-slide">
-                <div className="carousel-content">+
+                <div className="carousel-content">
                   <div className="text-content">
-                    <h6 className="text-white text-uppercase mb-3 animated slideInDown">TEDXSOCIMAT</h6>
-                    <h1 className="text-white mb-4 animated slideInDown">Dans un esprit d'idées<br />dignes d'être partagées.</h1>
-                    <a href="https://docs.google.com/forms/d/1Glkg-rgSHy3cZ16aLCB8RbqCPpggH-XW_Yg0SjFxlRA/edit?pli=1" target="_blank" rel="noopener noreferrer" className="btn btn-primary animated slideInDown">
-                    JE PARTICIPE 
+                    <h6 className="text-white text-uppercase mb-3 animated slideInDown">
+                      <img 
+                        src="/images/tedx2.png" 
+                        alt="TEDx Socimat" 
+                        className="logo-tedx"
+                        style={{ width: '120px', height: 'auto' }}
+                      />
+                    </h6>
+                    <h1 className="text-white mb-4 animated slideInDown">
+                      Dans un esprit d'idées<br />dignes d'être partagées.
+                    </h1>
+                    <a 
+                      href="https://docs.google.com/forms/d/1Glkg-rgSHy3cZ16aLCB8RbqCPpggH-XW_Yg0SjFxlRA/edit?pli=1" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="btn btn-primary animated slideInDown"
+                    >
+                      JE PARTICIPE
                     </a>
                   </div>
                   <div className="image-content">

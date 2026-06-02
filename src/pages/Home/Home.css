@@ -1,6 +1,6 @@
 .home {
     height: 100vh;
-    width: 100%;
+    width: 187vh;
     background-color: #000;
     overflow: hidden;
 
@@ -39,7 +39,7 @@
 
 .carousel-content {
 
-  left: 40% !important;
+  left: 30% !important;
   top:60% !important;
     height: 100%;
     max-width: 1400px;
@@ -79,9 +79,20 @@
 }
 
 .tedx-logo {
-    max-width: 100%;
+  
     height: auto;
     max-height: 70vh;
+    width: 300px !important;
+    font-size: 33px;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Nouveau style pour le logo TEDx agrandi */
+.logo-tedx {
+    width: 200px;
+    height: auto;
+    display: inline-block;
+    transition: all 0.3s ease;
 }
 
 h6 {
@@ -92,7 +103,7 @@ h6 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 5.5rem;
     font-weight: bold;
     line-height: 1.2;
     margin-bottom: 30px;
@@ -155,11 +166,15 @@ h1 {
 /* Tablettes */
 @media (max-width: 992px) {
     h1 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     h6 {
         font-size: 1rem;
+    }
+    
+    .logo-tedx {
+        width: 150px;
     }
 }
 
@@ -220,7 +235,7 @@ h1 {
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-bottom: 15px;
         line-height: 1.3;
     }
@@ -236,6 +251,10 @@ h1 {
         font-size: 0.8rem;
     }
 
+    .logo-tedx {
+        width: 120px;
+    }
+
     .carousel-control-prev,
     .carousel-control-next {
         width: 15%;
@@ -245,6 +264,10 @@ h1 {
     .carousel-control-next-icon {
         width: 30px;
         height: 30px;
+    }
+    
+    .logo-tedx {
+        width: 60px;
     }
 }
 
@@ -273,6 +296,17 @@ h1 {
     .btn-primary {
         padding: 8px 20px;
         font-size: 0.7rem;
+    }
+    
+    .logo-tedx {
+        width: 50px;
+    }
+}
+
+/* Desktop large */
+@media (min-width: 1440px) {
+    .logo-tedx {
+        width: 150px;
     }
 }
 

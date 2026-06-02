@@ -7,6 +7,7 @@ import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Sponsors from './pages/Sponsors/Sponsors';
 import Partners from './pages/Partners/Partners';
+import Gallery from './pages/Gallery/Gallery';
 import BecomeSpeaker from './pages/BecomeSpeaker/BecomeSpeaker';
 import Loader from '../src/components/Loader/Loader';
 import './App.css';
@@ -24,6 +25,7 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="sponsors" element={<Sponsors />} />
             <Route path="partners" element={<Partners />} />
+            <Route path="gallery" element={<Gallery />} />
             <Route path="become-speaker" element={<BecomeSpeaker />} />
           </Route>
         </Routes>

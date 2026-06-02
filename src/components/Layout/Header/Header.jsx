@@ -41,7 +41,7 @@ const Header = () => {
           <span><i className="far fa-clock"></i> Samedi 01 Novembre 2025 : 08h00 - 16h00</span>
         </div>
         <div className="top-right">
-          <span><i className="fas fa-phone-alt"></i> +243 851 773 575</span>s
+          <span><i className="fas fa-phone-alt"></i>+243 818 863 063</span>
           <div className="social-icons-header">
             <a href="#"><i className="fab fa-facebook-f"></i></a>
             <a href="#"><i className="fab fa-twitter"></i></a>
@@ -76,7 +76,9 @@ const Header = () => {
               <li>
                 <NavLink to="/about">À Propos</NavLink>
               </li>
-           
+              <li>
+                <NavLink to="/gallery">Galerie</NavLink>
+              </li>
               <li>
                 <NavLink to="/sponsors">Sponsors</NavLink>
               </li>

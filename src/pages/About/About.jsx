@@ -74,52 +74,54 @@ const About = () => {
           </div>
         </div>
       </section>
+      
       <Funder />
 
       <section className="ted-talks">
-        <h2 className="section-title">TED Talks Inspirants</h2>
-
-        <Swiper
-          slidesPerView={3}
-          spaceBetween={30}
-          freeMode={true}
-          pagination={{
-            clickable: true,
-          }}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
-          modules={[FreeMode, Pagination, Autoplay]}
-          className="mySwiper"
-          breakpoints={{
-            0: {
-              slidesPerView: 1,
-            },
-            768: {
-              slidesPerView: 3,
-            },
-          }}
-        >
-          {videos.map((video, index) => (
-            <SwiperSlide key={index}>
-              <div className="video-thumbnail">
-                <div
-                  className="clickable-overlay"
-                  onClick={() => setSelectedVideo(video.videoId)}
-                ></div>
-                <iframe
-                  src={`https://www.youtube.com/embed/${video.videoId}`}
-                  title={video.title}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-                <p>{video.title}</p>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <div className="container-about">
+          <h2 className="section-title">TED Talks Inspirants</h2>
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            freeMode={true}
+            pagination={{
+              clickable: true,
+            }}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            modules={[FreeMode, Pagination, Autoplay]}
+            className="mySwiper"
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 3,
+              },
+            }}
+          >
+            {videos.map((video, index) => (
+              <SwiperSlide key={index}>
+                <div className="video-thumbnail">
+                  <div
+                    className="clickable-overlay"
+                    onClick={() => setSelectedVideo(video.videoId)}
+                  ></div>
+                  <iframe
+                    src={`https://www.youtube.com/embed/${video.videoId}`}
+                    title={video.title}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                  <p>{video.title}</p>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
 
         {selectedVideo && (
           <div className="popup-overlay" onClick={handleClosePopup}>
@@ -137,7 +139,7 @@ const About = () => {
       </section>
 
       <section className="become-about">
-        <div className="container-become-about">
+        <div className="container-about">
           <div className="cta-content">
             <h2>Devenez Sponsor</h2>
             <p>

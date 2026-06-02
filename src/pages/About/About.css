@@ -1,15 +1,26 @@
 .about {
   min-height: 100vh;
+  width: 100%;
   overflow-x: hidden;
 }
 
-.hero-slide-about {
-
-  height: 60vh !important;
-
+/* Container principal pour uniformiser avec Partners */
+.container-about {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
 }
 
-.hero-slide::before {
+.hero-slide-about {
+  height: 60vh !important;
+  position: relative;
+  background: url('/images/ted.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-slide-about::before {
   content: '';
   position: absolute;
   top: 0;
@@ -20,21 +31,35 @@
 }
 
 .carousel-content {
-  height: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  display: flex;
-justify-content: center;
-
-
-  padding: 0 20px;
+  position: relative;
   z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
 }
 
 .text-content {
-  flex: 1;
-  padding-right: 50px;
-  margin: 0 auto !important;
+  color: white;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.text-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.text-content h6 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .image-content {
@@ -74,8 +99,21 @@ justify-content: center;
 
 .section-title {
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
+  color: #0B2154;
+  margin-bottom: 50px;
+  position: relative;
+}
 
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #e62b1e;
 }
 
 .stats-grid {
@@ -85,7 +123,6 @@ justify-content: center;
   margin: 0 auto;
   padding: 0 20px;
 }
-
 
 .stat-number {
   font-size: 2.5rem;
@@ -140,7 +177,7 @@ justify-content: center;
   gap: 80px;
   padding: 0;
   background: #fff;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 80px auto;
 }
 
@@ -263,10 +300,15 @@ justify-content: center;
   transform: translateY(-2px);
 }
 
-
-
 .ted-talks {
-  padding: 2rem;
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.ted-talks .container-about {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .video-thumbnail {
@@ -298,7 +340,7 @@ justify-content: center;
   top: 0;
   left: 0;
   width: 100%;
-  height: 180px; /* doit correspondre à la hauteur de l'iframe */
+  height: 180px;
   z-index: 2;
   cursor: pointer;
   background: transparent;
@@ -332,214 +374,19 @@ justify-content: center;
   border: none;
 }
 
-
-
-
-
-
-@media (max-width: 767px) {
-  .ted-talks {
-    padding: 1rem;
-  }
-
-  .swiper-backface-hidden .swiper-slide{
-    width: 300px !important;
-  }
-
-
-  .swiper-pagination{
-    display: none !important;
-  }
-  .video-thumbnail iframe {
-    height: 200px;
-  }
-
-  .swiper-slide {
-    height: auto;
-  }
-
-  .popup-content {
-    width: 95%;
-  }
-}
-
-
-
-
-
-
-@media (max-width: 1024px) {
-  .tedx-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .image-container {
-    width: 100%;
-    max-height: 600px;
-  }
-
-  .content-container {
-    max-width: 100%;
-    padding: 40px 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .content-container h2 {
-    font-size: 2rem;
-  }
-
-  .objective span {
-    font-size: 2.4rem;
-  }
-
-  .overlay h1 {
-    font-size: 3.5rem;
-  }
-
-  .overlay p {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .tedx-container {
-    margin-left: auto;
-    margin-right: auto;
-
-    margin-top: 370px;
-  }
-
-  .overlay {
-    padding: 60px 20px 20px;
-  }
-
-  .overlay h1 {
-    font-size: 3rem;
-  }
-
-  .content-container h2 {
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-  }
-
-  .objective {
-    gap: 15px;
-  }
-
-  .objective span {
-    font-size: 2rem;
-  }
-
-  .objective h3 {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 1200px) {
-  .stats-grid {
-  grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .carousel-content {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    top: 45%;
-  }
-
-  .hero-slide {
-    height: 50vh !important;
-  }
-
-  .text-content {
-    padding-right: 0;
-    margin-bottom: 30px;
-  }
-
-  .text-content h1 {
-    font-size: 2rem;
-  }
-
-  .text-content h6 {
-    font-size: 1rem;
-  }
-
-  .image-content {
-    display: none;
-    width: 100%;
-  }
-
-  .stats-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .stat-card {
-    padding: 20px 15px;
-  }
-
-  .stat-number {
-    font-size: 2rem;
-  }
-
-  .stat-label {
-    font-size: 1rem;
-  }
-
-  .timeline-item {
-    padding-left: 20px;
-    margin-bottom: 30px;
-  }
-
-  .year {
-    font-size: 1.3rem;
-  }
-
-  .content h3 {
-    font-size: 1.1rem;
-  }
-
-  .content p {
-    font-size: 1rem;
-  }
-
-  .intro-content h2 {
-    font-size: 2rem;
-  }
-
-  .intro-content p {
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .text-content h1 {
-    font-size: 1.8rem;
-  }
-
-  .tedx-logo {
-    max-width: 200px;
-  }
-
-  .stat-number {
-    font-size: 1.8rem;
-  }
-}
-
-
-
-
 .become-about {
   padding: 100px 0;
-  background:linear-gradient(rgb(51 52 54 / 90%), rgb(1 11 33 / 90%)), url(/images/ted.jpg);
+  background: linear-gradient(rgb(51 52 54 / 90%), rgb(1 11 33 / 90%)), url(/images/ted.jpg);
   background-size: cover;
   background-position: center;
   color: white;
   text-align: center;
+}
+
+.become-about .container-about {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .cta-content {
@@ -596,89 +443,27 @@ justify-content: center;
   background: rgba(255, 255, 255, 0.1);
 }
 
-@media (max-width: 768px) {
-  .carousel-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .text-content {
-    margin-bottom: 30px;
-  }
-
-  .text-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .image-content {
-    flex: 0 0 100%;
-    text-align: center;
-  }
-
-  .tedx-logo {
-    max-width: 80%;
-  }
-
-  .benefits-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .sponsors-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .sponsor-benefits h2,
-  .current-sponsors h2,
-  .cta-content h2 {
-    font-size: 2rem;
-  }
-
-  .cta-buttons {
-    flex-direction: column;
-  }
-
-  .sponsor-category {
-    padding: 60px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .benefits-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .text-content h1 {
-    font-size: 2rem;
-  }
-
-  .sponsor-benefits,
-  .become-about {
-    padding: 60px 0;
-  }
-}
-
-
+/* Brochure Modal */
 .brochure-modal {
   background: white;
   padding: 30px;
   border-radius: 10px;
-  max-width: 600px; /* Longueur augmentée */
+  max-width: 600px;
   width: 90%;
   text-align: center;
+  position: relative;
 }
 
 .brochure-modal h3 {
   color: #e62b1e;
   margin-bottom: 15px;
-  font-size: 1.5rem; /* Taille par défaut */
+  font-size: 1.5rem;
 }
 
 .brochure-modal p {
   margin-bottom: 25px;
   line-height: 1.6;
-  font-size: 1rem; /* Taille par défaut */
+  font-size: 1rem;
 }
 
 .modal-buttons {
@@ -690,7 +475,6 @@ justify-content: center;
   text-align: center;
 }
 
-/* Styles pour les boutons */
 .modal-buttons .cta-button.secondary {
   background: transparent;
   color: #e62b1e;
@@ -699,10 +483,9 @@ justify-content: center;
   border-radius: 50px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
-  min-width: 160px; /* Largeur réduite */
+  min-width: 160px;
 }
 
 .modal-buttons .cta-button.secondary:hover {
@@ -719,10 +502,9 @@ justify-content: center;
   border-radius: 50px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
-  min-width: 160px; /* Largeur réduite */
+  min-width: 160px;
 }
 
 .modal-buttons .cta-button.primary:hover {
@@ -746,56 +528,271 @@ justify-content: center;
   color: #000;
 }
 
-/* Responsive Mobile */
-@media (max-width: 768px) {
-  .brochure-modal {
-    max-width: 500px; /* Longueur adaptée pour mobile */
-    padding: 25px 20px; /* Padding réduit */
-    width: 95%;
+/* Swiper Styles */
+.swiper-backface-hidden .swiper-slide {
+  width: 300px !important;
+}
+
+.swiper-pagination {
+  display: block !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #e62b1e !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .tedx-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 20px;
   }
-  
-  .brochure-modal h3 {
-    font-size: 1.2rem; /* Taille police réduite */
-    margin-bottom: 12px;
+
+  .image-container {
+    width: 100%;
+    max-height: 500px;
   }
-  
-  .brochure-modal p {
-    font-size: 0.85rem; /* Taille police réduite */
-    margin-bottom: 20px;
-    line-height: 1.5;
-  }
-  
-  .modal-buttons {
-    gap: 12px;
-  }
-  
-  .modal-buttons .cta-button.primary,
-  .modal-buttons .cta-button.secondary {
-    padding: 10px 20px; /* Taille bouton réduite */
-    min-width: 140px; /* Largeur réduite */
-    font-size: 0.85rem; /* Taille texte réduite */
+
+  .content-container {
+    max-width: 100%;
+    padding: 40px 20px;
   }
 }
 
-/* Petits mobiles */
-@media (max-width: 480px) {
-  .brochure-modal {
-    max-width: 400px; /* Encore plus adapté petits écrans */
-    padding: 20px 15px;
+@media (max-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
   
+  .ted-talks .swiper-slide {
+    width: 300px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    top: 50%;
+  }
+
+  .hero-slide-about {
+    height: 50vh !important;
+  }
+
+  .text-content {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .text-content h1 {
+    font-size: 2rem;
+  }
+
+  .text-content h6 {
+    font-size: 1rem;
+  }
+
+  .image-content {
+    display: none;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .stat-card {
+    padding: 20px 15px;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-label {
+    font-size: 1rem;
+  }
+
+  .timeline-item {
+    padding-left: 20px;
+    margin-bottom: 30px;
+  }
+
+  .year {
+    font-size: 1.3rem;
+  }
+
+  .content h3 {
+    font-size: 1.1rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .content-container h2 {
+    font-size: 2rem;
+  }
+
+  .objective span {
+    font-size: 2.4rem;
+  }
+
+  .overlay h1 {
+    font-size: 3.5rem;
+  }
+
+  .overlay p {
+    font-size: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .ted-talks {
+    padding: 60px 0;
+  }
+
+  .ted-talks .swiper-slide {
+    width: 280px !important;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cta-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .become-about {
+    padding: 60px 0;
+  }
+
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .tedx-logo {
+    max-width: 200px;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+  }
+
+  .tedx-container {
+    margin: 20px 15px;
+  }
+
+  .overlay {
+    padding: 60px 20px 20px;
+  }
+
+  .overlay h1 {
+    font-size: 3rem;
+  }
+
+  .content-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .objective {
+    gap: 15px;
+  }
+
+  .objective span {
+    font-size: 2rem;
+  }
+
+  .objective h3 {
+    font-size: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .ted-talks .swiper-slide {
+    width: 260px !important;
+  }
+
+  .video-thumbnail iframe {
+    height: 160px;
+  }
+
+  .brochure-modal {
+    max-width: 400px;
+    padding: 20px 15px;
+  }
+
   .brochure-modal h3 {
     font-size: 1.1rem;
   }
-  
+
   .brochure-modal p {
     font-size: 0.8rem;
   }
-  
+
   .modal-buttons .cta-button.primary,
-  .modal-buttons .cta-button.seconsdary {
+  .modal-buttons .cta-button.secondary {
     padding: 8px 16px;
-    min-width: 120px; /* Largeur encore réduite */
+    min-width: 120px;
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .ted-talks {
+    padding: 1rem;
+  }
+
+  .swiper-backface-hidden .swiper-slide {
+    width: 300px !important;
+  }
+
+  .swiper-pagination {
+    display: none !important;
+  }
+
+  .video-thumbnail iframe {
+    height: 200px;
+  }
+
+  .swiper-slide {
+    height: auto;
+  }
+
+  .popup-content {
+    width: 95%;
+  }
+}
+
+@media (max-height: 600px) {
+  .hero-slide-about {
+    height: 50vh;
+  }
+
+  .text-content h1 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+
+  .text-content h6 {
+    font-size: 0.7rem;
+    margin-bottom: 8px;
   }
 }
