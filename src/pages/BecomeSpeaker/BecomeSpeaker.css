@@ -20,7 +20,6 @@
   height: 60vh !important;
 }
 
-
 .hero-slide::before {
   content: '';
   position: absolute;
@@ -331,212 +330,295 @@
   box-shadow: none;
 }
 
-/* Responsive Design */
-@media (max-width: 1200px) {
-  .container-speakers {
-    gap: 200px;
-  }
+
+/* ==================== */
+/* SIMPLE & ELEGANT TOAST - CENTRÉ */
+/* ==================== */
+
+/* Success Toast - Simple et élégant */
+.toast-success-card {
+  background: #ffffff !important;
+  border-radius: 20px !important;
+  padding: 0 !important;
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.15) !important;
+  overflow: hidden !important;
+  width: 420px !important;
+  max-width: calc(100vw - 32px) !important;
+  border: 1px solid #eef2f6 !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
-@media (max-width: 992px) {
-  .container-speakers {
-    gap: 100px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .speaker-form {
-    max-height: none;
-    overflow-y: visible;
-  }
-  
-  .speaker-form h2 {
-    text-align: center;
-  }
-  
-  .speaker-form h2::after {
-    left: 50%;
-    transform: translateX(-50%);
-  }
+.toast-success-body {
+  padding: 0 !important;
+  background: transparent !important;
 }
 
-@media (max-width: 768px) {
-  .carousel-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .text-content {
-    margin-bottom: 30px;
-    text-align: center;
-  }
-
-  .text-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .speaker-requirements h2::after {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .speaker-requirements h2 {
-    text-align: center;
-  }
-
-  .why-title {
-    width: auto;
-    text-align: center;
-    margin: 0 auto 30px auto;
-  }
-
-  .image-content {
-    flex: 0 0 100%;
-    text-align: center;
-  }
-
-  .tedx-logo {
-    max-width: 80%;
-  }
-
-  .speaker-requirements {
-    padding: 60px 20px;
-  }
-
-  .requirement-item {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .requirement-item:hover {
-    transform: translateY(-5px);
-  }
-
-  .speaker-form {
-    padding: 25px 20px;
-    margin-top: 40px;
-  }
-
-  .speaker-form h2 {
-    font-size: 1.5rem;
-  }
-
-  .form-group label {
-    font-size: 0.9rem;
-    text-align: left;
-  }
-
-  .form-group input,
-  .form-group textarea,
-  .form-group select {
-    padding: 10px 12px;
-    font-size: 14px;
-  }
-
-  .submit-btn {
-    padding: 12px 20px;
-    font-size: 0.95rem;
-  }
-  
-  .files-list,
-  .files-list strong,
-  .files-list li,
-  .form-text {
-    text-align: left;
-  }
+.toast-success-content {
+  position: relative;
+  padding: 0 !important;
+  text-align: center !important;
 }
 
-/* Small screens */
-@media (max-width: 480px) {
-  .hero-slide-become-speaker {
-    height: 50vh !important;
-  }
-
-  .text-content h1 {
-    font-size: 1.8rem;
-  }
-
-  .text-content h6 {
-    font-size: 0.9rem;
-  }
-
-  .speaker-requirements {
-    padding: 40px 15px;
-  }
-
-  .speaker-form {
-    padding: 20px 15px;
-  }
-
-  .requirement-item .icon {
-    min-width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
-  }
-
-  .requirement-item .text h3 {
-    font-size: 1rem;
-  }
-
-  .requirement-item .text p {
-    font-size: 0.85rem;
-  }
-
-  .files-list li {
-    font-size: 11px;
-  }
+/* Header simple - centré */
+.toast-success-header {
+  background: #f8fafc;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-bottom: 1px solid #eef2f6;
 }
 
-/* Loading state animation */
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.submit-btn:disabled::after {
-  content: '';
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  margin-left: 10px;
-  border: 2px solid white;
-  border-top-color: transparent;
+.toast-success-icon {
+  width: 34px;
+  height: 34px;
+  background: #e8f5e9;
   border-radius: 50%;
-  animation: spin 0.6s linear infinite;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
 }
 
-/* Accessibility */
-@media (prefers-reduced-motion: reduce) {
-  .requirement-item,
-  .submit-btn,
-  .form-group input,
-  .form-group textarea,
-  .form-group select {
-    transition: none;
+.toast-success-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a2c3e;
+}
+
+.toast-success-close {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+.toast-success-close:hover {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+/* Carte ID - centrée */
+.toast-success-id-card {
+  padding: 24px 20px;
+  border-bottom: 1px solid #f0f2f5;
+  text-align: center;
+}
+
+.toast-id-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #64748b;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.toast-id-value {
+  font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1a2c3e;
+  background: #f8fafc;
+  padding: 10px 14px;
+  border-radius: 10px;
+  display: inline-block;
+  word-break: break-all;
+  border-left: 3px solid #e62b1e;
+  text-align: center;
+  max-width: 100%;
+}
+
+/* Carte Email - centrée */
+.toast-success-email-card {
+  padding: 20px;
+  border-bottom: 1px solid #f0f2f5;
+  text-align: center;
+}
+
+.toast-email-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #64748b;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.toast-email-address {
+  font-weight: 600;
+  color: #e62b1e;
+  background: #fef2f0;
+  padding: 8px 14px;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.toast-subject-line {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #f0f2f5;
+  font-size: 0.8rem;
+  color: #64748b;
+  text-align: center;
+}
+
+.toast-subject-line strong {
+  color: #1a2c3e;
+  font-family: monospace;
+  font-size: 0.75rem;
+  background: #f8fafc;
+  padding: 4px 10px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+/* Note - centrée */
+.toast-success-note {
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 0.8rem;
+  color: #64748b;
+  background: #fafbfc;
+  text-align: center;
+}
+
+.toast-success-note span:first-child {
+  font-size: 1rem;
+}
+
+/* Barre de progression */
+.toast-progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: #e62b1e;
+  animation: progress 15s linear forwards;
+}
+
+/* Animations */
+@keyframes progress {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  .submit-btn:disabled::after {
-    animation: none;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-/* Print styles */
-@media print {
-  .hero-slide,
-  .submit-btn {
-    display: none;
+.toast-success-card {
+  animation: slideIn 0.3s ease-out !important;
+}
+
+/* Error Toast centré */
+.toast-error-card {
+  background: #ffffff !important;
+  border-radius: 20px !important;
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.15) !important;
+  overflow: hidden !important;
+  width: 380px !important;
+  max-width: calc(100vw - 32px) !important;
+  border: 1px solid #fee2e2 !important;
+  animation: slideIn 0.3s ease-out !important;
+  text-align: center;
+}
+
+.toast-error-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.toast-error-icon {
+  width: 48px;
+  height: 48px;
+  background: #fef2f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.toast-error-text {
+  text-align: center;
+}
+
+.toast-error-text strong {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #1a2c3e;
+}
+
+.toast-error-text p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .toast-success-id-card,
+  .toast-success-email-card {
+    padding: 18px 16px;
   }
   
-  .speaker-form {
-    box-shadow: none;
-    padding: 0;
+  .toast-success-note {
+    padding: 14px 16px;
   }
   
-  .form-group input,
-  .form-group textarea,
-  .form-group select {
-    border: 1px solid #ddd;
+  .toast-id-value {
+    font-size: 0.75rem;
+    word-break: break-all;
+  }
+  
+  .toast-success-header {
+    padding: 14px 16px;
+  }
+  
+  .toast-email-address {
+    font-size: 0.85rem;
+    word-break: break-all;
   }
 }

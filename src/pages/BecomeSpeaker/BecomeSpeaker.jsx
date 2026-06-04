@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
-import { HiCheckCircle, HiXCircle } from 'react-icons/hi';
-
 import 'react-toastify/dist/ReactToastify.css';
 import './BecomeSpeaker.css';
 
 const BecomeSpeaker = () => {
-
   // CONFIG EMAILJS
-  const SERVICE_ID = 'service_p01zpxm';
+  const SERVICE_ID = 'service_wantq4b';
   const TEMPLATE_ID = 'template_23sd8aq';
   const PUBLIC_KEY = 'Kr2nRKP_ZL81x2ck5';
 
@@ -34,9 +31,15 @@ const BecomeSpeaker = () => {
     otherRules: ''
   });
 
-  // STATE POUR LES FICHIERS
-  const [files, setFiles] = useState([]);
   const [uploading, setUploading] = useState(false);
+
+  // Générer un ID unique pour la candidature
+  const generateCandidateId = () => {
+    const timestamp = Date.now();
+    const random = Math.floor(Math.random() * 10000);
+    const name = formData.fullName?.replace(/\s/g, '').substring(0, 5) || 'CANDIDAT';
+    return `TEDX-${timestamp}-${random}-${name.toUpperCase()}`;
+  };
 
   // INITIALISATION EMAILJS
   useEffect(() => {
@@ -45,65 +48,11 @@ const BecomeSpeaker = () => {
 
   // HANDLE CHANGE
   const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    
-    if (type === 'checkbox') {
-      setFormData({
-        ...formData,
-        [name]: checked
-      });
-    } else {
-      setFormData({
-        ...formData,
-        [name]: value
-      });
-    }
-  };
-
-  // HANDLE FILES CHANGE
-  const handleFileChange = (e) => {
-    const selectedFiles = Array.from(e.target.files);
-    const validFiles = [];
-    const maxSize = 10 * 1024 * 1024; // 10 MB
-    const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'image/jpeg', 'image/png', 'image/jpg', 'application/vnd.ms-powerpoint', 'application/vnd.openxmlformats-officedocument.presentationml.presentation'];
-
-    for (let file of selectedFiles) {
-      if (file.size > maxSize) {
-        toast.error(`Le fichier ${file.name} dépasse 10 MB`);
-        continue;
-      }
-      if (!allowedTypes.includes(file.type)) {
-        toast.error(`Le fichier ${file.name} n'est pas au format accepté`);
-        continue;
-      }
-      validFiles.push(file);
-    }
-
-    if (validFiles.length > 5) {
-      toast.error('Vous ne pouvez importer que 5 fichiers maximum');
-      setFiles(validFiles.slice(0, 5));
-    } else {
-      setFiles(validFiles);
-    }
-  };
-
-  // CONVERSION FICHIERS EN BASE64
-  const filesToBase64 = (files) => {
-    return Promise.all(
-      files.map((file) => {
-        return new Promise((resolve, reject) => {
-          const reader = new FileReader();
-          reader.readAsDataURL(file);
-          reader.onload = () => resolve({
-            name: file.name,
-            type: file.type,
-            size: file.size,
-            content: reader.result
-          });
-          reader.onerror = (error) => reject(error);
-        });
-      })
-    );
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
   };
 
   // ENVOI FORMULAIRE
@@ -112,35 +61,29 @@ const BecomeSpeaker = () => {
     setUploading(true);
 
     try {
-      // Convertir les fichiers en base64
-      let filesData = [];
-      if (files.length > 0) {
-        filesData = await filesToBase64(files);
-      }
+      const candidateId = generateCandidateId();
 
-      // Préparer le domaine personnalisé
       let domainValue = formData.domain;
       if (formData.domain === 'Autre' && formData.otherDomain) {
         domainValue = `Autre: ${formData.otherDomain}`;
       }
 
-      // Préparer le coaching personnalisé
       let coachingValue = formData.coachingAvailable;
       if (formData.coachingAvailable === 'Autre' && formData.otherCoaching) {
         coachingValue = `Autre: ${formData.otherCoaching}`;
       }
 
-      // Préparer les règles personnalisées
       let rulesValue = formData.acceptTEDxRules;
       if (formData.acceptTEDxRules === 'Autre' && formData.otherRules) {
         rulesValue = `Autre: ${formData.otherRules}`;
       }
 
       const templateParams = {
-        fullName: formData.fullName,
-        city: formData.city,
+        candidateId: candidateId,
+        name: formData.fullName,
         email: formData.email,
         phone: formData.phone,
+        city: formData.city,
         linkedin: formData.linkedin,
         subject: formData.subject,
         importance: formData.importance,
@@ -151,19 +94,65 @@ const BecomeSpeaker = () => {
         publicTakeaway: formData.publicTakeaway,
         coachingAvailable: coachingValue,
         acceptTEDxRules: rulesValue,
-        files: JSON.stringify(filesData),
-        filesCount: files.length,
         submissionDate: new Date().toLocaleString('fr-FR')
       };
 
-      const response = await emailjs.send(
-        SERVICE_ID,
-        TEMPLATE_ID,
-        templateParams,
-        PUBLIC_KEY
-      );
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
+// Dans handleSubmit, remplacer toast.success par :
 
-      console.log('SUCCESS!', response);
+toast.success(
+  <div className="toast-success-content">
+    <div className="toast-success-header">
+      <div className="toast-success-icon">✓</div>
+      <h3>Candidature envoyée</h3>
+      <button 
+        className="toast-success-close"
+        onClick={() => toast.dismiss()}
+      >
+        ✕
+      </button>
+    </div>
+
+    <div className="toast-success-id-card">
+      <div className="toast-id-label">
+        <span>🆔</span>
+        <span>VOTRE IDENTIFIANT</span>
+      </div>
+      <div className="toast-id-value">
+        {candidateId}
+      </div>
+    </div>
+
+    <div className="toast-success-email-card">
+      <div className="toast-email-label">
+        <span>📧</span>
+        <span>ENVOYER VOS DOCUMENTS</span>
+      </div>
+      <div className="toast-email-address">
+       bulangamelissa@gmail.com
+      </div>
+      <div className="toast-subject-line">
+        Objet : <strong>{candidateId}</strong>
+      </div>
+    </div>
+
+    <div className="toast-success-note">
+      <span>💡</span>
+      <span>Conservez cet identifiant pour le suivi</span>
+    </div>
+  </div>,
+  {
+    icon: false,
+    position: "top-center",
+    autoClose: 15000,
+    hideProgressBar: true,
+    closeOnClick: true,
+    pauseOnHover: false,
+    draggable: true,
+    className: 'toast-success-card',
+    bodyClassName: 'toast-success-body',
+  }
+);
 
       // RESET FORM
       setFormData({
@@ -185,30 +174,24 @@ const BecomeSpeaker = () => {
         otherCoaching: '',
         otherRules: ''
       });
-      setFiles([]);
-
-      // Reset file input
-      const fileInput = document.getElementById('cv-portfolio');
-      if (fileInput) fileInput.value = '';
-
-      // TOAST SUCCESS
-      toast.success(
-        'Merci pour votre candidature ! Nous vous contacterons bientôt.',
-        {
-          icon: <HiCheckCircle className="text-green-500 text-2xl" />,
-          position: "top-center",
-          autoClose: 5000,
-        }
-      );
 
     } catch (error) {
-      console.error('FAILED...', error);
+      console.error('Erreur:', error);
+      
+      // AFFICHER POPUP ÉLÉGANT D'ERREUR
       toast.error(
-        "Une erreur est survenue lors de l'envoi de votre candidature.",
+        <div className="toast-error-content">
+          <div className="toast-error-icon">⚠️</div>
+          <div className="toast-error-text">
+            <strong>Erreur d'envoi</strong>
+            <p>Une erreur technique est survenue. Veuillez réessayer ou nous contacter directement.</p>
+          </div>
+        </div>,
         {
-          icon: <HiXCircle className="text-red-500 text-2xl" />,
+          icon: false,
           position: "top-center",
           autoClose: 5000,
+          className: 'toast-error-card',
         }
       );
     } finally {
@@ -218,7 +201,14 @@ const BecomeSpeaker = () => {
 
   return (
     <div className="become-speaker">
-      <ToastContainer position="top-right" autoClose={5000} theme="colored" />
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        closeButton={true}
+        closeOnClick={true}
+        pauseOnHover={false}
+        draggable={true}
+      />
 
       <div className="become-speaker-container">
         {/* HERO SECTION */}
@@ -284,7 +274,6 @@ const BecomeSpeaker = () => {
                   <h2>Candidature Speaker TEDxSocimat</h2>
                   
                   <form onSubmit={handleSubmit}>
-                    {/* 1. Nom Complet */}
                     <div className="form-group">
                       <label>Nom Complet *</label>
                       <input
@@ -297,7 +286,6 @@ const BecomeSpeaker = () => {
                       />
                     </div>
 
-                    {/* 2. Ville de résidence */}
                     <div className="form-group">
                       <label>Ville de résidence *</label>
                       <input
@@ -310,7 +298,6 @@ const BecomeSpeaker = () => {
                       />
                     </div>
 
-                    {/* 3. Email */}
                     <div className="form-group">
                       <label>Adresse email *</label>
                       <input
@@ -323,7 +310,6 @@ const BecomeSpeaker = () => {
                       />
                     </div>
 
-                    {/* 4. Téléphone WhatsApp */}
                     <div className="form-group">
                       <label>Numéro de téléphone (WhatsApp) *</label>
                       <input
@@ -336,7 +322,6 @@ const BecomeSpeaker = () => {
                       />
                     </div>
 
-                    {/* 5. LinkedIn / Site / Portfolio */}
                     <div className="form-group">
                       <label>Lien vers votre profil LinkedIn / Site / Portfolio *</label>
                       <input
@@ -349,7 +334,6 @@ const BecomeSpeaker = () => {
                       />
                     </div>
 
-                    {/* 6. Sujet exact */}
                     <div className="form-group">
                       <label>Sujet exact sur lequel vous voulez intervenir *</label>
                       <textarea
@@ -362,7 +346,6 @@ const BecomeSpeaker = () => {
                       />
                     </div>
 
-                    {/* 7. Importance du sujet */}
                     <div className="form-group">
                       <label>En 3 lignes, expliquez pourquoi ce sujet est important maintenant *</label>
                       <textarea
@@ -375,7 +358,6 @@ const BecomeSpeaker = () => {
                       />
                     </div>
 
-                    {/* 8. Domaine */}
                     <div className="form-group">
                       <label>À quel domaine appartient votre talk ? *</label>
                       <select name="domain" value={formData.domain} onChange={handleChange} required>
@@ -402,7 +384,6 @@ const BecomeSpeaker = () => {
                       )}
                     </div>
 
-                    {/* 9. Expérience en prise de parole */}
                     <div className="form-group">
                       <label>Avez-vous déjà pris la parole en public ? Si oui, où et devant combien de personnes ? *</label>
                       <textarea
@@ -415,7 +396,6 @@ const BecomeSpeaker = () => {
                       />
                     </div>
 
-                    {/* 10. Disponibilité à Kinshasa */}
                     <div className="form-group">
                       <label>Serez-vous disponible le jour J à Kinshasa ? *</label>
                       <select name="availableInKinshasa" value={formData.availableInKinshasa} onChange={handleChange} required>
@@ -425,7 +405,6 @@ const BecomeSpeaker = () => {
                       </select>
                     </div>
 
-                    {/* 11. Pourquoi TEDxSocimat */}
                     <div className="form-group">
                       <label>Pourquoi voulez-vous monter sur la scène du TEDxSocimat en particulier ? *</label>
                       <textarea
@@ -438,7 +417,6 @@ const BecomeSpeaker = () => {
                       />
                     </div>
 
-                    {/* 12. Message à retenir */}
                     <div className="form-group">
                       <label>Que retiendra le public après votre intervention ? *</label>
                       <textarea
@@ -451,7 +429,6 @@ const BecomeSpeaker = () => {
                       />
                     </div>
 
-                    {/* 13. Coaching */}
                     <div className="form-group">
                       <label>Êtes-vous disponible pour un coaching ou un accompagnement si votre candidature est retenue ? *</label>
                       <select name="coachingAvailable" value={formData.coachingAvailable} onChange={handleChange} required>
@@ -473,7 +450,6 @@ const BecomeSpeaker = () => {
                       )}
                     </div>
 
-                    {/* 14. Acceptation règles TEDx */}
                     <div className="form-group">
                       <label>Êtes-vous prêt à accepter les normes TEDx : formats, durées et lignes éditoriales ? *</label>
                       <select name="acceptTEDxRules" value={formData.acceptTEDxRules} onChange={handleChange} required>
@@ -495,33 +471,29 @@ const BecomeSpeaker = () => {
                       )}
                     </div>
 
-                    {/* 15. CV / Portfolio */}
                     <div className="form-group">
-                      <label>Veuillez soumettre votre CV ou Portfolio *</label>
-                      <input
-                        type="file"
-                        id="cv-portfolio"
-                        accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.ppt,.pptx"
-                        onChange={handleFileChange}
-                        multiple
-                      />
-                      <small className="form-text text-muted">
-                        Importez jusqu'à 5 fichiers compatibles : PDF, document, image ou presentation. 10 MB max. par fichier.
-                      </small>
-                      {files.length > 0 && (
-                        <div className="files-list mt-2">
-                          <strong>Fichiers sélectionnés ({files.length}/5) :</strong>
-                          <ul>
-                            {files.map((file, index) => (
-                              <li key={index}>{file.name} ({(file.size / 1024 / 1024).toFixed(2)} MB)</li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
+                      <label>CV / Portfolio *</label>
+                      <div className="cv-message" style={{ 
+                        background: '#f0f7ff', 
+                        padding: '15px', 
+                        borderRadius: '8px',
+                        borderLeft: '4px solid #e62b1e'
+                      }}>
+                        <p style={{ margin: '0 0 10px 0', fontWeight: 'bold', color: '#0B2154' }}>
+                          📄 Comment soumettre votre CV et portfolio :
+                        </p>
+                        <p style={{ margin: '0 0 5px 0' }}>1️⃣ Remplissez et envoyez ce formulaire</p>
+                        <p style={{ margin: '0 0 5px 0' }}>2️⃣ Vous recevrez un <strong>numéro unique</strong> après envoi</p>
+                        <p style={{ margin: '0 0 5px 0' }}>3️⃣ Envoyez votre CV et portfolio à : <strong>candidature@tedxsocimat.com</strong></p>
+                        <p style={{ margin: '0 0 5px 0' }}>4️⃣ Utilisez ce numéro comme <strong>OBJET</strong> de votre email</p>
+                        <p style={{ margin: '10px 0 0 0', fontSize: '12px', color: '#666' }}>
+                          ⚠️ Les candidatures sans numéro de référence ne pourront pas être traitées
+                        </p>
+                      </div>
                     </div>
 
                     <button type="submit" className="submit-btn" disabled={uploading}>
-                      {uploading ? 'Envoi en cours...' : 'Envoyer ma candidature'}
+                      {uploading ? 'Envoi en cours...' : '📤 Envoyer ma candidature'}
                     </button>
                   </form>
                 </div>
