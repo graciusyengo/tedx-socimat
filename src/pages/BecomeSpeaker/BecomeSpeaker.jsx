@@ -30,6 +30,7 @@ const BecomeSpeaker = () => {
     otherCoaching: '',
     otherRules: ''
   });
+  
 
   const [uploading, setUploading] = useState(false);
 
