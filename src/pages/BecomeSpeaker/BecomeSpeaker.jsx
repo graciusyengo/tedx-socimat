@@ -113,15 +113,7 @@ toast.success(
       </button>
     </div>
 
-    <div className="toast-success-id-card">
-      <div className="toast-id-label">
-        <span>🆔</span>
-        <span>VOTRE IDENTIFIANT</span>
-      </div>
-      <div className="toast-id-value">
-        {candidateId}
-      </div>
-    </div>
+  
 
     <div className="toast-success-email-card">
       <div className="toast-email-label">

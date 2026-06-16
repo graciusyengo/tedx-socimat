@@ -60,6 +60,13 @@
     width: 900px;
 }
 
+/* Align children (logo, headings, button) to the left */
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .text-content h1 {
   width: 700px;
 }

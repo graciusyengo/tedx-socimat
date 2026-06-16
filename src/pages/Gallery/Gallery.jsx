@@ -153,6 +153,15 @@ const Gallery = () => {
     'DIEZ EVENTS TED.jpg',
   ];
 
+  // Pagination state
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 12; // images per page
+  const totalPages = Math.ceil(galleryImages.length / itemsPerPage);
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const displayedImages = galleryImages.slice(startIndex, endIndex);
+
   const handleImageClick = (image) => {
     setSelectedImage(image);
   };
@@ -206,23 +215,57 @@ const Gallery = () => {
           <h2 className="gallery-title">Moments Mémorables</h2>
           
           <div className="gallery-grid">
-            {galleryImages.map((image, index) => (
-              <div
-                key={index}
-                className="gallery-item"
-                onClick={() => handleImageClick(image)}
-              >
-                <img
-                  src={`/images/tedx_socimat_galerie/${image}`}
-                  alt={`Gallery ${index + 1}`}
-                  loading="lazy"
-                />
-                <div className="overlay">
-                  <span className="zoom-icon">🔍</span>
+            {displayedImages.map((image, idx) => {
+              const index = startIndex + idx;
+              return (
+                <div
+                  key={index}
+                  className="gallery-item"
+                  onClick={() => handleImageClick(image)}
+                >
+                  <img
+                    src={`/images/tedx_socimat_galerie/${image}`}
+                    alt={`Gallery ${index + 1}`}
+                    loading="lazy"
+                  />
+                  <div className="overlay">
+                    <span className="zoom-icon">🔍</span>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
+
+          {/* Pagination controls */}
+          {totalPages > 1 && (
+            <div className="gallery-pagination">
+              <button
+                className="pagination-nav"
+                onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                disabled={currentPage === 1}
+              >
+                Préc
+              </button>
+
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                <button
+                  key={page}
+                  className={`pagination-button ${page === currentPage ? 'pagination-active' : ''}`}
+                  onClick={() => setCurrentPage(page)}
+                >
+                  {page}
+                </button>
+              ))}
+
+              <button
+                className="pagination-nav"
+                onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                disabled={currentPage === totalPages}
+              >
+                Suiv
+              </button>
+            </div>
+          )}
         </div>
       </section>
 
